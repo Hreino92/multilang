@@ -1,0 +1,63 @@
+{
+    "menu":{
+        "home":"Home",
+        "services": "Services",
+        "tickets": "Tickets",
+        "who": "About us",
+        "contact":"Contact"
+    },
+    "carimg1":{
+        "title":"Title",
+        "description":"Description"
+    },
+    "carimg2":{
+        "title":"Title",
+        "description":"Description"	
+    },
+    "carimg3":{
+        "title":"Title",
+        "description":"Description"	
+    },
+    "carimg4":{
+        "title":"Title",
+        "description":"Description"	
+    },"carimg5":{
+        "title":"Title",
+        "description":"Description"	
+    },
+    "intro":{
+        "title":"Discover the innovation with reserve503.travel!",
+        "description":"This revolutionary platform merges the services of <b>Viajes Universales, Tours Universales y Wellness El Salvador</b> into a personalized booking experience. It is the ultimate solution, offering convenience and practicality to our clients. With a wide range of tourism options, from cultural adventures to wellness retreats, our platform integrates the best of each brand to provide a unique travel experience. Travel with ease, attention and personalization, choose your preferred destination and enjoy an exceptional experience! reserve503.travel is the new way to explore, simplifying travel planning with a diverse offer and unparalleled service just a click away from your phone or computer and we arrive at your doorstep. Learn more about us, below:"
+    },
+    "brands":{
+        "title":"Our brands"
+    },
+    "card1":{
+        "text":"<b>Viajes Universales</b> distinguishes itself as the travel agency with excellent service, offering a wide range of services and global connections. Our worldwide network of commercial partners guarantees varied options and unique experiences in the destination of your choice. We stand out for our personalized service, tailoring each itinerary to the individual preferences and budgets of our travelers. From flight and accommodation bookings to tailor-made excursions, we are committed to providing meticulous attention and tailor-made solutions for each client. With Universal Travel, experience the convenience of exploring the world with exceptional service and personalized attention that exceeds your expectations.",
+        "since":"Since 2000"
+    },
+    "card2":{
+        "text":"<b>Tours universales</b> is a leader in tourism experiences, stands out as one of the most experienced tour operators in El Salvador, with more than 20 years of experience. We offer a range of options that highlight the cultural and natural richness of the country. With a focus on excellence, we provide customized itineraries, guided by local experts, allowing travelers to explore the hidden treasures of El Salvador. In addition, our network extends throughout Central America, facilitating connections to discover the unique diversity of the region. With Universal Tours, discover the authenticity of El Salvador and the cultural proximity of Central America at every step of your journey.",
+        "since":"Since 2000"
+    },
+    "card3":{
+        "text":"<b>Wellness El Salvador</b> stands out as a tour operator focused on wellness, offering transformative experiences for the body and mind. Our programs are designed to nurture inner balance, combining yoga retreats, meditation and spa treatments in serene and natural settings in El Salvador. With a holistic approach, we foster personal harmony and connection with nature, allowing travelers to fully revitalize themselves. Wellness El Salvador is committed to offering rejuvenating getaways and enriching experiences that promote holistic wellness, inviting you to immerse yourself in a transformative journey towards health and happiness.",
+        "since":"Since 2008"
+    }, 
+    "who":{
+        "title":"Our history",
+        "story":"We announce with enthusiasm the renewal of our commercial image! As a tourism company in El Salvador with more than two decades of experience in national and international tourism, we are proud to present a new stage in our trajectory. For more than 20 years, we have been pioneers in the tourism industry, offering high quality products and services that have delighted our travelers.<br> We present the integration of our services as a travel agency and inbound tour operator in the new reserve503.travel platform. This merger marks a significant milestone in our trajectory, allowing us to get even closer to our valued customers in an agile and versatile way. <br> reserve503.travel represents an evolution in the way we interact with those who rely on our services. This innovative platform allows us not only to offer a wide range of tourism options, but also to provide a closer and more accessible service through multiple communication channels. <br> This update reflects our continuous evolution and commitment to excellence. We have excelled in developing unique and memorable tourism experiences, always maintaining an unparalleled standard of quality. Our vast experience in creating tailor-made trips, coupled with our passion for showcasing the best of El Salvador and other international destinations, positions us as leaders in the market. <br> Our team, recognized for its expertise and commitment, will be available to advise and guide our travelers every step of the way. The fusion of services at reserve503.travel positions us to offer a comprehensive and personalized travel experience, tailored to the individual needs of each client. <br>Introducing a series of new destinations and tours that encapsulate natural beauty, wellness and sustainability at its finest. Our programs have been meticulously designed to immerse travelers in environments that promote harmony with nature, offering enriching experiences that balance enjoyment with preservation. From eco-conscious excursions in protected areas to wellness retreats in natural paradises, each tour is committed to excellence and seeks to provide the best in terms of connection with the environment, promoting personal wellness and respect for the environment at every step of the journey. <br>Our strategic collaborations with leading international organizations such as ACTUAL, ALL XPERIENCE and TERMATALIA and our registration in RNT, keep us at the forefront of tourism, allowing us to offer high quality experiences and remain up-to-date with the latest trends and global standards. These alliances not only enrich our offerings, but also reinforce our commitment to excellence and innovation in every experience we provide. In addition, our partnership with CATA (Central America Tourism Agency) allows us to promote our region as an integral tourist destination, highlighting the diversity and richness of Central America as a whole, thus reinforcing our position as a must-see destination on the international tourist map. <br>We are excited about this new stage that allows us to be even closer to you, our valued travelers, discover with us the comfort, versatility and excellence in every travel experience through reserve503.travel! <br>Join us on this exciting journey as we continue to offer the best in Salvadoran and international tourism."
+
+    },
+    "video":{
+        "description":"video description"
+    },
+    "carousel2":{
+        "text1":"Image description",
+        "text2":"Image description",
+        "text3":"Image description",
+        "text4":"Image description",
+        "text5":"Image description",
+        "carouseldescription":"Context"
+    }
+}

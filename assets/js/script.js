@@ -4,13 +4,13 @@ const flagsElement = document.getElementById("flags");
 // Seleccionamos las etiquetas que tienen el atributo data-section
 const textToChange = document.querySelectorAll('[data-section]');
 
-// Creamos una funcion para cambiar el lenguaje
 const changeLanguage = async language => {
     // Leemos el json con el lenguaje al que damos clic
-    const requestJson = await fetch(`../assets/lang/${language}.json`);
+    const requestJson = await fetch(`../assets/js/languages/${language}.json`);
 
     // el resultado lo almacenamos en texts
     const texts = await requestJson.json();
+    console.log(texts);
 
     // recorremos los elementos del json
     for (const element of textToChange) {
@@ -28,7 +28,9 @@ const changeLanguage = async language => {
 };
 
 
+
 // Escucha el clic en cada bandera
 flagsElement.addEventListener('click', (e) => {
+    // console.log(e.target.parentElement.dataset.language);
     changeLanguage(e.target.parentElement.dataset.language);
 });

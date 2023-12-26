@@ -1,88 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Banderas -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+
+
+  <!--Referencia a la pagina de estilos-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--Referencia al favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon.ico">
+
+  <!--Referencia para FontAwesome-->
+  <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+  <title>reserve503.travel</title>
+
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <!-- Barra de navegacion-->  
+    <!-- Barra de navegacion-->  
+    <!-- Barra de navegacion-->  
+    <nav class="navbar navbar-expand-lg bg-light sticky-top ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+            <a class="navbar-brand" href="./index.html">
+                <img class="nav-logo" src="./assets/img/logoreserve503_Mesa de trabajo 1.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col align-self-end flex-row-reverse " id="navbarNav">
+                <ul class="navbar-nav text-center nav-text ">
               <!-- Flags -->
               <!-- Flags -->
               <!-- Flags -->
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-              <div id="flags" class="flags nav-item">
+              <div id="flags" class="flags nav-item align-self-center">
                 <div class="flags__item" data-language="es">
-                    <img src="/assets/sv.svg" alt="">
+                    <img src="./assets/icons/sv.svg" alt="">
+                    <p class="fw-lighter">es</p>
                 </div>
                 <div class="flags__item" data-language="en">
-                    <img src="/assets/us.svg" alt="">
+                    <img src="./assets/icons/us.svg" alt="">
+                    <p class="fw-lighter">en</p>
                 </div>
               </div>
               <!-- Flags -->
               <!-- Flags -->
               <!-- Flags -->
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+                    <li class="nav-item ">
+                        <a class="nav-link active nav-hover" aria-current="page" href="./index.html" data-section="menu" data-value="home">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-hover" href="#" data-section="menu" data-value="services">Servicios turísticos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-hover" href="#" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-hover" href="./pages/quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-hover" data-section="menu" data-value="contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+
+
+
+
+  <!--Home Carousel-->
+  <!--Home Carousel-->
+  <!--Home Carousel-->
+  <div class="container align-items-center col-md-8 col-12">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./assets/img/home/carousel1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5 data-section="carimg1" data-value="title">Titulo de la imagen</h5>
+            <p data-section="carimg1" data-value="description">Texto representativo y descriptivo de la imagen</p>
           </div>
         </div>
-      </nav>
-    <!--Home Cards-->
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./assets/img/home/carousel2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5 data-section="carimg2" data-value="title">Titulo de la imagen</h5>
+            <p data-section="carimg2" data-value="description">Texto representativo y descriptivo de la imagen</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./assets/img/home/carousel3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5 data-section="carimg3" data-value="title">Titulo de la imagen</h5>
+            <p data-section="carimg3" data-value="description">Texto representativo y descriptivo de la imagen</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./assets/img/home/carousel4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5 data-section="carimg4" data-value="title">Titulo de la imagen</h5>
+            <p data-section="carimg4" data-value="description">Texto representativo y descriptivo de la imagen</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./assets/img/home/carousel5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5 data-section="carimg5" data-value="title">Titulo de la imagen</h5>
+            <p data-section="carimg5" data-value="description">Texto representativo y descriptivo de la imagen</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previo</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+  <!--Home Carousel-->
+  <!--Home Carousel-->
+  <!--Home Carousel-->
+
+  <!--Presentacion reserve503-->
+  <!--Presentacion reserve503-->
+  <!--Presentacion reserve503-->
+<div class="container">
+    <h3 class="text-center green-text" data-section="intro" data-value="title">¡Descubre la innovación con reserve503.travel! </h3>
+    <p class="lead card-text" data-section="intro" data-value="description">
+      Esta plataforma revolucionaria fusiona los servicios de <b>Viajes Universales, Tours Universales y Wellness El Salvador</b> 
+      en una experiencia de reservas personalizadas. Es la solución definitiva, ofreciendo comodidad y practicidad a nuestros clientes. 
+      Con una amplia gama de opciones turísticas, desde aventuras culturales hasta retiros de bienestar, nuestra plataforma integra lo mejor 
+      de cada marca para brindar una experiencia única de viaje. 
+      ¡Viaja con facilidad, atención y personalización, elige tu destino de preferencia  y disfruta de una experiencia excepcional! reserve503.travel
+      es la nueva forma de explorar, simplificando la planificación de viajes con una oferta diversa y un servicio inigualable a tan solo un click 
+      desde tu teléfono o computadora y llegamos a la puerta de tu casa. Conoce más de nosotros, a continuación:
+
+    </p>
+</div>
+  <!--Presentacion reserve503-->
+  <!--Presentacion reserve503-->
+  <!--Presentacion reserve503-->
+
+
+  <!--Home Cards-->
   <!--Home Cards-->
   <!--Home Cards-->
   <div class="container">
-    <h1 class="green-text text-center">Nuestras marcas</h1>
-    <div class="container align-items-center col col-12">
-      <iframe class="iframe" src="https://www.youtube.com/embed/X7UIO_RHEW0?si=GVEVK1NDkYOOQ4PF"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-      
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores beatae veniam earum ut adipisci, porro quo
-        aliquid inventore voluptatem culpa aperiam doloremque voluptates incidunt sit. Consectetur consequatur quia
-        quam dicta.</p>
-    </div>
+    <h1 class="green-text text-center" data-section="brands" data-value="title">Nuestras marcas</h1>
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
-          <img src="/assets/img/home/card1.jpg" class="card-img-top" alt="...">
+          <img src="./assets/img/home/card1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" data-section="card1" data-value="title">Viajes Universales</h5>
-            <img src="/assets/img/LOGO VU.png" class="card-logo">
-            <p class="card-text" data-section="card1" data-value="description">
+            <h5 class="card-title">Viajes Universales</h5>
+            <img src="./assets/img/LOGO VU.png" class="card-logo">
+            <p class="card-text" data-section="card1" data-value="text">
              <b> Viajes Universales</b> se distingue como la agencia de viajes de excelente atención, ofreciendo una amplia gama de servicios y 
              conexiones globales. Nuestra red de socios comerciales a nivel mundial garantiza opciones variadas y experiencias únicas en el 
              destino de su elección. Destacamos por nuestro servicio personalizado, adaptando cada itinerario a las preferencias  individuales 
@@ -98,11 +203,11 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="/assets/img/home/card2.jpg" class="card-img-top" alt="...">
+          <img src="./assets/img/home/card2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Tours Universales</h5>
-            <img src="/assets/img/LOGO TU.png" alt="" class="card-logo">
-            <p class="card-text">
+            <img src="./assets/img/LOGO TU.png" alt="" class="card-logo">
+            <p class="card-text" data-section="card2" data-value="text">
               <b>Tours universales</b> es líder en experiencias turísticas, destaca como uno de los operadores de turismo con experiencia en 
               El Salvador, con más de 20 años de experiencia. Ofrecemos un abanico de opciones que resaltan la riqueza cultural y natural del país.
                Con un enfoque en la excelencia, brindamos itinerarios personalizados, guiados por expertos locales, permitiendo a los viajeros 
@@ -112,17 +217,17 @@
             </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Desde el año 2000</small>
+            <small class="text-muted" data-section="card2" data-value="since">Desde el año 2000</small>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="/assets/img/home/card3.jpg" class="card-img-top" alt="...">
+          <img src="./assets/img/home/card3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text" data-section="card" data-value="title" >Wellness El Salvador</h5>
-            <img src="/assets/img/LOGO WN.png" alt="" class="card-logo">
-            <p class="card-text">
+            <h5 class="card-title text">Wellness El Salvador</h5>
+            <img src="./assets/img/LOGO WN.png" alt="" class="card-logo">
+            <p class="card-text" data-section="card3" data-value="text">
               <b>Wellness El Salvador</b> se destaca como un operador turístico centrado en el bienestar, ofreciendo experiencias transformadoras para 
               el cuerpo y la mente. Nuestros programas están diseñados para nutrir el equilibrio interior, combinando retiros de yoga, meditación y 
               tratamientos de spa en entornos serenos y naturales de El Salvador. Con un enfoque holístico, fomentamos la armonía personal y la 
@@ -132,7 +237,7 @@
             </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Desde el año 2008</small>
+            <small class="text-muted" data-section="card3" data-value="since">Desde el año 2008</small>
           </div>
         </div>
       </div>
@@ -141,7 +246,73 @@
   <!--Home Cards-->
   <!--Home Cards-->
   <!--Home Cards-->
+
+
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <div class="fixed-help-center" title="Centro de ayuda">
+    <a href="" class="nav-link">
+      <i class="bi bi-headset"></i>
+    </a>
+  </div>
+  <div class="fixed-whatsapp" title="Whatsapp">
+    <a href="" class="nav-link">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
 </body>
-<script src="/js/scripts.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<footer class="text-center text-white footer-background">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitter - X -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="bi bi-twitter-x"></i>
+      </a>
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023
+    <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- End of .container -->
+
+
+<!-- Scripts -->
+<!-- Scripts -->
+<!-- Scripts -->
+<script src="./assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+</script>
+<!-- Scripts -->
+<!-- Scripts -->
+<!-- Scripts -->
+
 </html>
