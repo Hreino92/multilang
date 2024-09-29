@@ -4,6 +4,15 @@
     background-repeat: no-repeat;
   }
   */
+.btn-success{
+  background-color: #7BA745;
+  border: none;
+}
+.btn-success:hover{
+  background-color: #fd850b;
+  border: none;
+}
+
 .nav-logo {
   width: 200px;
   height: auto;
@@ -108,6 +117,9 @@
 .green-text{
   color: #7BA745 ;
 }
+.green-text:hover{
+  color: #fd850b ;
+}
 .card-text{
   text-align: justify;
 }
@@ -139,3 +151,130 @@ iframe{
 }
 /* Banderas */
 /* Banderas */
+
+
+
+/* Formulario*/
+#tickets_form{
+  background-image: url('../img/forms/airplane.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  #tickets_form{
+    background-image: none;
+  }
+}
+/* Formulario*/
+
+/*Services Background*/
+
+#elsalvador{
+  background-image: url('../img/services/el-salvador.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
+
+}
+#america{
+  background-image: url('../img/services/america.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
+
+}
+#europa{
+  background-image: url('../img/services/europa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
+
+}
+#asia{
+  background-image: url('../img/services/asia.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
+
+}
+@media(max-width: 767px){
+  #elsalvador, #america, #europa, #asia, #program, #tour, #hotel, #transfer{
+    height: 256px;
+    display: block;
+  }
+}
+
+.sv{
+display: none;
+}
+
+/* EL SALVADOR */
+#program{
+  background-image: url('../img/services/program.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  border-radius: 5px;
+
+}
+#tours{
+  background-image: url('../img/services/tour.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  border-radius: 5px;
+
+}
+#hotels{
+  background-image: url('../img/services/hotel.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  border-radius: 5px;
+
+}
+#transfers{
+  background-image: url('../img/services/transfer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  border-radius: 5px;
+
+}
+/* Programas */
+.programs_list{
+  display: none;
+}
+
+#program1{
+  background-image: url('../img/services/program1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  border-radius: 5px;
+}
+#program2{
+background-image: url('../img/services/program2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  border-radius: 5px;  
+}
+#program3{
+background-image: url('../img/services/program3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  border-radius: 5px;  
+}
+#program4{
+background-image: url('../img/services/program4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  border-radius: 5px;  
+}

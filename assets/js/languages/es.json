@@ -1,14 +1,14 @@
 {
     "menu":{
         "home":"Inicio",
-        "services": "Servicios turísticos",
+        "services": "Otros destinos del mundo",
         "tickets": "Boletos aéreos",
         "who": "¿Quiénes  somos?",
         "contact":"Contacto"
     },
     "carimg1":{
-        "title":"Título de la imagen",
-        "description":"Texto representativo de la imagen"
+        "title":"Catedral Metropolitana de San Salvador",
+        "description":"Lugar de la tumba de San Oscar Romero"
     },
     "carimg2":{
         "title":"Título de la imagen",
@@ -58,5 +58,43 @@
         "text4":"Texto representativo y descriptivo de la imagen",
         "text5":"Texto representativo y descriptivo de la imagen",
         "carouseldescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi corrupti quam iste fugit debitis eligendi maiores quos voluptatem voluptates? Iure suscipit non doloremque, cupiditate a officia fugiat nemo ab!"
+    },
+    "tickets_form":{
+        "title":"Cotiza tu próximo boleto",
+        "required":"*Campo requerido",
+        "yes":"SI",
+        "name":"Nombre:",
+        "phone":"Teléfono de contacto:",
+        "city":"Ciudad de destino:",
+        "start_date":"Fecha de inicio del viaje:",
+        "end_date":"Fecha de retorno:",
+        "flexibility":"¿Tienes flexibilidad de fechas?:",
+        "airline":"Selecciona tu aerolínea de preferencia:",
+        "baggage":"¿Deseas incluir el equipaje de carga?:",
+        "scale":"¿Deseas viajar con escalas?",
+        "contact_form":"¿Cuál es tu forma preferida para que te contactemos?:",
+        "phone_call":"Llamada telefónica",
+        "adults":"¿Cuántos adultos viajan?:",
+        "kids":"¿Cuántos niños viajan?:"
+    },
+    "contact_form":{
+        "title":"Cotiza tu próximo viaje",
+        "required":"*Campo requerido",
+        "yes":"SI",
+        "name":"Nombre:",
+        "phone":"Teléfono de contacto:",
+        "date_of_trip":"Fecha de viaje:",
+        "package":"Paquete de interés:",
+        "tour":"Tour de interés:",
+        "hotel":"Hotel de interés:",
+        "transfer":"Traslado de interés:",
+        "flexibility":"¿Tienes flexibilidad de fechas?:",
+        "considerations":"Consideraciones especiales:"
+    },
+    "contactpage": {
+        "headline":"¡Estamos aquí para ti, sin importar en qué parte del mundo te encuentres!",
+        "text":"Nuestro equipo combina tecnología de punta con un trato cercano y personalizado para que planificar tu próximo viaje sea una experiencia fácil y emocionante. Ya sea por chat, correo o redes sociales, estamos listos para responder tus preguntas y ayudarte a crear la aventura perfecta. Contáctanos y descubre lo sencillo que es viajar con nosotros.",
+        "endline":"¡Tu próxima aventura comienza con un clic!",
+        "ourcontact":"Nuestros contactos:"
     }
 }
