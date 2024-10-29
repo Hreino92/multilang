@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Banderas -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+
+  <!--Referencia a la pagina de estilos-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!--Referencia al favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon.ico" />
+
+  <!--Referencia para FontAwesome-->
+  <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Referencias para mask-input -->
+  <!-- Incluir jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Incluir Inputmask -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+  <title>reserve503.travel</title>
+</head>
+
+<body>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img class="nav-logo" src="/assets/img/logoreserve503_Mesa de trabajo 1.png" alt="" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+                <!-- Flags Section -->
+                <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
+                    <div class="flags__item" data-language="es">
+                        <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
+                        <p class="fw-lighter m-0">es</p>
+                    </div>
+                    <div class="flags__item" data-language="en">
+                        <img src="../assets/icons/us.svg" alt="" style="width: 25px;">
+                        <p class="fw-lighter m-0">en</p>
+                    </div>
+                </div>
+                <!-- Nav Items -->
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="../index.html" data-section="menu" data-value="home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="el-salvador.html" data-section="menu" data-value="elsalvador">El Salvador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover active" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./contact.html" data-section="menu" data-value="contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+
+  <!-- Cuatro cuadritos -->
+  <!-- Cuatro cuadritos -->
+
+  <!-- Contenedor para los botones, alineados al centro -->
+
+  <div class="container mt-5" id="programs_sv">
+    <h2 class="text-center green-text">Programas en Sur América</h2>
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <div class="row">
+      <!-- PROGRAMA 1 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".bogotaColombia">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="saprogram1">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>BOGOTÁ, COLOMBIA</h3>
+            <h6>4 días / 3 noches</h6>
+          </a>
+        </div>
+      </div>
+
+      <!-- PROGRAMA 1 -->
+
+      <!-- PROGRAMA 2 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".santiagoChile">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="saprogram2">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>SANTIAGO DE CHILE</h3>
+            <h6>4 días / 3 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 2 -->
+
+      <!-- PROGRAMA 3 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".icaNazca">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="saprogram3">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>ICA - NAZCA</h3>
+            <h6>2 días / 1 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 3 -->
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- PROGRAMA 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-3 justify-content-center" data-bs-toggle="modal" data-bs-target=".patagoniaArgentina">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect" id="saprogram4">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>PATAGONIA - ARGENTINA</h3>
+            <h6>11 días / 10 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 1 -->
+    
+      <!-- PROGRAMA 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-3 justify-content-center" data-bs-toggle="modal" data-bs-target=".peruAncestral">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect" id="saprogram5">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none">
+            <h3>PERU ANCESTRAL</h3>
+            <h6>6 días / 5 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 2 -->
+    </div>
+    
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- Modal: BOGOTA COLOMBIA -->
+    <div class="modal fade bogotaColombia" tabindex="-1" role="dialog" aria-labelledby="bogotaColombiaLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="bogotaColombiaLabel" data-section="daytour1" data-value="name">
+                BOGOTÁ, COLOMBIA
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="bogotaColombiaHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/saprograms/saprogram1_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram1_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram1_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#bogotaColombiaHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bogotaColombiaHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="bogotaColombiaItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="bogotaColombiaDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#bogotaColombiaDay1" type="button" role="tab" aria-controls="bogotaColombiaDay1"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bogotaColombiaDay2-tab" data-bs-toggle="tab" data-bs-target="#bogotaColombiaDay2"
+                  type="button" role="tab" aria-controls="bogotaColombiaDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bogotaColombiaDay3-tab" data-bs-toggle="tab" data-bs-target="#bogotaColombiaDay3"
+                  type="button" role="tab" aria-controls="bogotaColombiaDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bogotaColombiaDay4-tab" data-bs-toggle="tab" data-bs-target="#bogotaColombiaDay4"
+                  type="button" role="tab" aria-controls="bogotaColombiaDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bogotaColombiaInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#bogotaColombiaInclusions" type="button" role="tab" aria-controls="bogotaColombiaInclusions"
+                  aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bogotaColombiaRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#bogotaColombiaRecommendations" type="button" role="tab"
+                  aria-controls="bogotaColombiaRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="bogotaColombiaItineraryTabsContent">
+              <div class="tab-pane fade show active" id="bogotaColombiaDay1" role="tabpanel"
+                aria-labelledby="bogotaColombiaDay1-tab">
+                <h5>Dia 1</h5>
+                <p>
+                    Llegada a Bogotá, traslado hacia el hotel. Check in y resto del día libre.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="bogotaColombiaDay2" role="tabpanel" aria-labelledby="bogotaColombiaDay2-tab">
+                <h5>DIA 2</h5>
+                <p>
+                    Desayuno. Sube al santuario del Señor Caído de Monserrate, un símbolo de Bogotá
+                    construido en el siglo XVII y ubicado en la parte oriental del cerro de Monserrate a una altura de más
+                    de 3000 metros. Deja atrás el monasterio y dirígete a la plaza de Bolívar, la plaza principal de Bogotá
+                    que alberga algunos de los edificios más emblemáticos de la ciudad como el palacio presidencial, la
+                    catedral, el Capitolio Nacional, el palacio Liévano, la Casa del Florero -sede del Museo del 20 de
+                    julio- y el palacio de Justicia.
+                    Pon rumbo a La Candelaria, el centro adoquinado de la ciudad y disfruta de una visita exclusiva al
+                    Museo del Oro, hogar de la colección de orfebrería prehispánica más grande del mundo. Paséate por
+                    las calles del centro histórico de La Candelaria y contempla la espectacular arquitectura con su
+                    encanto colonial precolombino. Retorno al hotel.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="bogotaColombiaDay3" role="tabpanel" aria-labelledby="bogotaColombiaDay3-tab">
+                <h5>DIA 3</h5>
+                <p>
+                  Desayuno. Día libre.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="bogotaColombiaDay4" role="tabpanel" aria-labelledby="bogotaColombiaDay4-tab">
+                <h5>DIA 4</h5>
+                <p>
+                    Check out. Te llevaremos al aeropuerto para tu regreso a El Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="bogotaColombiaInclusions" role="tabpanel"
+                aria-labelledby="bogotaColombiaInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                    <li>Traslados aeropuerto / hotel / aeropuerto</li>
+                    <li>3 noches de alojamiento en categoría de hotel seleccionado con desayuno</li>
+                    <li>Visita turística de Bogotá, el monasterio de Monserrate y La Candelaria</li>
+                    <li>Tarjeta de asistencia</li>
+                    <li>Impuestos hoteleros</li>
+                </ul>                
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                    <li>Resort fee o impuesto ambiental según sea el destino y hotel seleccionado</li>
+                    <li>Habitaciones con vistas al mar, vistas a la ciudad, habitaciones Suites ni ninguna no especificada en el paquete</li>
+                    <li>No incluye otros servicios no especificados</li>
+                </ul>                
+              </div>
+              <div class="tab-pane fade" id="bogotaColombiaRecommendations" role="tabpanel"
+                aria-labelledby="bogotaColombiaRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                    <li>Tarifas sujetas a cambios y disponibilidad sin previo aviso hasta el momento de su reservación</li>
+                    <li>En caso el hotel no confirme disponibilidad se brindarán opciones de hotel similares en la misma categoría</li>
+                    <li>Tarifas en base a hotel en habitación estándar</li>
+                    <li>Pasajeros deben presentarse 3 horas antes de la salida del vuelo en aeropuerto, aun estando prechequeados</li>
+                    <li>Boletos aéreos están sujetos a cambios de horarios por parte de la aerolínea</li>
+                    <li>Se requiere pasaporte con vigencia mínima de 6 meses</li>
+                    <li>Salvadoreños no requieren visa vigente (consulte por otras nacionalidades)</li>
+                    <li>Se requiere vacuna de fiebre amarilla</li>
+                    <li>Tarifas no aplican en temporada alta: feriados, Navidad, Fin de año y Semana Santa</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: SANTIAGO DE CHILE -->
+    <div class="modal fade santiagoChile" tabindex="-1" role="dialog" aria-labelledby="santiagoChileLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="santiagoChileLabel" data-section="daytour1" data-value="name">
+                SANTIAGO DE CHILE
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="santiagoChileHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/saprograms/saprogram2_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram2_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram2_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#santiagoChileHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#santiagoChileHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="santiagoChileItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="santiagoChileDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#santiagoChileDay1" type="button" role="tab"
+                  aria-controls="santiagoChileDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="santiagoChileDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#santiagoChileDay2" type="button" role="tab"
+                  aria-controls="santiagoChileDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="santiagoChileDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#santiagoChileDay3" type="button" role="tab"
+                  aria-controls="santiagoChileDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="santiagoChileDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#santiagoChileDay4" type="button" role="tab"
+                  aria-controls="santiagoChileDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="santiagoChileInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#santiagoChileInclusions" type="button" role="tab"
+                  aria-controls="santiagoChileInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="santiagoChileRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#santiagoChileRecommendations" type="button" role="tab"
+                  aria-controls="santiagoChileRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="santiagoChileItineraryTabsContent">
+              <div class="tab-pane fade show active" id="santiagoChileDay1" role="tabpanel"
+                aria-labelledby="santiagoChileDay1-tab">
+                <h5>Dia 1</h5>
+                <p>
+                    Llegada al aeropuerto, camino hacia su hotel y check in.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="santiagoChileDay2" role="tabpanel"
+                aria-labelledby="santiagoChileDay2-tab">
+                <h5>DIA 2</h5>
+                <p>
+                    Desayuno. Iniciaremos nuestra Experiencia desde tu hotel para recorrer distintos sitios de
+                    interés de Santiago, observando los contrastes entre el casco histórico capitalino y los modernos
+                    edificios del sector Oriente, conociendo además los lugares favoritos de turistas y locales.
+                    Comenzaremos en la calle principal del centro de la ciudad, la Av. Libertador Bernardo O’Higgins
+                    (más conocida como Alameda) y allí conoceremos el Palacio Presidencial de la Moneda, un edificio
+                    de construcción neoclásica que alberga parte importante de la historia chilena. Recorreremos en
+                    forma panorámica, los céntricos paseos peatonales y pasaremos por Plaza de Armas, lugar
+                    estratégico desde donde se realizaron los primeros trazados de la ciudad. A su alrededor podremos
+                    ver varios edificios históricos: la Iglesia Catedral, el Correo Central y la Municipalidad de Santiago.
+                    Subiremos el Cerro Santa Lucía, un hermoso e importante sitio arquitectónico e histórico que sirvió
+                    como punto estratégico de la fundación de la ciudad (y que es visitado con frecuencia por los
+                    santiaguinos) para luego dirigirnos a otros de los lugares donde los locales pasan su tiempo libre: el
+                    Parque Forestal, el Museo de Bellas Artes, y el Barrio Lastarria. Cruzaremos el río Mapocho para
+                    llegar al Barrio Bellavista, el que concentra una fuerte actividad cultural y artística, además de ser
+                    uno de los favoritos para la vida nocturna de la capital. Finalmente conoceremos el nuevo centro de
+                    la ciudad visitando Providencia y las comunas de Las Condes y Vitacura, visitando el parque
+                    Bicentenario, uno de los nuevos parques íconos de la ciudad. Mas tarde, después de conocer la
+                    zona Oriente de Santiago, protagonistas del crecimiento y la modernidad, comenzaremos nuestro
+                    retorno al hotel.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="santiagoChileDay3" role="tabpanel"
+                aria-labelledby="santiagoChileDay3-tab">
+                <h5>DIA 3</h5>
+                <p>
+                    Desayuno. Iniciaremos nuestra Experiencia según el tour de tu elección:
+                </p>
+                <p><b>OPCIÓN 1:</b></p>
+                <p>Valparaíso con Viña del mar: desde tu hotel hacia la costa para conocer Valparaíso,
+                    ciudad que fue el puerto principal del Océano Pacífico durante el siglo XIX y que hoy en día es uno
+                    de los principales destinos turísticos de Chile gracias a su vibrante cultura y particular arquitectura.
+                    Visitaremos también Viña del Mar, una linda ciudad costera reconocida por sus jardines y sus
+                    agradables playas. Cruzaremos el fértil valle vinícola de Casablanca y llegaremos a Valparaiso,
+                    obteniendo lindas vistas de la ciudad desde los miradores ubicados en alguno de los 43 cerros que
+                    rodean la bahía. Visitaremos algunas de sus zonas históricas y comerciales y también el Congreso
+                    Nacional, y subiremos a uno de los ascensores más famosos de la ciudad. Iremos al Cerro Alegre y
+                    lograremos una vista extraordinaria desde el Paseo Yugoslavo, continuando hasta el Cerro
+                    Concepción y paseando por el pintoresco Paseo Atkinson, obteniendo una de las mejores postales
+                    de Valparaíso. Nos dirigiremos a La Sebastiana, una original construcción que hoy en dia es un
+                    museo y centro cultural que alberga colecciones del reconocido poeta chileno Pablo Neruda (solo
+                    experiencia Privada acceso Miercoles a Domingo), y continuaremos luego hacia la vecina ciudad
+                    balneario de Viña del Mar. Allí visitaremos el Casino de Juegos y las principales avenidas y jardines
+                    del sector costero, para luego pasear por barrios residenciales de moderna arquitectura, llegando
+                    hasta la playa de Reñaca. Finalizaremos visitando el centro de la ciudad, la Plaza Vergara y Av.
+                    Alvarez, regresando luego al hotel en Santiago.
+                </p>
+                <p><b>OPCIÓN 2:</b></p>
+                <p>Viñedos del Maipo - Viña Santa Rita: Tour Clásico: Iniciaremos nuestra Experiencia CL
+                    Mundo desde tu hotel para dirigirnos hacia el Valle del Maipo, cuyo clima mediterráneo le otorga
+                    condiciones privilegiadas para la producción de extraordinarios vinos. Visitaremos la Viña Santa Rita,
+                    una de las bodegas más importantes del país, la que se encuentra rodeada por un entorno natural
+                    
+                    único donde conviven la tradición vitivinícola con la historia, cultura y gastronomía chilena.
+                    Realizaremos la Experiencia Clásica: Un recorrido por la Historia de Chile y su Viticultura,
+                    comenzando por el Jardín de Cepas guiados por un experto que nos llevará por los viñedos y las
+                    bodegas de vinificación, guarda y planta de embotellamiento. Visitaremos la histórica Bodega 1,
+                    hecha de cal y canto y la famosa Bodega de los 120 patriotas, hoy Monumento Nacional.
+                    Continuaremos con una degustación de vinos reserva y luego tendremos tiempo libre para recorrer el
+                    Museo Andino y visitar la tienda de souvenirs de Viña Santa Rita, retornando posteriormente al hotel.</p>
+              </div>
+              <div class="tab-pane fade" id="santiagoChileDay4" role="tabpanel"
+                aria-labelledby="santiagoChileDay4-tab">
+                <h5>DIA 4</h5>
+                <p>
+                    Check out. Dirígete al aeropuerto para tu regreso a El Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="santiagoChileInclusions" role="tabpanel"
+                aria-labelledby="santiagoChileInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                    <li>Traslados aeropuerto / hotel / aeropuerto en servicio compartido</li>
+                    <li>3 noches de alojamiento en habitación estándar en hotel de su elección o similar</li>
+                    <li>Régimen alimenticio: Desayuno</li>
+                    <li>City Tour Panorámico</li>
+                    <li>1 tour a escoger entre: Valparaíso con Viña del Mar o Viñedos del Maipo con Viña Santa Rita: Tour Clásico</li>
+                    <li>Tarjeta de asistencia</li>
+                    <li>Impuestos hoteleros</li>
+                </ul>                
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                    <li>Resort fee o impuesto ambiental según sea el destino y hotel seleccionado</li>
+                    <li>Habitaciones con vistas al mar, vistas a la ciudad, habitaciones Suites ni ninguna no especificada en el paquete</li>
+                    <li>No incluye otros servicios no especificados</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="santiagoChileRecommendations" role="tabpanel"
+                aria-labelledby="santiagoChileRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                    <li>Tarifas sujetas a cambios y disponibilidad sin previo aviso hasta el momento de su reservación</li>
+                    <li>En caso el hotel no confirme disponibilidad se brindarán opciones de hotel similares en la misma categoría</li>
+                    <li>Tarifas en base a hotel en habitación estándar</li>
+                    <li>Pasajeros deben presentarse 3 horas antes de la salida del vuelo en aeropuerto, aun estando prechequeados</li>
+                    <li>Boletos aéreos están sujetos a cambios de horarios por parte de la aerolínea</li>
+                    <li>Se requiere pasaporte con vigencia mínima de 6 meses</li>
+                    <li>Salvadoreños no requieren visa vigente (consulte por otras nacionalidades)</li>
+                    <li>Se requiere vacuna de fiebre amarilla</li>
+                    <li>Tarifas no aplican en temporada alta: feriados, Navidad, Fin de año y Semana Santa</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal: ICA - NAZCA -->
+    <div class="modal fade icaNazca" tabindex="-1" role="dialog" aria-labelledby="icaNazcaLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="icaNazcaLabel" data-section="daytour1" data-value="name">
+                ICA - NAZCA
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="icaNazcaHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/saprograms/saprogram3_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram3_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram3_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#icaNazcaHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#icaNazcaHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="icaNazcaItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="icaNazcaDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#icaNazcaDay1" type="button" role="tab"
+                  aria-controls="icaNazcaDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" icaNazcaticoDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#icaNazcaDay2" type="button" role="tab"
+                  aria-controls="icaNazcaDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="icaNazcaInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#icaNazcaInclusions" type="button" role="tab"
+                  aria-controls="icaNazcaInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="icaNazcaRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#icaNazcaRecommendations" type="button" role="tab"
+                  aria-controls="icaNazcaRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="icaNazcaItineraryTabsContent">
+              <div class="tab-pane fade show active" id="icaNazcaDay1" role="tabpanel"
+                aria-labelledby="icaNazcaDay1-tab">
+                <h5>DÍA 1: LIMA</h5>
+                <p>
+                    07:00 Hrs. Salida hacia la ciudad de Ica -empresa Cruz del Sur 10:50
+                    Hrs. Llegada la ciudad de Ica y traslado al hotel elegido. 13:00 Hrs. CITY TOUR ICA Visitaremos el
+                    centro histórico de la ciudad de Ica, Plaza de Armas, El Santuario del Señor de Luren y una Bodega
+                    Vitivinícola artesanal, dónde conoceremos el Proceso de la elaboración de Vinos y Piscos Peruanos,
+                    también podremos degustar las diferentes variedades de Vinos y Piscos. Luego, tendremos una
+                    visita a la Laguna de la Huacachina considerado como el oasis de América, lugar donde se practica
+                    deportes de aventura como los buggies y sandboard. Tarde libre. Noche de alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="icaNazcaDay2" role="tabpanel"
+                aria-labelledby="icaNazcaDay2-tab">
+                <h5>DÍA 2: ICA - NAZCA - LIMA</h5>
+                <p>
+                    Desayuno. 08:00 hrs Salida en auto privado, hacia la ciudad de Nazca.
+                    11.00 hrs. Llegada a Nazca y traslado al aeródromo. SOBREVUELO A LAS LINEAS DE NAZCA
+                    Abordaremos una avioneta que sobrevolará las misteriosas Líneas de Nazca; enormes dibujos
+                    lineales de animales, pájaros y figuras geométricas, dibujados en el desierto, que sólo pueden ser
+                    apreciados desde el aire. 14:30 Hrs. Salida hacia la ciudad de Lima en empresa de transporte Cruz
+                    del Sur. 21:30 Hrs. Llegada a la ciudad de Lima.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="icaNazcaInclusions" role="tabpanel"
+                aria-labelledby="icaNazcaInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                    <li>Boleto de bus Lima / Ica en empresa Cruz del Sur - servicio imperial</li>
+                    <li>Boleto de bus Nazca / Lima en empresa Cruz del Sur - servicio crucero</li>
+                    <li>Traslados In – Out</li>
+                    <li>01 noche en Ica + desayuno</li>
+                    <li>Auto privado Ica - Nazca</li>
+                    <li>Tour: City tour Ica + Laguna de la Huacachina / Sobrevuelo Líneas de Nazca</li>
+                    <li>Impuestos hoteleros</li>
+                    <li>Guiado profesional en español o inglés</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                    <li>No incluye impuesto de sobrevuelo $10.00 aprox.</li>
+                    <li>No incluye boleto turístico $15.00 aprox.</li>
+                    <li>Para los viajes en bus, el pasajero tiene derecho a transportar hasta 20 kilos de equipaje en bodega y 5 kilos en maletín de mano.</li>
+                </ul>                             
+              </div>
+              <div class="tab-pane fade" id="icaNazcaRecommendations" role="tabpanel"
+                aria-labelledby="icaNazcaRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                    <li>Los pasajeros nacionales o extranjeros que sobrevuelen las Líneas de Nazca deberán llevar consigo su DNI o pasaporte original (incluidos menores de edad).</li>
+                    <li>El pasajero que exceda los 95 kg de peso, deberá pagar un asiento adicional.</li>
+                    <li>El tiempo de espera en temporada alta es de 90 a 120 minutos.</li>
+                    <li>Los niños desde los 2 años de edad ocupan asiento y pagan pasaje completo (avioneta).</li>
+                    <li>Los sobrevuelos a las Líneas de Nazca comenzarán a partir de las 7:00 am hasta las 4:30 pm (sujeto a condiciones meteorológicas).</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: PATAGONIA-ARGENTINA -->
+    <div class="modal fade patagoniaArgentina" tabindex="-1" role="dialog" aria-labelledby="patagoniaArgentinaLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="patagoniaArgentinaLabel" data-section="daytour1" data-value="name">
+                PATAGONIA - ARGENTINA
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="patagoniaArgentinaHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/saprograms/saprogram4_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram4_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram4_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram4_4.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram4_5.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#patagoniaArgentinaHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#patagoniaArgentinaHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="patagoniaArgentinaItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="patagoniaArgentinaDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay1" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay2" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay3" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay4" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay5-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay5" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaDay5" aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay6-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay6" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaDay6" aria-selected="false">
+                  Día 6
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay7-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay7" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaDay7" aria-selected="false">
+                  Día 7
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay8-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay8" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaDay8" aria-selected="false">
+                  Día 8
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay9-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay9" type="button" role="tab"
+                  aria-contr9ls="patagoniaArgentinaDay9" aria-selected="false">
+                  Día 9
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay10-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay10" type="button" role="tab"
+                  aria-contr9ls="patagoniaArgentinaDay10" aria-selected="false">
+                  Día 10
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaDay11-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaDay11" type="button" role="tab"
+                  aria-contr9ls="patagoniaArgentinaDay11" aria-selected="false">
+                  Día 11
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaInclusions" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaInclusions" aria-selected="false">
+                  Inclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="patagoniaArgentinaRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#patagoniaArgentinaRecommendations" type="button" role="tab"
+                  aria-controls="patagoniaArgentinaRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li> 
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="patagoniaArgentinaItineraryTabsContent">
+              <div class="tab-pane fade show active" id="patagoniaArgentinaDay1" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay1-tab">
+                <h5>DÍA 1: Buenos Aires. </h5>
+                <p>
+                   Recepción en el aeropuerto y traslado al hotel seleccionado. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay2" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay2-tab">
+                <h5>DÍA 2: Buenos Aires - Trelew - Puerto Madryn Desayuno. </h5>
+                <p>
+                    Salida al aeropuerto local para tomar el
+                    vuelo a Trelew. Recepción en el aeropuerto y traslado al hotel seleccionado en la ciudad de
+                    Puerto Madryn. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay3" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay3-tab">
+                <h5>DÍA 3: Puerto Madryn.</h5>
+                <p>
+                    Desayuno. Partimos por la mañana hacia el Área Natural Protegida
+                    Península Valdés. Luego de 1 hora de viaje arribamos a Puerto Pirámides, donde nos
+                    embarcamos para el avistaje de ballenas (opcional) entre los meses de junio y diciembre.
+                    Durante los meses de abril, mayo y hasta el 15 de junio no habrá navegaciones en Puerto
+                    Pirámides. Luego partimos hacia Punta Delgada para tomar el almuerzo (no está incluido) en el
+                    complejo del Faro y donde tenemos la oportunidad de bajar a la playa para acercarnos a los
+                    elefantes marinos. Luego partimos hacia Punta Cantor para observar la costa externa de la
+                    península y llegamos hasta el comienzo de la Caleta Valdés. Interpretamos las formaciones
+                    geológicas de la costa y desde allí regresamos al Istmo Carlos Ameghino, donde visitamos el
+                    centro de interpretación. En el camino tenemos una buena probabilidad de observar fauna
+                    silvestre terrestre, como guanacos, choiques, zorros, maras, piches, zorrinos, etc. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay4" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay4-tab">
+                <h5>DÍA 4: Puerto Madryn - Trelew - Ushuaia</h5>
+                <p>
+                    Desayuno. Salida al aeropuerto de Trelew para tomar el
+                    vuelo a Ushuaia. Recepción en el aeropuerto y traslado al hotel seleccionado. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay5" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay5-tab">
+                <h5>DÍA 5: Ushuaia</h5>
+                <p>
+                    Desayuno. Tomaremos la excursión al Parque Nacional Tierra del Fuego, el cual
+                    tiene una superficie de casi 69.000 ha, experimentando un paseo diferente: lo realizaremos en
+                    pequeños grupos por sendas muchas veces inexploradas, llegando a rincones escondidos del
+                    bosque. Tomamos la Ruta Nacional 3 desde Ushuaia y pararemos en un punto panorámico del
+                    Canal Beagle. Luego llegamos al Parque Nacional Tierra del Fuego y comenzamos nuestro
+                    trekking hacia el Mirador Lapataia. En nuestros tours recorremos algunos senderos de este
+                    bosque excepcional.Se puede optar por salidas en la mañana o en la tarde (6 horas cada uno
+                    aproximadamente). El parque está surcado por cordones montañosos que lo dividen en valles de
+                    muy difícil acceso. A diferencia de otros parques andino patagónicos, presenta bosques cercanos
+                    a la costa marítima, de 6 km de longitud sobre el Canal Beagle. Recomendamos tomar
+                    opcionalmente la navegación por el Canal Beagle a Isla de Lobos. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay6" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay6-tab">
+                <h5>DÍA 6: Ushuaia - El Calafate</h5>
+                <p>
+                    Desayuno. Salida al aeropuerto para tomar el vuelo a El Calafate.
+                    Recepción en el aeropuerto y traslado al hotel seleccionado. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay7" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay7-tab">
+                <h5>DÍA 7: El Calafate</h5>
+                <p>
+                    Desayuno. Salida para tomar la excursión de día completo al Glaciar Perito
+                    Moreno. Desde El Calafate al Glaciar Perito Moreno media una distancia de 80 km por caminos
+                    de ripio. Durante el recorrido se puede apreciar el Lago Argentino y su Bahía Redonda. En los
+                    primeros 40 km domina el paisaje la estepa patagónica, para luego ingresar dentro del Parque
+                    Nacional Los Glaciares, donde predomina la vegetación arbórea, en su mayoría perteneciente a
+                    la familia de los nothofagus (lengas, ñires, coihues de magallanes). El trayecto culmina en las
+                    pasarelas, las cuáles pueden recorrer libremente. Las mismas tienen una extensión de 4 km y
+                    sus escalinatas descienden hasta
+                    aproximarse a unos 300 m del frente del glaciar. Regreso al hotel. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay8" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay8-tab">
+                <h5>DÍA 8: El Calafate</h5>
+                <p>
+                    Desayuno. Día libre. Le recomendamos la excursión Ríos de Hielo Express.
+                    Alojamiento
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay9" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay9-tab">
+                <h5>DÍA 9: El Calafate - Buenos Aires</h5>
+                <p>
+                    Desayuno. Salida al Aeropuerto para tomar el vuelo a Buenos
+                    Aires. Recepción en el aeropuerto y traslado al hotel seleccionado. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay10" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay10-tab">
+                <h5>DÍA 10: Buenos Aires Desayuno.</h5>
+                <p>
+                    Por la mañana salida para realizar el City Tour. Descubriremos
+                    la belleza de Buenos Aires conociendo su Centro Cívico; comenzando por el imponente
+                    Congreso Nacional y la Plaza de Mayo con la Casa de Gobierno (Casa Rosada), la Catedral
+                    Metropolitana y el Cabildo. Transitaremos frente al Teatro Colón, una de las joyas mundiales en
+                    lo que a óperas se refiere y orgullo cultural de los porteños. Luego iremos al tradicional barrio de
+                    San Telmo cuya mágica atmósfera lo hará retroceder en el tiempo. Nos detendremos en La Boca
+                    donde se establecieron los primeros inmigrantes italianos, famosa por su pintoresca y colorida
+                    arquitectura. Continuaremos hacia Palermo, barrio residencial con varios atractivos como el
+                    Ecoparque, el Parque 3 de Febrero, el Planetario, etc. Finalmente visitaremos La Recoleta, uno
+                    de los barrios más exclusivos de la ciudad, donde veremos el famoso cementerio, boutiques
+                    elegantes, excelentes restaurantes y cafés al aire libre. Tarde libre. Por la noche recomendamos
+                    tomar opcionalmente una cena show de tango. Alojamiento.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaDay11" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaDay11-tab">
+                <h5>DÍA 11: Buenos Aires</h5>
+                <p>
+                    Desayuno. A la hora correspondiente, traslado al aeropuerto.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaInclusions" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaInclusions-tab">
+                <h5>INCLUSIONES</h5>
+                <ul>
+                  <li>Idiomas: Español/Inglés/Portugués</li>
+                  <li>Desayunos</li>
+                  <li>Traslados y excursiones especificadas en el itinerario.</li>
+                  <li>Entradas a Parques Nacionales.</li>
+                  <li>Alojamiento según categoría.</li>
+              </ul>  
+              <h5>NO INCLUYE</h5>          
+              <ul>
+                <li>Propinas ni servicios no especificados en el programa</li>
+              </ul>
+              </div>
+              <div class="tab-pane fade" id="patagoniaArgentinaRecommendations" role="tabpanel"
+                aria-labelledby="patagoniaArgentinaRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                    <li>Mínimo de pasajeros: 2 (dos). Salidas diarias (no aplica a fechas especiales: Navidad, Año Nuevo, Semana Santa, etc.).</li>
+                </ul>                                
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: NICARAGUA - RUTA COLONIAL -->
+    <div class="modal fade peruAncestral" tabindex="-1" role="dialog" aria-labelledby="peruAncestralLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="peruAncestralLabel" data-section="daytour1" data-value="name">
+                PERÚ ANCESTRAL
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="peruAncestralHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/saprograms/saprogram5_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram5_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram5_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/saprograms/saprogram5_4.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#peruAncestralHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#peruAncestralHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="peruAncestralItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="peruAncestralDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#peruAncestralDay1" type="button" role="tab"
+                  aria-controls="peruAncestralDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="peruAncestralDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#peruAncestralDay2" type="button" role="tab"
+                  aria-controls="peruAncestralDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="peruAncestralDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#peruAncestralDay3" type="button" role="tab"
+                  aria-controls="peruAncestralDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="peruAncestralDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#peruAncestralDay4" type="button" role="tab"
+                  aria-controls="peruAncestralDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="peruAncestralDay5-tab" data-bs-toggle="tab"
+                  data-bs-target="#peruAncestralDay5" type="button" role="tab"
+                  aria-controls="peruAncestralDay5" aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="peruAncestralDay6-tab" data-bs-toggle="tab"
+                  data-bs-target="#peruAncestralDay6" type="button" role="tab"
+                  aria-controls="peruAncestralDay6" aria-selected="false">
+                  Día 6
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="peruAncestralInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#peruAncestralInclusions" type="button" role="tab"
+                  aria-controls="peruAncestralInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="peruAncestralRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#peruAncestralRecommendations" type="button" role="tab"
+                  aria-controls="peruAncestralRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="peruAncestralItineraryTabsContent">
+              <div class="tab-pane fade show active" id="peruAncestralDay1" role="tabpanel"
+                aria-labelledby="peruAncestralDay1-tab">
+                <h5>DÍA 1: TRASLADOS DE LLEGADA</h5>
+                <p>
+                    Llegada al aeropuerto internacional Jorge
+                    Chávez de la ciudad de Lima. Asistencia y traslado al hotel. Día libre para descansar y realizar
+                    actividades personales. Alojamiento en Lima.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="peruAncestralDay2" role="tabpanel"
+                aria-labelledby="peruAncestralDay2-tab">
+                <h5>DÍA 2: CITY TOUR LIMA COLONIAL Y MODERNA</h5>
+                <p>
+                    Desayuno en el hotel. 09:30 hrs. Este
+                    recorrido inicia con una vista panorámica de la Huaca Pucllana, templo pre-Inca del siglo IV d.C.
+                    Luego, se visita el Museo del Banco Central de Reserva*, para apreciar una exposición de
+                    cerámica y textiles de diversas culturas precolombinas, así como la colección de Oro Cohen.
+                    Luego, una caminata al Convento de San Francisco, donde recorrerán los túneles y recintos
+                    subterráneos de sus catacumbas. Además, se disfruta de una caminata por la Plaza Mayor
+                    donde se ubica la Catedral, el Palacio de Gobierno y el Palacio Municipal. Al retornar, apreciarán
+                    hermosas vistas del océano Pacífico al recorrer el malecón de Miraflores. Finalizando el recorrido
+                    será retornado a su hotel. *Museo BCRP, cerrado al público lunes y domingos* Alojamiento en
+                    Lima 
+                </p>
+              </div>
+              <div class="tab-pane fade" id="peruAncestralDay3" role="tabpanel"
+                aria-labelledby="peruAncestralDay3-tab">
+                <h5>DÍA 3: LIMA OUT – CUSCO IN + CITY TOUR</h5>
+                <p>
+                    Llegada a la ciudad imperial (Cusco). Bienvenida,
+                    asistencia y traslado hacia el hotel. Descanso para aclimatación. 12:00Hrs Iniciará el recorrido en
+                    el Qoricancha, legendario Templo del Sol y principal lugar ceremonial del Imperio Incaico, que,
+                    junto con el Convento de Santo Domingo, lucen una fascinante combinación de arquitecturas
+                    Inca y colonial. Luego subirá hacia las alturas de la ciudad, al impresionante complejo
+                    arqueológico de Sacsayhuaman, una de las mayores obras de los Incas, donde se encuentran
+                    gigantescos muros de piedras megalíticas perfectamente colocadas, y se aprecian las mejores
+                    vistas de la ciudad de Cusco. De allí visitamos Quenko, lugar antiguo de ceremonias y sacrificios,
+                    seguido del puesto militar Inca de Pucapucara (o piedra roja). Tomará un descanso en un centro
+                    artesanal para disfrutar de nuestro Té del Inka, un agradable momento de refrigerio. Finalmente,
+                    visitará TamboMachay, la Fuente del Inca, lugar antiguo de veneración al agua y las lluvias.
+                    Retorno al hotel. Alojamiento en Cusco. 
+                </p>
+              </div>
+              <div class="tab-pane fade" id="peruAncestralDay4" role="tabpanel"
+                aria-labelledby="peruAncestralDay4-tab">
+                <h5>DÍA 4: VALLE SAGRADO</h5>
+                <p>
+                    Desayuno. 08:30 Hrs. Tour al Valle Sagrado de los Incas. Recorrido por
+                    el pueblo de Pisac, pintoresco pueblo mestizo colonial. De la misma forma, los domingos se
+                    celebra la misa en quechua. Luego visitamos en el trayecto los pueblos de Ccoya, Lamay, Calca
+                    y Urubamba. Almuerzo buffet. Por la tarde, la visita guiada del pueblo de Ollantaytambo, lugar
+                    donde se ubica el parque arqueológico de Ollantaytambo, gigantesco complejo agrícola
+                    administrativo social religioso y militar en tiempos del Tahuantinsuyo. Retorno al Cusco por el
+                    poblado de Chincheros, antiguo centro agrícola Inca de bello paisaje andino. Destaca su iglesia
+                    colonial. Alojamiento en Cusco.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="peruAncestralDay5" role="tabpanel"
+                aria-labelledby="peruAncestralDay5-tab">
+                <h5>DÍA 5: EXC. FD SANTUARIO HISTÓRICO DE MACHU PICCHU</h5>
+                <p>
+                    Desayuno en el hotel. Am.
+                    Recojo y traslado a la estación de trenes. Hora indicada abordara el tren hacia Aguas Calientes,
+                    el pueblo al pie de Machu Picchu. De allí, un corto viaje en bus lo llevara al complejo
+                    arqueológico de Machu Picchu, una de las maravillas del mundo moderno. Al pasear por el
+                    complejo, podrá admirar la impresionante arquitectura mientras su guía comparte interesantes
+                    teorías sobre la historia e importancia de Machu Picchu para los Incas. Las grandiosas vistas y la
+                    magia del lugar son incomparables. Luego de dos horas de recorrido, bajara en bus hacia Aguas
+                    Calientes para el almuerzo buffet. Finalmente abordará el tren de retorno a Ollantaytambo, donde
+                    será recogido por una movilidad para retornar a la ciudad de Cusco. Alojamiento en Cusco
+                </p>
+              </div>
+              <div class="tab-pane fade" id="peruAncestralDay6" role="tabpanel"
+                aria-labelledby="peruAncestralDay6-tab">
+                <h5>DÍA 6: TRASLADO DE SALIDA</h5>
+                <p>
+                    Desayuno. Hora oportuna traslado de salida.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="peruAncestralInclusions" role="tabpanel"
+                aria-labelledby="peruAncestralInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                    <li>Traslados In – Out</li>
+                    <li>02 noches en Lima + 02 desayunos</li>
+                    <li>Tour: City tour Lima</li>
+                    <li>Entrada a los atractivos</li>
+                    <li>Guiado profesional en español o inglés</li>
+                    <li>Traslado In – Out en Cusco</li>
+                    <li>03 noches de hotel en Cusco + 03 desayunos</li>
+                    <li>Excursión a la ciudad del Cusco y 4 Ruinas (Koricancha)</li>
+                    <li>Excursión al Valle Sagrado. Incluye almuerzo</li>
+                    <li>Excursión a Machu Picchu. Boleto de tren Expedition a Machu Picchu. Bus de subida y bajada a Machu Picchu. Almuerzo en Machu Picchu (Apu Inti)</li>
+                    <li>Excursiones en servicio compartido</li>
+                    <li>Todas las entradas a los atractivos de acuerdo al itinerario</li>
+              </ul>
+              
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                    <li>Tickets aéreos internacionales y domésticos</li>
+                    <li>Early check-in (llegada temprana) y late check-out (salida más tarde) de los horarios establecidos del hotel</li>
+                    <li>Seguro de viaje</li>
+                    <li>Comidas no mencionadas y propinas</li>
+                    <li>Gastos personales (bebidas, seguro médico o de viaje, lavandería, etc.)</li>
+                    <li>Ingreso a la Catedral</li>
+                    
+                </ul>                                      
+              </div>
+              <div class="tab-pane fade" id="peruAncestralRecommendations" role="tabpanel"
+                aria-labelledby="peruAncestralRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                    <li>OPCIONAL: Tren Vistadome $60.00 dólares (netos)</li>
+              </ul>          
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <div class="fixed-help-center" title="Centro de ayuda">
+    <a href="" class="nav-link">
+      <i class="bi bi-headset"></i>
+    </a>
+  </div>
+  <div class="fixed-whatsapp" title="Whatsapp">
+    <a href="" class="nav-link">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+</body>
+<footer class="text-center text-white footer-background">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-google"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitter - X -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="bi bi-twitter-x"></i>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023
+    <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- End of container -->
+<script src="/assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</html>

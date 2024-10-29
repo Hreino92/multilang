@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Banderas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+
+
+    <!--Referencia a la pagina de estilos-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--Referencia al favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon.ico">
+
+    <!--Referencia para FontAwesome-->
+    <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referencias para mask-input -->
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+    <title>reserve503.travel</title>
+</head>
+
+<body>
+    <!-- Barra de navegacion-->
+    <!-- Barra de navegacion-->
+    <!-- Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="nav-logo" src="/assets/img/logoreserve503_Mesa de trabajo 1.png" alt="" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+                    <!-- Flags Section -->
+                    <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
+                        <div class="flags__item" data-language="es">
+                            <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
+                            <p class="fw-lighter m-0">es</p>
+                        </div>
+                        <div class="flags__item" data-language="en">
+                            <img src="../assets/icons/us.svg" alt="" style="width: 25px;">
+                            <p class="fw-lighter m-0">en</p>
+                        </div>
+                    </div>
+                    <!-- Nav Items -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="../index.html" data-section="menu" data-value="home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-hover" href="./el-salvador.html" data-section="menu" data-value="elsalvador">El Salvador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./contact.html" data-section="menu" data-value="contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
+                layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
+                gaTrack: true,
+                gaId: 'UA-12345678-XX'
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Barra de navegacion-->
+    <!-- Barra de navegacion-->
+    <!-- Barra de navegacion-->
+
+
+    <!-- DAYTOURS -->
+    <!-- DAYTOURS -->
+    <!-- DAYTOURS -->
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="green-text">Tours de un día en El Salvador</h1>
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour1">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect" id="svday1">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>TOUR DE SAN SALVADOR</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour2">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday2">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>LA VIDA Y COMERCIO DE LOS MAYAS</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour3">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday3">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>DIA MAYA EN EL SALVADOR</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour4">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday4">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>MARAVILLOSA EXPERIENCIA EN EL VOLCÁN DE SANTA ANA Y LAGO DE COATEPEQUE</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour5">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday5">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>DESCUBRIENDO EL CRÁTER DEL VOLCÁN DE SANTA ANA</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour6">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday6">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>EXPERIENCIA NATURAL EN CERRO VERDE Y LAGO DE COATEPEQUE</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour7">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday7">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>AVENTURA PANORÁMICA EN RUTA DE LAS FLORES</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour8">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday8">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>ADRENALINA MÁGICA EN RUTA DE LAS FLORES</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour9">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday9">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>RUTA CON AROMA A FLORES Y CAFÉ</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 offset-md-4" data-bs-toggle="modal" data-bs-target=".daytour10">
+                <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+                    id="svday10">
+                    <a class="link-light text-decoration-none">
+                        <a class="text-decoration-none" style="color: white;">
+                            <h3>SUCHITOTO, CIUDAD DEL PÁJARO Y LA FLOR</h3>
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- DAYTOURS -->
+    <!-- DAYTOURS -->
+    <!-- DAYTOURS -->
+
+    <!-- MODALS -->
+    <!-- MODALS -->
+    <!-- MODALS -->
+
+    <!-- MODAL1 -->
+    <!-- MODAL1 -->
+    <div class="modal fade daytour1" tabindex="-1" role="dialog" aria-labelledby="daytour1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour1Label" data-section="daytour1" data-value="name">
+                            TOUR DE SAN SALVADOR
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour1HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/program1_1.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday1_1.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday1_2.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday1_3.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour1HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour1HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour1ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour1Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour1Day1" type="button" role="tab"
+                                aria-controls="daytour1Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour1Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour1Inclusions" type="button" role="tab"
+                                aria-controls="daytour1Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour1Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour1Recommendations" type="button" role="tab"
+                                aria-controls="daytour1Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour1ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour1Day1" role="tabpanel"
+                            aria-labelledby="daytour1Day1-tab">
+                            <p>
+                                Explora la rica historia y cultura de San Salvador con un fascinante tour. Se iniciará desde un punto de encuentro
+                                acordado en la ciudad, dirigiéndose primero al emblemático Centro Histórico. La primera parada será en la Catedral
+                                Metropolitana, donde podrás visitar el lugar de descanso de San Óscar Arnulfo Romero, una figura de gran importancia
+                                histórica y espiritual.
+                            </p>
+                            <p>El recorrido continúa hacia la Plaza Gerardo Barrios, desde donde se admirarán las majestuosas fachadas de la
+                                Catedral Metropolitana, el Palacio Nacional y la Biblioteca Nacional de El Salvador (BINAES). Luego, se visitará la
+                                moderna Biblioteca Nacional para descubrir su innovador concepto en experiencias y aprendizaje. Posteriormente, te
+                                trasladarás a la impresionante Iglesia El Rosario y, finalmente, a la antigua Plaza las Américas, conocida como
+                                Plaza Salvador del Mundo, donde se contemplará el Monumento al Divino Salvador del Mundo. Se concluirá el tour
+                                regresando al punto de partida, cerrando una jornada llena de descubrimientos culturales e históricos.
+                            
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour1Inclusions" role="tabpanel"
+                            aria-labelledby="daytour1Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour1Recommendations" role="tabpanel"
+                            aria-labelledby="daytour1Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Ropa ligera</li>
+                                <li>Zapatos cómodos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL1 -->
+
+    <!-- MODAL2 -->
+    <div class="modal fade daytour2" tabindex="-1" role="dialog" aria-labelledby="daytour2Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour2Label" data-section="daytour2" data-value="name">
+                            LA VIDA Y COMERCIO DE LOS MAYAS
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour2HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/program1_3.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program3_2.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program3_3.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour2HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour2HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour2ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour2Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour2Day1" type="button" role="tab"
+                                aria-controls="daytour2Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour2Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour2Inclusions" type="button" role="tab"
+                                aria-controls="daytour2Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour2Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour2Recommendations" type="button" role="tab"
+                                aria-controls="daytour2Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour2ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour2Day1" role="tabpanel"
+                            aria-labelledby="daytour2Day1-tab">
+                            <p>
+                                Partirás desde un punto acordado en San Salvador hacia el sitio arqueológico Joya de Cerén, conocida como la "Pompeya de América". Este sitio arqueológico único ofrece una ventana al pasado, mostrando la vida cotidiana de la civilización Maya hace más de 1,400 años. Disfrutarás de un recorrido guiado que te transportará a la civilización a través de las estructuras y viviendas preservadas por siglos.
+                            </p>
+                            <p>Luego, te dirigirás hacia San Andrés, uno de los centros prehispánicos más destacados de El Salvador. Al llegar, explorarás este complejo arqueológico, admirando sus pirámides, plazas y vestigios que revelan la grandeza de la cultura precolombina en la región. Tras una jornada fascinante de descubrimientos, emprenderás el regreso a San Salvador, concluyendo así el tour.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour2Inclusions" role="tabpanel"
+                            aria-labelledby="daytour2Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour2Recommendations" role="tabpanel"
+                            aria-labelledby="daytour2Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Ropa ligera</li>
+                                <li>Zapatos cómodos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL2 -->
+
+    <!-- MODAL3 -->
+    <div class="modal fade daytour3" tabindex="-1" role="dialog" aria-labelledby="daytour3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour3Label" data-section="daytour3" data-value="name">
+                            DIA MAYA EN EL SALVADOR
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour3HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/program1_3.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program3_2.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program6_4.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour3HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour3HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour3ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour3Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour3Day1" type="button" role="tab"
+                                aria-controls="daytour3Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour3Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour3Inclusions" type="button" role="tab"
+                                aria-controls="daytour3Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour3Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour3Recommendations" type="button" role="tab"
+                                aria-controls="daytour3Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour3ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour3Day1" role="tabpanel"
+                            aria-labelledby="daytour3Day1-tab">
+                            <p>
+                                Sumérgete en la historia y cultura ancestral de El Salvador. El tour comienza con la partida desde San Salvador hacia el maravilloso sitio arqueológico Joya de Cerén, conocida como la "Pompeya de América". Aquí, realizarás un recorrido guiado para apreciar la vida cotidiana de la civilización Maya de hace más de 1,400 años. Tras esta experiencia, continuarás hacia el majestuoso sitio arqueológico San Andrés.</p>
+                            <p>En San Andrés, uno de los centros prehispánicos más grandes de El Salvador, disfrutarás de una visita guiada por sus impresionantes estructuras y plazas ceremoniales. Se continuará el recorrido en un restaurante local para un almuerzo (no incluido). La aventura prosigue hacia las Ruinas del Tazumal, en Chalchuapa, donde un guía especializado te mostrará sus majestuosas pirámides. Finalmente, regresaremos a San Salvador, concluyendo un día lleno de descubrimientos históricos y culturales.</p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour3Inclusions" role="tabpanel"
+                            aria-labelledby="daytour3Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour3Recommendations" role="tabpanel"
+                            aria-labelledby="daytour3Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Ropa ligera</li>
+                                <li>Zapatos cómodos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL3 -->
+
+    <!-- MODAL4 -->
+    <div class="modal fade daytour4" tabindex="-1" role="dialog" aria-labelledby="daytour4Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour4Label" data-section="daytour4" data-value="name">
+                            MARAVILLOSA EXPERIENCIA EN EL VOLCÁN DE SANTA ANA Y LAGO DE COATEPEQUE
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour4HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/program10_1.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program10_2.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program3_1.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour4HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour4HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour4ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour4Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour4Day1" type="button" role="tab"
+                                aria-controls="daytour4Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour4Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour4Inclusions" type="button" role="tab"
+                                aria-controls="daytour4Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour4Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour4Recommendations" type="button" role="tab"
+                                aria-controls="daytour4Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour4ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour4Day1" role="tabpanel"
+                            aria-labelledby="daytour4Day1-tab">
+                            <p>Vive una emocionante aventura natural en el majestuoso Volcán de Santa Ana. Comenzarás el recorrido partiendo desde San Salvador hacia el punto de inicio del ascenso, guiados por un experto local. A medida que subimos, serás testigo de impresionantes vistas panorámicas hasta llegar al cráter del volcán, donde podrás apreciar una hermosa laguna de azufre. Aquí, tendrás tiempo para capturar fotografías espectaculares, descansar e hidratarte antes de comenzar el descenso.</p>
+                            <p>Una vez de regreso en el punto de inicio, tomaremos un breve descanso para hidratarnos antes de dirigirnos al restaurante Cardedeu para disfrutar de un delicioso almuerzo (no incluido). Después, podrás relajarte y aprovechar las instalaciones del lugar, incluyendo actividades acuáticas no motorizadas durante 30 minutos. Finalmente, nos reuniremos en el punto acordado para regresar a San Salvador, concluyendo un día lleno de aventura y belleza natural.</p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour4Inclusions" role="tabpanel"
+                            aria-labelledby="daytour4Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour4Recommendations" role="tabpanel"
+                            aria-labelledby="daytour4Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Ropa ligera</li>
+                                <li>Zapatos cómodos</li>
+                                <li>Ropa ligera y de baño</li>
+                                <li>Agua o bebidas rehidratantes adicionales</li>
+                                <li>Estar en condiciones físicas favorables</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL4 -->
+
+    <!-- MODAL5 -->
+    <div class="modal fade daytour5" tabindex="-1" role="dialog" aria-labelledby="daytour5Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour5Label" data-section="daytour5" data-value="name">
+                            DESCUBRIENDO EL CRÁTER DEL VOLCÁN DE SANTA ANA
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour5HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/svday5_1.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program10_2.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday5_2.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour5HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour5HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour5ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour5Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour5Day1" type="button" role="tab"
+                                aria-controls="daytour5Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour5Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour5Inclusions" type="button" role="tab"
+                                aria-controls="daytour5Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour5Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour5Recommendations" type="button" role="tab"
+                                aria-controls="daytour5Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour5ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour5Day1" role="tabpanel"
+                            aria-labelledby="daytour5Day1-tab">
+                            <p>Partimos desde un punto de salida en San Salvador, dirigiéndonos hacia la zona designada por nuestro guía local. Una vez lleguemos al punto de inicio del ascenso, nos prepararemos para la emocionante subida al cráter del Volcán de Santa Ana, el volcán más alto de El Salvador. Al llegar a la cima, serás recompensado con una vista impresionante de una hermosa laguna de azufre en el fondo del cráter, ofreciendo una experiencia visual única.</p>
+                            <p>Durante la visita al cráter, habrá tiempo para tomar fotografías, descansar e hidratarse, permitiéndote disfrutar al máximo de este espectacular entorno natural. Después, comenzaremos el descenso, regresando al punto de inicio donde tendrás otra oportunidad para hidratarte. Nos trasladaremos a un restaurante local para un almuerzo delicioso (no incluido), disfrutando de la gastronomía local en un ambiente acogedor. Finalmente, nos reuniremos en el punto de encuentro acordado para iniciar nuestro retorno a San Salvador, concluyendo un día lleno de aventura y maravillosas vistas.</p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour5Inclusions" role="tabpanel"
+                            aria-labelledby="daytour5Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour5Recommendations" role="tabpanel"
+                            aria-labelledby="daytour5Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Ropa ligera</li>
+                                <li>Zapatos cómodos</li>
+                                <li>Ropa ligera y de baño</li>
+                                <li>Agua o bebidas rehidratantes adicionales</li>
+                                <li>Estar en condiciones físicas favorables</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL5 -->
+
+    <!-- MODAL6 -->
+    <div class="modal fade daytour6" tabindex="-1" role="dialog" aria-labelledby="daytour6Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour6Label" data-section="daytour6" data-value="name">
+                            EXPERIENCIA NATURAL EN CERRO VERDE Y LAGO DE COATEPEQUE
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour6HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/svday6_1.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday6_2.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday6_3.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour6HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour6HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour6ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour6Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour6Day1" type="button" role="tab"
+                                aria-controls="daytour6Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour6Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour6Inclusions" type="button" role="tab"
+                                aria-controls="daytour6Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour6Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour6Recommendations" type="button" role="tab"
+                                aria-controls="daytour6Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour6ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour6Day1" role="tabpanel"
+                            aria-labelledby="daytour6Day1-tab">
+                            <p>Inicia tu día con una salida desde San Salvador hacia el espectacular Parque Nacional El Cerro Verde, en el majestuoso Complejo de Los Volcanes. Tras la entrada al complejo, comenzarás una caminata por el fascinante sendero “Una ventana a la naturaleza”, donde experimentarás una profunda conexión con el entorno al abrazar un árbol centenario y recorrer los miradores con impresionantes vistas.</p>
+                            <p>El sendero te regalará panorámicas inolvidables del Lago de Coatepeque, seguido de un merecido tiempo de descanso e hidratación. Luego, traslado a Cardedeu en el Lago de Coatepeque, donde tendrás tiempo libre para almorzar y disfrutar de las hermosas instalaciones. Además, podrás aprovechar 30 minutos de actividades acuáticas como kayak, paddle board o bicicleta acuática. Se finalizará esta increíble jornada con el retorno a San Salvador, llevando contigo recuerdos y experiencias invaluables de esta conexión única con la naturaleza salvadoreña.</p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour6Inclusions" role="tabpanel"
+                            aria-labelledby="daytour6Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour6Recommendations" role="tabpanel"
+                            aria-labelledby="daytour6Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Abrigo ligero</li>
+                                <li>Zapatos cómodos</li>
+                                <li>Ropa ligera y de baño, incluyendo toalla</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL6 -->
+
+    <!-- MODAL7 -->
+    <div class="modal fade daytour7" tabindex="-1" role="dialog" aria-labelledby="daytour7Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour7Label" data-section="daytour7" data-value="name">
+                            AVENTURA PANORÁMICA EN RUTA DE LAS FLORES
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour7HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/svday7_1.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday7_2.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program1_2.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour7HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour7HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour7ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour7Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour7Day1" type="button" role="tab"
+                                aria-controls="daytour7Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour7Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour7Inclusions" type="button" role="tab"
+                                aria-controls="daytour7Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour7Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour7Recommendations" type="button" role="tab"
+                                aria-controls="daytour7Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour7ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour7Day1" role="tabpanel"
+                            aria-labelledby="daytour7Day1-tab">
+                            <p>Embárcate en una emocionante aventura hacia el occidente de El Salvador, comenzando desde un punto acordado en San Salvador. Durante el recorrido, visitarás la encantadora ciudad de Nahuizalco, donde podrás explorar su iglesia, mercado municipal y parque, así como tiendas de artesanías de mimbre que destacan la tradición local. Continuarás hacia Juayúa para admirar la impresionante Iglesia del Cristo Negro y disfrutar de vistas panorámicas de la zona cafetalera, antes de degustar un delicioso almuerzo en un restaurante local (no incluido). </p>
+                            <p>Después, se continuará a Concepción de Ataco para conocer un telar artesanal y degustar un exquisito café salvadoreño. Tendrás tiempo para comprar artesanías únicas que reflejan la rica cultura de la región. Finalizaremos el recorrido en Ahuachapán, visitando el Parque Concordia y la Iglesia La Asunción, antes de regresar a San Salvador. Este tour te ofrece una experiencia completa de la belleza y cultura del occidente salvadoreño, ideal para quienes buscan explorar y disfrutar de lo mejor de nuestra tierra.</p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour7Inclusions" role="tabpanel"
+                            aria-labelledby="daytour7Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour7Recommendations" role="tabpanel"
+                            aria-labelledby="daytour7Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Abrigo ligero</li>
+                                <li>Zapatos cómodos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL7 -->
+
+    <!-- MODAL8 -->
+    <div class="modal fade daytour8" tabindex="-1" role="dialog" aria-labelledby="daytour8Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6">
+                        <h5 class="modal-title green-text" id="daytour8Label" data-section="daytour8" data-value="name">
+                            AVENTURA PANORÁMICA EN RUTA DE LAS FLORES
+                        </h5>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="daytour8HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/program5_4.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program5_5.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday8_1.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour8HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour8HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour8ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour8Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour8Day1" type="button" role="tab"
+                                aria-controls="daytour8Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour8Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour8Inclusions" type="button" role="tab"
+                                aria-controls="daytour8Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour8Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour8Recommendations" type="button" role="tab"
+                                aria-controls="daytour8Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour8ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour8Day1" role="tabpanel"
+                            aria-labelledby="daytour8Day1-tab">
+                            <p>Partirás desde San Salvador hacia la encantadora ciudad de Apaneca, en Ahuachapán. La primera parada es el Laberinto de Albania, donde tendrás acceso incluido a este emocionante parque de aventuras. Disfruta de tiempo libre para experimentar actividades de adrenalina como la bicicleta en el aire, surf en el aire, y adéntrate en el laberinto más grande de Centroamérica (juegos no incluidos). A la hora del almuerzo, podrás deleitarte con las opciones culinarias del restaurante en Albania (incluido), disfrutando del entorno natural y la hospitalidad local.</p>
+                            <p>Después del almuerzo, continuas a Concepción de Ataco, un pintoresco pueblo conocido por su colorida arquitectura y vibrante cultura. Aquí, tendrás tiempo libre para relajarte y saborear un delicioso café de la zona, una experiencia incluida en nuestro tour. Pasea por las calles adoquinadas, explora las tiendas de artesanías y disfruta del ambiente acogedor del pueblo. Al final de la tarde, retorno a San Salvador, concluyendo un día lleno de aventuras y descubrimientos.</p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour8Inclusions" role="tabpanel"
+                            aria-labelledby="daytour8Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour8Recommendations" role="tabpanel"
+                            aria-labelledby="daytour8Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Abrigo ligero</li>
+                                <li>Zapatos cómodos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL8 -->
+
+    <!-- MODAL9 -->
+    <div class="modal fade daytour9" tabindex="-1" role="dialog" aria-labelledby="daytour9Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour9Label" data-section="daytour9" data-value="name">
+                            RUTA CON AROMA A FLORES Y CAFÉ
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour9HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/svday9_1.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday9_2.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program9_3.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour9HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour9HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour9ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour9Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour9Day1" type="button" role="tab"
+                                aria-controls="daytour9Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour9Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour9Inclusions" type="button" role="tab"
+                                aria-controls="daytour9Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour9Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour9Recommendations" type="button" role="tab"
+                                aria-controls="daytour9Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour9ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour9Day1" role="tabpanel"
+                            aria-labelledby="daytour9Day1-tab">
+                            <p>Descubre la magia del café y la cultura en un día lleno de experiencias inolvidables en cada uno de los pueblos de la Ruta de las Flores. Comienza la aventura partiendo desde San Salvador hacia la Cooperativa de cafetaleros de San José La Majada. Allí, podrás sumergirte en el fascinante proceso del beneficiado industrial del café, guiado por expertos que compartirán contigo cada detalle. La jornada continua con una cata de café, donde explorarás sus ricas características organolépticas. Tras esta enriquecedora experiencia, te conducirás a la pintoresca ciudad de Juayúa, famosa por su templo dedicado al Cristo Negro. </p>
+                            <p>El recorrido prosigue hacia un restaurante de la zona, donde podrás deleitarte con un delicioso almuerzo (no incluido). Luego, traslado a Concepción de Ataco, un encantador pueblo lleno de historia y tradiciones. Recorreremos sus calles pintorescas, y visitaremos un telar artesanal para conocer más sobre la producción local. También tendrás tiempo libre para explorar las tiendas de artesanías y adquirir recuerdos únicos. Finalmente, retornaremos a San Salvador, concluyendo así un día repleto de descubrimientos y sabores excepcionales.</p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour9Inclusions" role="tabpanel"
+                            aria-labelledby="daytour9Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour9Recommendations" role="tabpanel"
+                            aria-labelledby="daytour9Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Abrigo ligero</li>
+                                <li>Zapatos para trekking</li>
+                                <li>Repelente para mosquitos</li>
+                                <li>Agua o bebidas rehidratantes adicionales</li>
+                                <li>Ropa ligera</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL9 -->
+
+    <!-- MODAL10 -->
+    <div class="modal fade daytour10" tabindex="-1" role="dialog" aria-labelledby="daytour10Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del modal con carrusel -->
+                <div class="modal-header">
+                    <div class="col-md-6 col-sm-4">
+                        <h5 class="modal-title green-text" id="daytour10Label" data-section="daytour10" data-value="name">
+                            SUCHITOTO, CIUDAD DEL PÁJARO Y LA FLOR
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-8">
+                        <div id="daytour10HeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                            style="width: 100%; height: auto; margin-left: auto">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/svprograms/svday10_1.png" class="d-block w-100" alt="Imagen 1"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday10_2.png" class="d-block w-100" alt="Imagen 2"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/program1_4.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/svprograms/svday10_3.png" class="d-block w-100" alt="Imagen 3"
+                                        style="height: auto; object-fit: cover" />
+                                </div>
+                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#daytour10HeaderCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#daytour10HeaderCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0" />
+                <!-- Contenido del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de las pestañas -->
+                    <ul class="nav nav-tabs" id="daytour10ItineraryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active zoom-effect" id="daytour10Day1-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour10Day1" type="button" role="tab"
+                                aria-controls="daytour10Day1" aria-selected="true">
+                                ITINERARIO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour10Inclusions-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour10Inclusions" type="button" role="tab"
+                                aria-controls="daytour10Inclusions" aria-selected="false">
+                                INCLUSIONES Y EXCLUSIONES
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link zoom-effect" id="daytour10Recommendations-tab" data-bs-toggle="tab"
+                                data-bs-target="#daytour10Recommendations" type="button" role="tab"
+                                aria-controls="daytour10Recommendations" aria-selected="false">
+                                RECOMENDACIONES
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-3" id="daytour10ItineraryTabsContent">
+                        <div class="tab-pane fade show active" id="daytour10Day1" role="tabpanel"
+                            aria-labelledby="daytour10Day1-tab">
+                            <p>Comienza la aventura partiendo de San Salvador hacia Suchitoto. Al llegar al Muelle de San Juan, abordarás una lancha que te llevará a través del pintoresco Lago de Suchitlán hasta la Isla de los Pájaros, donde podrás observar una variedad de aves locales y migratorias. Continúa el recorrido visitando el Salitre y la Isla de los Enamorados, disfrutando de paisajes naturales impresionantes. Al mediodía, traslado a un restaurante local para degustar un delicioso almuerzo (no incluido), y luego dirigirse al centro de Suchitoto.</p>
+                            <p>En el centro de la ciudad, explorararas sitios emblemáticos como la Iglesia de Santa Lucía y diversas galerías de arte que reflejan la rica herencia cultural de Suchitoto. Visitarás la casa de una artesana que elabora puros y conocerás el proceso artesanal de estos productos. Tendrás tiempo libre para recorrer el pueblo a tu ritmo, descubriendo sus encantos y tiendas locales. Al final de la tarde, regreso a San Salvador, concluyendo así una jornada llena de experiencias inolvidables.</p>
+                        </div>
+                        <div class="tab-pane fade" id="daytour10Inclusions" role="tabpanel"
+                            aria-labelledby="daytour10Inclusions-tab">
+                            <p><strong>Incluye:</strong></p>
+                            <ul>
+                                <li>Asistencia de guía profesional</li>
+                                <li>Entrada a sitios descritos en el itinerario</li>
+                                <li>Paquete informativo de bienvenida.</li>
+                                <li>Agua a bordo.</li>
+                                <li>Transporte con A/C</li>
+                            </ul>
+                            <p><strong>No incluye:</strong></p>
+                            <ul>
+                                <li>
+                                    Comidas no descritas, modificaciones al itinerario,
+                                    entradas a sitios no indicados en los tours, llamadas
+                                    telefónicas, propinas, servicios en las habitaciones con
+                                    cargo, u otros servicios no descritos explícitamente.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="daytour10Recommendations" role="tabpanel"
+                            aria-labelledby="daytour10Recommendations-tab">
+                            <ul>
+                                <li>Captura los mejores momentos</li>
+                                <li>Abrigo ligero</li>
+                                <li>Zapatos para trekking</li>
+                                <li>Repelente para mosquitos</li>
+                                <li>Agua o bebidas rehidratantes adicionales</li>
+                                <li>Ropa ligera</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie de modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL10 -->
+
+    <!-- MODALS -->
+    <!-- MODALS -->
+    <!-- MODALS -->
+
+
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+
+    <div class="fixed-help-center" title="Centro de ayuda">
+        <a href="" class="nav-link">
+            <i class="bi bi-headset"></i>
+        </a>
+    </div>
+    <div class="fixed-whatsapp" title="Whatsapp">
+        <a href="" class="nav-link">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+</body>
+<footer class="text-center text-white footer-background ">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+            <!-- Twitter - X -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="bi bi-twitter-x"></i>
+            </a>
+
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023
+        <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- End of container -->
+
+
+
+<script src="../assets/js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</html>

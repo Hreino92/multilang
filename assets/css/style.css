@@ -167,114 +167,451 @@ iframe{
 }
 /* Formulario*/
 
-/*Services Background*/
+/*El Salvador Services Background*/
+.zoom-effect {
+  transition: transform 0.5s ease-in-out;
+  
+}
 
-#elsalvador{
+.zoom-effect:hover {
+  transform: scale(1.1); /* Zoom in al hacer hover */
+  font-weight: bold;
+}
+
+.zoom-effect:active {
+  transform: scale(0.9); /* Zoom out al hacer clic */
+  font-weight: bold;
+}
+
+#svprograms{
   background-image: url('../img/services/el-salvador.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 420px;
   border-radius: 5px;
-
 }
-#america{
-  background-image: url('../img/services/america.png');
+#svprogramsorigin{
+  background-image: url('../img/services/el-salvador.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
+}
+#svdaytours{
+  background-image: url('../img/services/daytoursbg.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 420px;
   border-radius: 5px;
 
 }
-#europa{
-  background-image: url('../img/services/europa.png');
+#svhotels{
+  background-image: url('../img/services/svhotels.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 420px;
   border-radius: 5px;
 
 }
-#asia{
-  background-image: url('../img/services/asia.png');
+#svtransfers{
+  background-image: url('../img/services/svtransfers.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 420px;
   border-radius: 5px;
 
+}
+#caprograms{
+  background-image: url('../img/international/caprograms.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
+}
+#naprograms{
+  background-image: url('../img/international/naprograms.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
+}
+#saprograms{
+  background-image: url('../img/international/saprograms.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
+}
+#transportation{
+  background-image: url('../img/international/trasnsportation.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 5px;
 }
 @media(max-width: 767px){
-  #elsalvador, #america, #europa, #asia, #program, #tour, #hotel, #transfer{
+  #svprograms, #svdaytours, #svhotels, #svtransfers, #caprograms, #naprograms, #saprograms, #transportation{
     height: 256px;
     display: block;
   }
 }
 
-.sv{
-display: none;
-}
 
-/* EL SALVADOR */
-#program{
-  background-image: url('../img/services/program.png');
+/*El Salvador Services Background*/
+
+/*svprograms*/
+#svprogram1{
+  background-image: url('../img/svprograms/program1.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 214px;
+  height: 300px;
   border-radius: 5px;
-
 }
-#tours{
-  background-image: url('../img/services/tour.png');
+#svprogram2{
+  background-image: url('../img/svprograms/program2.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 214px;
+  height: 300px;
   border-radius: 5px;
-
 }
-#hotels{
-  background-image: url('../img/services/hotel.png');
+#svprogram3{
+  background-image: url('../img/svprograms/program3.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 214px;
+  height: 300px;
   border-radius: 5px;
-
 }
-#transfers{
-  background-image: url('../img/services/transfer.png');
+#svprogram4{
+  background-image: url('../img/svprograms/program4.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 214px;
+  height: 300px;
   border-radius: 5px;
-
 }
-/* Programas */
-.programs_list{
+#svprogram5{
+  background-image: url('../img/svprograms/program5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svprogram6{
+  background-image: url('../img/svprograms/program6.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svprogram7{
+  background-image: url('../img/svprograms/program7.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svprogram8{
+  background-image: url('../img/svprograms/program8.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svprogram9{
+  background-image: url('../img/svprograms/program9.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svprogram10{
+  background-image: url('../img/svprograms/program10.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#caprogram1{
+  background-image: url('../img/caprograms/caprogram1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#caprogram2{
+  background-image: url('../img/caprograms/caprogram2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#caprogram3{
+  background-image: url('../img/caprograms/caprogram3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#caprogram4{
+  background-image: url('../img/caprograms/caprogram4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#caprogram5{
+  background-image: url('../img/caprograms/caprogram5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#naprogram1{
+  background-image: url('../img/naprograms/naprogram1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#naprogram2{
+  background-image: url('../img/naprograms/naprogram2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#naprogram3{
+  background-image: url('../img/naprograms/naprogram3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#saprogram1{
+  background-image: url('../img/saprograms/saprogram1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#saprogram2{
+  background-image: url('../img/saprograms/saprogram2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#saprogram3{
+  background-image: url('../img/saprograms/saprogram3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#saprogram4{
+  background-image: url('../img/saprograms/saprogram4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#saprogram5{
+  background-image: url('../img/saprograms/saprogram5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+/*svprograms*/
+
+#aroundamerica{
+  background-image: url('../img/services/america.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#aroundeuropa{
+  background-image: url('../img/services/europa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#aroundasia{
+  background-image: url('../img/services/asia.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#aroundafrica{
+  background-image: url('../img/services/america.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+
+
+/* DAYTOURS */
+/* DAYTOURS */
+/* DAYTOURS */
+#svday1{
+  background-image: url('../img/svprograms/svday1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday2{
+  background-image: url('../img/svprograms/svday2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday3{
+  background-image: url('../img/svprograms/svday3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday4{
+  background-image: url('../img/svprograms/svday4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday5{
+  background-image: url('../img/svprograms/svday5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday6{
+  background-image: url('../img/svprograms/svday6.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday7{
+  background-image: url('../img/svprograms/svday7.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday8{
+  background-image: url('../img/svprograms/svday8.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday9{
+  background-image: url('../img/svprograms/program9.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+#svday10{
+  background-image: url('../img/svprograms/svday10.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
+}
+
+/* DAYTOURS */
+/* DAYTOURS */
+/* DAYTOURS */
+/* Estilo de la mini-galería */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  flex-wrap: wrap; /* Permite que las imágenes se alineen en varias filas en pantallas pequeñas */
+}
+
+/* Estilos para la transición de las imágenes */
+.gallery img {
+  width: 200px;  /* Tamaño predeterminado para pantallas grandes */
+  height: auto;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  flex-grow: 1; /* Permite que las imágenes se ajusten automáticamente en filas más pequeñas */
+  opacity: 0; /* Inicialmente invisibles */
+  transition: opacity 1s ease-in; /* Transición suave de la opacidad */
+}
+
+/* Cuando las imágenes se carguen por completo, se mostrarán */
+.gallery img.loaded {
+  opacity: 1; /* Aparecen suavemente */
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .gallery img {
+    width: 150px; /* Reduce el tamaño de las imágenes en pantallas más pequeñas */
+  }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .gallery {
+    flex-direction: column; /* Cambia el diseño a columna para móviles */
+    align-items: center; /* Centra las imágenes en dispositivos móviles */
+  }
+
+  .gallery img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible en móviles */
+    margin: 5px 0; /* Margen superior e inferior para separar las imágenes */
+  }
+}
+
+.hidden-row {
   display: none;
 }
 
-#program1{
-  background-image: url('../img/services/program1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 214px;
-  border-radius: 5px;
+/* SV TRANSFERS */
+/* SV TRANSFERS */
+/* SV TRANSFERS */
+.custom-container {
+  background-color: #ffffff; /* azul claro */
+  border: 2px solid #7ba745; /* verde */
+  padding: 20px;
+  border-radius: 8px;
 }
-#program2{
-background-image: url('../img/services/program2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 214px;
-  border-radius: 5px;  
+
+.custom-container:hover {
+  box-shadow: 0 0 30px rgba(123, 167, 69, 0.8); /* Aumenta el resplandor al hacer hover */
 }
-#program3{
-background-image: url('../img/services/program3.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 214px;
-  border-radius: 5px;  
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgb(253, 133, 11);
 }
-#program4{
-background-image: url('../img/services/program4.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 214px;
-  border-radius: 5px;  
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(253, 133, 11, 0.8);
 }
+
+.content {
+  background-color: #ffffff; /* naranja */
+  padding: 20px;
+  border-radius: 8px;
+  color: #33333351;
+}
+
+/* SV TRANSFERS */
+/* SV TRANSFERS */
+/* SV TRANSFERS */

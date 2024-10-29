@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Banderas -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+
+  <!--Referencia a la pagina de estilos-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!--Referencia al favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon.ico" />
+
+  <!--Referencia para FontAwesome-->
+  <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Referencias para mask-input -->
+  <!-- Incluir jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Incluir Inputmask -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+  <title>reserve503.travel</title>
+</head>
+
+<body>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img class="nav-logo" src="/assets/img/logoreserve503_Mesa de trabajo 1.png" alt="" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+                <!-- Flags Section -->
+                <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
+                    <div class="flags__item" data-language="es">
+                        <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
+                        <p class="fw-lighter m-0">es</p>
+                    </div>
+                    <div class="flags__item" data-language="en">
+                        <img src="../assets/icons/us.svg" alt="" style="width: 25px;">
+                        <p class="fw-lighter m-0">en</p>
+                    </div>
+                </div>
+                <!-- Nav Items -->
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="../index.html" data-section="menu" data-value="home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="el-salvador.html" data-section="menu" data-value="elsalvador">El Salvador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover active" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./contact.html" data-section="menu" data-value="contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+
+  <!-- Cuatro cuadritos -->
+  <!-- Cuatro cuadritos -->
+
+  <!-- Contenedor para los botones, alineados al centro -->
+
+  <div class="container mt-5" id="programs_sv">
+    <h2 class="text-center green-text">Programas en Norte América</h2>
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <div class="row">
+      <!-- PROGRAMA 1 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".lasvegas">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="naprogram1">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>LA ESPECTACULAR LAS VEGAS CON VISTA AL GRAN CAÑÓN</h3>
+            <h6>4 días / 3 noches</h6>
+          </a>
+        </div>
+      </div>
+
+      <!-- PROGRAMA 1 -->
+
+      <!-- PROGRAMA 2 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".ciudadyplayaPanama">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="naprogram2">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>ORLANDO IMPERDIBLE</h3>
+            <h6>4 días / 3 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 2 -->
+
+      <!-- PROGRAMA 3 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".miamibeach">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="naprogram3">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>ESCÁPATE A MIAMI BEACH</h3>
+            <h6>4 días / 3 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 3 -->
+    </div>
+
+
+    
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- Modal: LA ESPECTACULAR LAS VEGAS CON VISTA AL GRAN CAÑÓN -->
+    <div class="modal fade lasvegas" tabindex="-1" role="dialog" aria-labelledby="lasvegasLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="lasvegasLabel" data-section="daytour1" data-value="name">
+                LA ESPECTACULAR LAS VEGAS CON VISTA AL GRAN CAÑÓN
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="lasvegasHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/naprograms/naprogram1_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/naprograms/naprogram1_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/naprograms/naprogram1_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#lasvegasHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#lasvegasHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="lasvegasItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="lasvegasDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#lasvegasDay1" type="button" role="tab" aria-controls="lasvegasDay1"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lasvegasDay2-tab" data-bs-toggle="tab" data-bs-target="#lasvegasDay2"
+                  type="button" role="tab" aria-controls="lasvegasDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lasvegasDay3-tab" data-bs-toggle="tab" data-bs-target="#lasvegasDay3"
+                  type="button" role="tab" aria-controls="lasvegasDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lasvegasDay4-tab" data-bs-toggle="tab" data-bs-target="#lasvegasDay4"
+                  type="button" role="tab" aria-controls="lasvegasDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lasvegasInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#lasvegasInclusions" type="button" role="tab" aria-controls="lasvegasInclusions"
+                  aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lasvegasRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#lasvegasRecommendations" type="button" role="tab"
+                  aria-controls="lasvegasRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="lasvegasItineraryTabsContent">
+              <div class="tab-pane fade show active" id="lasvegasDay1" role="tabpanel"
+                aria-labelledby="lasvegasDay1-tab">
+                <h5>Dia 1</h5>
+                <p>
+                  LLlegada a Las Vegas. Check in en hotel.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="lasvegasDay2" role="tabpanel" aria-labelledby="lasvegasDay2-tab">
+                <h5>DIA 2</h5>
+                <p>
+                    Gran Excursión al Gran Cañón de 1 día con visita a la presa Hoover.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="lasvegasDay3" role="tabpanel" aria-labelledby="lasvegasDay3-tab">
+                <h5>DIA 3</h5>
+                <p>
+                    Día libre.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="lasvegasDay4" role="tabpanel" aria-labelledby="lasvegasDay4-tab">
+                <h5>DIA 4</h5>
+                <p>
+                    Check out. Dirígete al aeropuerto para tu regreso a El Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="lasvegasInclusions" role="tabpanel"
+                aria-labelledby="lasvegasInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                    <li>Traslados aeropuerto Las Vegas / hotel / aeropuerto</li>
+                    <li>3 noches de alojamiento en categoría de hotel seleccionado</li>
+                    <li>Gran Excursión al Gran Cañón de 1 día con visita a la presa Hoover</li>
+                    <li>Tarjeta de asistencia</li>
+                    <li>Impuestos hoteleros</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                    <li>Desayuno en hotel</li>
+                    <li>Habitaciones vistas al mar, vista a la ciudad, habitaciones Suites ni ninguna no especificada en el paquete</li>
+                    <li>Resort fee de hotel, deberá ser pagado en el hotel al momento del check-in</li>
+                    <li>No incluye otros servicios no especificados</li>
+                </ul>                
+              </div>
+              <div class="tab-pane fade" id="lasvegasRecommendations" role="tabpanel"
+                aria-labelledby="lasvegasRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                    <li>Hotel Treasure Island - TI Las Vegas Hotel &Casino ****</li>
+                    <li>Hotel Paris Las Vegas ****</li>
+                    <li>Tarifas sujetas a cambios y disponibilidad sin previo aviso hasta el momento de su reservación</li>
+                    <li>En caso el hotel no confirme disponibilidad se brindarán opciones de hotel similares en misma categoría</li>
+                    <li>Tarifas en base a hotel en habitación estándar</li>
+                    <li>Pasajeros deben presentarse 3 horas antes de la salida del vuelo en aeropuerto aun estando prechequeados</li>
+                    <li>Se requiere pasaporte con vigencia mínima de 6 meses</li>
+                    <li>Salvadoreños requieren visa americana vigente (consulte por otras nacionalidades)</li>
+                    <li>Tarifas no aplican en temporada alta: vacaciones de agosto, feriados, Navidad, Fin de año</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal: ORLANDO IMPERDIBLE -->
+    <div class="modal fade ciudadyplayaPanama" tabindex="-1" role="dialog" aria-labelledby="ciudadyplayaPanamaLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="ciudadyplayaPanamaLabel" data-section="daytour1" data-value="name">
+                ORLANDO IMPERDIBLE
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="ciudadyplayaPanamaHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/naprograms/naprogram2_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/naprograms/naprogram2_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/naprograms/naprogram2_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ciudadyplayaPanamaHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ciudadyplayaPanamaHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="ciudadyplayaPanamaItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="ciudadyplayaPanamaDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay1" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay2" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay3" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay4" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaInclusions" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaRecommendations" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="ciudadyplayaPanamaItineraryTabsContent">
+              <div class="tab-pane fade show active" id="ciudadyplayaPanamaDay1" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay1-tab">
+                <h5>Dia 1</h5>
+                <p>
+                    Llegada a Orlando. Check in en hotel.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaDay2" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay2-tab">
+                <h5>DIA 2</h5>
+                <p>
+                    Entrada a Magic Kingdom de 1 día básico. No incluye traslados desde/hacia hotel (costo
+                    adicional de $75.00 por persona, tarifa aplica mínimo 2 personas)
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaDay3" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay3-tab">
+                <h5>DIA 3</h5>
+                <p>
+                    Entrada a Universal de 1 día básico. No incluye traslados desde/hacia hotel (costo adicional
+                    de $75.00 por persona, tarifa aplica mínimo 2 personas)
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaDay4" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay4-tab">
+                <h5>DIA 4</h5>
+                <p>
+                    Check out. Dirígete al aeropuerto para tu regreso a El Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaInclusions" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                    <li>Traslados aeropuerto Orlando / hotel / aeropuerto</li>
+                    <li>3 noches de alojamiento en categoría de hotel seleccionado</li>
+                    <li>1 día Parque Temático Disney Magic Kingdom</li>
+                    <li>1 día Parque Universal 1 Parque 1 Día Básico</li>
+                    <li>Tarjeta de asistencia</li>
+                    <li>Impuestos hoteleros</li>
+                </ul>                
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                    <li>Desayuno en hotel</li>
+                    <li>Habitaciones con vistas al mar, vistas a la ciudad, habitaciones Suites ni ninguna no especificada en el paquete</li>
+                    <li>Resort fee de hotel, deberá ser pagado en el hotel al momento del check-in</li>
+                    <li>Otros servicios no especificados</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaRecommendations" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                    <li>Hotel Rosen Inn Lake Buena Vista ***</li>
+                    <li>Tarifas sujetas a cambios y disponibilidad sin previo aviso hasta el momento de su reservación</li>
+                    <li>En caso el hotel no confirme disponibilidad se brindarán opciones de hotel similares en la misma categoría</li>
+                    <li>Tarifas en base a hotel en habitación estándar</li>
+                    <li>Pasajeros deben presentarse 3 horas antes de la salida del vuelo en aeropuerto, aun estando prechequeados</li>
+                    <li>Se requiere pasaporte con vigencia mínima de 6 meses</li>
+                    <li>Salvadoreños requieren visa americana vigente (consulte por otras nacionalidades)</li>
+                    <li>Tarifas no aplican en temporada alta: vacaciones de agosto, feriados, Navidad, Fin de año</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal: ESCAPATE A MIAMI BEACH -->
+    <div class="modal fade miamibeach" tabindex="-1" role="dialog" aria-labelledby="miamibeachLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="miamibeachLabel" data-section="daytour1" data-value="name">
+                ESCÁPATE A MIAMI BEACH
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="miamibeachHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/naprograms/naprogram3_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/naprograms/naprogram3_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/naprograms/naprogram3_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#miamibeachHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#miamibeachHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="amigoticoItineraryTabs" role="tablist">
+              <!-- <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="amigoticoDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay1" type="button" role="tab"
+                  aria-controls="amigoticoDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay2" type="button" role="tab"
+                  aria-controls="amigoticoDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay3" type="button" role="tab"
+                  aria-controls="amigoticoDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay4" type="button" role="tab"
+                  aria-controls="amigoticoDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li> -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="miamibeachInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#miamibeachInclusions" type="button" role="tab"
+                  aria-controls="miamibeachInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="miamibeachRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#miamibeachRecommendations" type="button" role="tab"
+                  aria-controls="miamibeachRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="amigoticoItineraryTabsContent">
+              <!-- <div class="tab-pane fade show active" id="amigoticoDay1" role="tabpanel"
+                aria-labelledby="amigoticoDay1-tab">
+                <h5>DÍA 01: CIUDAD DE ORIGEN - SAN JOSÉ / CITY TOUR</h5>
+                <p>
+                  Bienvenido a Costa Rica! Uno de nuestros representantes le estará esperando en el
+                  Aeropuerto Internacional Juan Santamaría, para trasladarlo al hotel en San José.
+                  El tour comienza presentando primero el sector este de la Ciudad de San José, pasando
+                  junto a La Plaza de la Democracia y el Museo Nacional, Los Tribunales del Poder Judicial,
+                  Los Yoses, el Mall San Pedro, La Fuente de la Hispanidad y La Sede Rodrigo Facio de la
+                  Universidad de Costa Rica. Después de pasar por los principales atractivos de la capital,
+                  llegaremos al impresionante Museo de Oro Precolombino y al bellísimo Teatro Nacional.
+                  Posteriormente, el recorrido continúa hacia el oeste de la ciudad pasando por el Parque
+                  Metropolitano La Sabana, el Museo de Arte Costarricense o antigua torre de control del
+                  primer Aeropuerto Internacional de San José, el Gimnasio Nacional, la Contraloría
+                  General de la República, la zona residencial de Rohmoser, la Nunciatura Apostólica, la
+                  casa del Premio Nobel de la Paz, Sr. Oscar Arias Sánchez, el Boulevar de Rohmoser y el
+                  sector de Pavas. Al finalizar también se tendrá la oportunidad de visitar un interesante
+                  sitio donde adquirir algún recuerdo de su visita a la cuidad San José. Hospedaje en San
+                  José.
+                </p>
+              </div> -->
+              <!-- <div class="tab-pane fade" id="amigoticoDay2" role="tabpanel"
+                aria-labelledby="amigoticoDay2-tab">
+                <h5>DÍA 02: VOLCÁN IRAZÚ, VALLE OROSI Y JARDÍN LANKESTER</h5>
+                <p>
+                  Este coloso es el volcán más alto del territorio con 3432 metros (11000 pies) de altura
+                  sobre el nivel del mar, cuya última fase eruptiva comprende el periodo entre 1963 a 1965
+                  con fuertes emanaciones de gas y cenizas que fueron percibidas en todo el país. En un
+                  día soleado y despejado, tanto el océano Atlántico como el Pacífico pueden ser
+                  observados. Luego de la visita al volcán, descenderemos hacia la ciudad de Cartago,
+                  antigua capital de Costa Rica establecida en 1563 por el conquistador Juan Vázquez de
+                  Coronado, donde se realiza una parada en la Basílica de la Virgen de los Ángeles, lugar
+                  de peregrinaje de muchos fieles, la cuál es una tradición vigente desde 1635. La siguiente
+                  parada es el Jardín Botánico Lankester, centro de investigación de la Universidad de
+                  Costa Rica, creado para la protección y preservación de más de 800 especies de
+                  orquídeas, así como otras especies de plantas. En este lugar se realiza una visita guiada
+                  conociendo las diferentes secciones, como por ejemplo las bromelias, cactus, heliconias,
+                  palmas, entre otras. Seguidamente, continuaremos hacia el maravilloso y escénico Valle
+                  Orosí, rodeado de hermosas montañas, diversidad de cultivos como café, caña de azúcar,
+                  entre otros, el cual fue uno de los establecimientos importantes durante la época colonial,
+                  siendo éste testigo de diversos acontecimientos históricos protagonizados por ataques de
+                  piratas, terremotos, inundaciones, así como la trascendencia de las órdenes de
+                  Franciscanos encomendados del proceso de evangelización y pioneros en el
+                  levantamiento de los primeros templos católicos del país. En este recorrido visitaremos
+                  una de las pocas iglesias coloniales que aún permanecen en pie, seguido de un delicioso
+                  almuerzo típico en el mejor restaurante de la zona.
+                </p>
+              </div> -->
+              <!-- <div class="tab-pane fade" id="amigoticoDay3" role="tabpanel"
+                aria-labelledby="amigoticoDay3-tab">
+                <h5>DÍA 03: ISLA TORTUGA</h5>
+                <p>
+                  El Golfo de Nicoya, es un paradisiaco archipiélago compuesto por Islas, con una riqueza
+                  natural exuberante y un santuario para aves marinas, posee playas de arenas blancas,
+                  una flora y fauna propias de nuestro Pacifico Central. En este bello archipiélago se
+                  encuentra: Isla Tortuga. Ubicada a 12 millas náuticas de Puntarenas se encuentra: Isla
+                  Tortuga (llamada por los indígenas Tolinga); posee una extensión de 120 hectáreas, se
+                  mantiene como un bosque protegido. Isla Tortuga posee el galardón de la Bandera Azul
+                  Ecológica, ya que sus aguas están libres de contaminación. Esta distinción es otorgada
+                  por el Instituto Costarricense de Turismo. Por su característica geográfica Isla Tortuga,
+                  tiene sus aguas de tono turquesa, las cuales son óptimas para nadar. Hospedaje en San
+                  José.
+                </p>
+              </div> -->
+              <!-- <div class="tab-pane fade" id="amigoticoDay4" role="tabpanel"
+                aria-labelledby="amigoticoDay4-tab">
+                <h5>DÍA 04: TELEFÉRICO</h5>
+                <p>
+                  Desayuno en el hotel. Explore cada nivel del denso bosque lluvioso costarricense desde
+                  el suelo hasta la copa de los árboles. Nuestro galardonado Tour de Teleférico Le deja
+                  conocer de primera mano todos los secretos que guarda el bosque mientras vuela sobre
+                  las copas de los árboles ante una magnífica vista del Parque Nacional Braulio Carrillo y
+                  nuestra reserva privada, una experiencia inmersa en la naturaleza, así como un glorioso
+                  vuelo sobre el canopy del bosque lluvioso. Ofrecemos el viaje más largo en teleférico y el
+                  único guiado en el país. El paseo en góndola de 1.10 horas incluye una caminata guiada
+                  naturalista en nuestros senderos naturales pavimentados, una visita a nuestro hermoso y
+                  especializado Mariposario y Jardín de Colibríes donde podrás aprender mucho entre
+                  coloridas alas; otra visita a nuestro Jardín de Orquídeas comprendida por orquídeas
+                  rescatadas de troncos caídos y finalmente una tranquila caminata en nuestros terrarios
+                  donde podrás observar muchas especies interesantes de anfibios y reptiles. Hospedaje
+                  en San José.
+                </p>
+              </div> -->
+              <div class="tab-pane fade show active" id="miamibeachInclusions" role="tabpanel"
+                aria-labelledby="miamibeachInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                    <li>Traslado aeropuerto en Miami – hotel y viceversa</li>
+                    <li>3 noches de alojamiento en Hampton Inn Miami Beach – Mid Beach</li>
+                    
+                </ul>                
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>Servicios o comidas no especificadas.</li>
+                  <li>Gastos personales.</li>
+                  <li>Propina a mucamas, botones, guías, choferes.</li>
+              </ul>              
+              </div>
+              <div class="tab-pane fade" id="miamibeachRecommendations" role="tabpanel"
+                aria-labelledby="miamibeachRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                    <li>Desayuno buffet e impuesto hotelero</li>
+                    <li>Tour de compras a Dolphin Mall o International Mall</li>
+                    <li>Consultar costo adicional si desea incluir: City Tour y almuerzo en Gianni's at The Former Versace Mansion</li>
+                    <li>Traslados y tours en servicio compartido. Aplica recargos en horarios de llegada o salida entre las 10:00 pm - 7:00 am</li>
+              </ul>
+              
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <div class="fixed-help-center" title="Centro de ayuda">
+    <a href="" class="nav-link">
+      <i class="bi bi-headset"></i>
+    </a>
+  </div>
+  <div class="fixed-whatsapp" title="Whatsapp">
+    <a href="" class="nav-link">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+</body>
+<footer class="text-center text-white footer-background">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-google"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitter - X -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="bi bi-twitter-x"></i>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023
+    <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- End of container -->
+<script src="/assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</html>

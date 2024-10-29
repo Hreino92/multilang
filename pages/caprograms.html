@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Banderas -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+
+  <!--Referencia a la pagina de estilos-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!--Referencia al favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon.ico" />
+
+  <!--Referencia para FontAwesome-->
+  <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Referencias para mask-input -->
+  <!-- Incluir jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Incluir Inputmask -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+  <title>reserve503.travel</title>
+</head>
+
+<body>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img class="nav-logo" src="/assets/img/logoreserve503_Mesa de trabajo 1.png" alt="" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+                <!-- Flags Section -->
+                <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
+                    <div class="flags__item" data-language="es">
+                        <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
+                        <p class="fw-lighter m-0">es</p>
+                    </div>
+                    <div class="flags__item" data-language="en">
+                        <img src="../assets/icons/us.svg" alt="" style="width: 25px;">
+                        <p class="fw-lighter m-0">en</p>
+                    </div>
+                </div>
+                <!-- Nav Items -->
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="../index.html" data-section="menu" data-value="home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="el-salvador.html" data-section="menu" data-value="elsalvador">El Salvador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover active" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./contact.html" data-section="menu" data-value="contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+
+  <!-- Cuatro cuadritos -->
+  <!-- Cuatro cuadritos -->
+
+  <!-- Contenedor para los botones, alineados al centro -->
+
+  <div class="container mt-5" id="programs_sv">
+    <h2 class="text-center green-text">Programas en Centro América</h2>
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <div class="row">
+      <!-- PROGRAMA 1 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".antiguaPana">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="caprogram1">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>ANTIGUA GUATEMALA Y PANAJACHEL</h3>
+            <h6>3 días / 2 noches</h6>
+          </a>
+        </div>
+      </div>
+
+      <!-- PROGRAMA 1 -->
+
+      <!-- PROGRAMA 2 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".ciudadyplayaPanama">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="caprogram2">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>CIUDAD Y PLAYA - PANAMÁ</h3>
+            <h6>5 días / 4 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 2 -->
+
+      <!-- PROGRAMA 3 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".amigotico">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="caprogram3">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>COSTA RICA, AMIGO TICO</h3>
+            <h6>5 días / 4 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 3 -->
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- PROGRAMA 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-3 justify-content-center" data-bs-toggle="modal" data-bs-target=".hondurasRoatan">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect" id="caprogram4">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none">
+            <h3>HONDURAS</h3>
+            <h6>8 días / 7 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 1 -->
+    
+      <!-- PROGRAMA 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-3 justify-content-center" data-bs-toggle="modal" data-bs-target=".nicaraguaColonial">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect" id="caprogram5">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none">
+            <h3>NICARAGUA - RUTA COLONIAL</h3>
+            <h6>5 días / 4 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 2 -->
+    </div>
+    
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- FILA PROGRAMAS -->
+    <!-- Modal: ANTIGUA Y PANAJACHEL -->
+    <div class="modal fade antiguaPana" tabindex="-1" role="dialog" aria-labelledby="antiguaPanaLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="antiguaPanaLabel" data-section="daytour1" data-value="name">
+                ANTIGUA GUATEMALA Y PANAJACHEL
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="antiguaPanaHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/caprograms/caprogram1_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram1_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram1_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#antiguaPanaHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#antiguaPanaHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="antiguaPanaItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="antiguaPanaDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#antiguaPanaDay1" type="button" role="tab" aria-controls="antiguaPanaDay1"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="antiguaPanaDay2-tab" data-bs-toggle="tab" data-bs-target="#antiguaPanaDay2"
+                  type="button" role="tab" aria-controls="antiguaPanaDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="antiguaPanaDay3-tab" data-bs-toggle="tab" data-bs-target="#antiguaPanaDay3"
+                  type="button" role="tab" aria-controls="antiguaPanaDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="antiguaPanaInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#antiguaPanaInclusions" type="button" role="tab" aria-controls="antiguaPanaInclusions"
+                  aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="antiguaPanaRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#antiguaPanaRecommendations" type="button" role="tab"
+                  aria-controls="antiguaPanaRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="antiguaPanaItineraryTabsContent">
+              <div class="tab-pane fade show active" id="antiguaPanaDay1" role="tabpanel"
+                aria-labelledby="antiguaPanaDay1-tab">
+                <h5>Dia 1</h5>
+                <p>
+                  Llegada al aeropuerto/estación de bus de Ciudad de Guatemala, camino hacia su hotel en Antigua y
+                  check in.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="antiguaPanaDay2" role="tabpanel" aria-labelledby="antiguaPanaDay2-tab">
+                <h5>DIA 2</h5>
+                <p>
+                  Desayuno. Salida muy temprano hacia el Altiplano de Guatemala, específicamente al poblado
+                  indígena
+                  de Panajachel. A su llegada abordaremos el bote que nos conducirá hacia el poblado de San Juan
+                  La Laguna,
+                  a su llegada caminata y visita de la Iglesia Católica. Luego nos dirigiremos hacia la
+                  cooperativa de chocolate
+                  para ver la elaboración de este, siguiendo hacia la cooperativa de Textiles donde nos mostrarán
+                  la elaboración
+                  de los tintes para estos bellos lienzos, además visitaremos a los artesanos de las plantas
+                  medicinales. A la
+                  hora conveniente retorno a Panajachel. Por la tarde traslado hacia la Ciudad de Guatemala
+                </p>
+              </div>
+              <div class="tab-pane fade" id="antiguaPanaDay3" role="tabpanel" aria-labelledby="antiguaPanaDay3-tab">
+                <h5>DIA 3</h5>
+                <p>
+                  Check out. Dirígete al aeropuerto/ estación desde Antigua hacia Ciudad de Guatemala para tu
+                  regreso a El Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="antiguaPanaInclusions" role="tabpanel"
+                aria-labelledby="antiguaPanaInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>
+                    Boleto terrestre vía Pullmantur San Salvador/ Ciudad Guatemala / San Salvador
+                  </li>
+                  <li>
+                    Traslados aeropuerto / hotel Antigua / aeropuerto o estación de bus en servicio compartido
+                  </li>
+                  <li>2 noches de alojamiento habitación estándar en hotel de su elección o similar</li>
+                  <li>
+                    Régimen alimenticio: Desayuno
+                  </li>
+                  <li>
+                    Tour Panajachel 1 dia regular
+                  </li>
+                  <li>Tarjeta de asistencia</li>
+                  <li>Impuestos hoteleros</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>
+                    Resort fee o impuesto ambiental según sea el destino y hotel seleccionado
+                  </li>
+                  <li>Habitaciones vistas al mar, vista a la ciudad, habitaciones Suites ni ninguna no
+                    especificada en el paquete</li>
+                  <li>No incluye otros servicios no especificados</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="antiguaPanaRecommendations" role="tabpanel"
+                aria-labelledby="antiguaPanaRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                  <li>Tarifas sujetas a cambios y disponibilidad sin previo aviso hasta el momento de su
+                    reservación</li>
+                  <li>En caso el hotel no confirme disponibilidad se brindarán opciones de hotel similares en
+                    misma categoría</li>
+                  <li>Tarifas en base a hotel en habitación estándar</li>
+                  <li>Pasajeros deben presentarse 3 horas antes de la salida del vuelo en aeropuerto aun estando
+                    prechequeados</li>
+                  <li>Se requiere pasaporte con vigencia mínima de 6 meses o DUI vigente</li>
+                  <li>Salvadoreños no requieren visa vigente (consulte por otras nacionalidades)</li>
+                  <li>Tarifas no aplican en temporada alta: feriados, Navidad, Fin de año y semana santa</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: CIUDAD Y PLAYA - PANAMA -->
+    <div class="modal fade ciudadyplayaPanama" tabindex="-1" role="dialog" aria-labelledby="ciudadyplayaPanamaLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="ciudadyplayaPanamaLabel" data-section="daytour1" data-value="name">
+                CIUDAD Y PLAYA - PANAMÁ
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="ciudadyplayaPanamaHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/caprograms/caprogram2_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram2_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram2_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ciudadyplayaPanamaHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ciudadyplayaPanamaHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="ciudadyplayaPanamaItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="ciudadyplayaPanamaDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay1" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay2" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay3" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay4" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaDay5-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaDay5" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaDay5" aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaInclusions" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ciudadyplayaPanamaRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#ciudadyplayaPanamaRecommendations" type="button" role="tab"
+                  aria-controls="ciudadyplayaPanamaRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="ciudadyplayaPanamaItineraryTabsContent">
+              <div class="tab-pane fade show active" id="ciudadyplayaPanamaDay1" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay1-tab">
+                <h5>Dia 1</h5>
+                <p>
+                  Llegada al aeropuerto, camino hacia su hotel de playa y check in.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaDay2" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay2-tab">
+                <h5>DIA 2</h5>
+                <p>
+                  Dia libre.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaDay3" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay3-tab">
+                <h5>DIA 3</h5>
+                <p>
+                  Desayuno. Traslado hacia tu hotel de Ciudad.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaDay4" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay4-tab">
+                <h5>DIA 4</h5>
+                <p>
+                  Desayuno. Con este tour daremos un paseo por 342 años de historia panameña, iniciando en
+                  la cinta costera, la cual bordea la bahía de Panamá uniendo la cosmopolita área de Punta Paitilla con
+                  el icónico Casco Antiguo. También te llevaremos a recorrer la Calzada de Amador, creada con rocas
+                  excavadas del Canal de Panamá, conecta el continente con cuatro islas junto a la entrada del
+                  océano Pacífico. Y podrás conocer la majestuosa maravilla del Mundo: El Canal de Panamá.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaDay5" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaDay5-tab">
+                <h5>DIA 5</h5>
+                <p>
+                  Check out. Dirígete al aeropuerto para tu regreso a El Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaInclusions" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>
+                    Traslados aeropuerto / hotel de playa/ hotel ciudad / aeropuerto en servicio compartido
+                  </li>
+                  <li>
+                    2 noches de alojamiento habitación estándar en hotel de playa en plan todo incluido
+                  </li>
+                  <li>2 noches de alojamiento habitación estándar en hotel de Ciudad en plan desayunos</li>
+                  <li>
+                    Tour de ciudad &amp; Canal – Entradas incluidas+ Tour de compras con retorno al hotel
+                  </li>
+                  <li>Tarjeta de asistencia</li>
+                  <li>Impuestos hoteleros</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>
+                    Resort fee o impuesto ambiental según sea el destino y hotel seleccionado
+                  </li>
+                  <li>Habitaciones vistas al mar, vista a la ciudad, habitaciones Suites ni ninguna no
+                    especificada en el paquete</li>
+                  <li>No incluye otros servicios no especificados</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="ciudadyplayaPanamaRecommendations" role="tabpanel"
+                aria-labelledby="ciudadyplayaPanamaRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                  <li>Tarifas sujetas a cambios y disponibilidad sin previo aviso hasta el momento de su
+                    reservación</li>
+                  <li>En caso el hotel no confirme disponibilidad se brindarán opciones de hotel similares en
+                    misma categoría</li>
+                  <li>Tarifas en base a hotel en habitación estándar</li>
+                  <li>Pasajeros deben presentarse 3 horas antes de la salida del vuelo en aeropuerto aun estando
+                    prechequeados</li>
+                  <li>Boletos aéreos están sujetos a cambios de horarios por parte de la aerolínea</li>
+                  <li>Se requiere pasaporte con vigencia mínima de 6 meses</li>
+                  <li>Se requiere vacuna de fiebre amarilla</li>
+                  <li>Tarifas no aplican en temporada alta: feriados, Navidad, Fin de año y semana santa</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal: COSTA RICA, AMIGO TICO -->
+    <div class="modal fade amigotico" tabindex="-1" role="dialog" aria-labelledby="amigoticoLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="amigoticoLabel" data-section="daytour1" data-value="name">
+                COSTA RICA, AMIGO TICO
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="amigoticoHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/caprograms/caprogram3_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram3_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram3_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#amigoticoHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#amigoticoHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="amigoticoItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="amigoticoDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay1" type="button" role="tab"
+                  aria-controls="amigoticoDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay2" type="button" role="tab"
+                  aria-controls="amigoticoDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay3" type="button" role="tab"
+                  aria-controls="amigoticoDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay4" type="button" role="tab"
+                  aria-controls="amigoticoDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoDay5-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoDay5" type="button" role="tab"
+                  aria-controls="amigoticoDay5" aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoInclusions" type="button" role="tab"
+                  aria-controls="amigoticoInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amigoticoRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#amigoticoRecommendations" type="button" role="tab"
+                  aria-controls="amigoticoRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="amigoticoItineraryTabsContent">
+              <div class="tab-pane fade show active" id="amigoticoDay1" role="tabpanel"
+                aria-labelledby="amigoticoDay1-tab">
+                <h5>DÍA 01: CIUDAD DE ORIGEN - SAN JOSÉ / CITY TOUR</h5>
+                <p>
+                  Bienvenido a Costa Rica! Uno de nuestros representantes le estará esperando en el
+                  Aeropuerto Internacional Juan Santamaría, para trasladarlo al hotel en San José.
+                  El tour comienza presentando primero el sector este de la Ciudad de San José, pasando
+                  junto a La Plaza de la Democracia y el Museo Nacional, Los Tribunales del Poder Judicial,
+                  Los Yoses, el Mall San Pedro, La Fuente de la Hispanidad y La Sede Rodrigo Facio de la
+                  Universidad de Costa Rica. Después de pasar por los principales atractivos de la capital,
+                  llegaremos al impresionante Museo de Oro Precolombino y al bellísimo Teatro Nacional.
+                  Posteriormente, el recorrido continúa hacia el oeste de la ciudad pasando por el Parque
+                  Metropolitano La Sabana, el Museo de Arte Costarricense o antigua torre de control del
+                  primer Aeropuerto Internacional de San José, el Gimnasio Nacional, la Contraloría
+                  General de la República, la zona residencial de Rohmoser, la Nunciatura Apostólica, la
+                  casa del Premio Nobel de la Paz, Sr. Oscar Arias Sánchez, el Boulevar de Rohmoser y el
+                  sector de Pavas. Al finalizar también se tendrá la oportunidad de visitar un interesante
+                  sitio donde adquirir algún recuerdo de su visita a la cuidad San José. Hospedaje en San
+                  José.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="amigoticoDay2" role="tabpanel"
+                aria-labelledby="amigoticoDay2-tab">
+                <h5>DÍA 02: VOLCÁN IRAZÚ, VALLE OROSI Y JARDÍN LANKESTER</h5>
+                <p>
+                  Este coloso es el volcán más alto del territorio con 3432 metros (11000 pies) de altura
+                  sobre el nivel del mar, cuya última fase eruptiva comprende el periodo entre 1963 a 1965
+                  con fuertes emanaciones de gas y cenizas que fueron percibidas en todo el país. En un
+                  día soleado y despejado, tanto el océano Atlántico como el Pacífico pueden ser
+                  observados. Luego de la visita al volcán, descenderemos hacia la ciudad de Cartago,
+                  antigua capital de Costa Rica establecida en 1563 por el conquistador Juan Vázquez de
+                  Coronado, donde se realiza una parada en la Basílica de la Virgen de los Ángeles, lugar
+                  de peregrinaje de muchos fieles, la cuál es una tradición vigente desde 1635. La siguiente
+                  parada es el Jardín Botánico Lankester, centro de investigación de la Universidad de
+                  Costa Rica, creado para la protección y preservación de más de 800 especies de
+                  orquídeas, así como otras especies de plantas. En este lugar se realiza una visita guiada
+                  conociendo las diferentes secciones, como por ejemplo las bromelias, cactus, heliconias,
+                  palmas, entre otras. Seguidamente, continuaremos hacia el maravilloso y escénico Valle
+                  Orosí, rodeado de hermosas montañas, diversidad de cultivos como café, caña de azúcar,
+                  entre otros, el cual fue uno de los establecimientos importantes durante la época colonial,
+                  siendo éste testigo de diversos acontecimientos históricos protagonizados por ataques de
+                  piratas, terremotos, inundaciones, así como la trascendencia de las órdenes de
+                  Franciscanos encomendados del proceso de evangelización y pioneros en el
+                  levantamiento de los primeros templos católicos del país. En este recorrido visitaremos
+                  una de las pocas iglesias coloniales que aún permanecen en pie, seguido de un delicioso
+                  almuerzo típico en el mejor restaurante de la zona.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="amigoticoDay3" role="tabpanel"
+                aria-labelledby="amigoticoDay3-tab">
+                <h5>DÍA 03: ISLA TORTUGA</h5>
+                <p>
+                  El Golfo de Nicoya, es un paradisiaco archipiélago compuesto por Islas, con una riqueza
+                  natural exuberante y un santuario para aves marinas, posee playas de arenas blancas,
+                  una flora y fauna propias de nuestro Pacifico Central. En este bello archipiélago se
+                  encuentra: Isla Tortuga. Ubicada a 12 millas náuticas de Puntarenas se encuentra: Isla
+                  Tortuga (llamada por los indígenas Tolinga); posee una extensión de 120 hectáreas, se
+                  mantiene como un bosque protegido. Isla Tortuga posee el galardón de la Bandera Azul
+                  Ecológica, ya que sus aguas están libres de contaminación. Esta distinción es otorgada
+                  por el Instituto Costarricense de Turismo. Por su característica geográfica Isla Tortuga,
+                  tiene sus aguas de tono turquesa, las cuales son óptimas para nadar. Hospedaje en San
+                  José.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="amigoticoDay4" role="tabpanel"
+                aria-labelledby="amigoticoDay4-tab">
+                <h5>DÍA 04: TELEFÉRICO</h5>
+                <p>
+                  Desayuno en el hotel. Explore cada nivel del denso bosque lluvioso costarricense desde
+                  el suelo hasta la copa de los árboles. Nuestro galardonado Tour de Teleférico Le deja
+                  conocer de primera mano todos los secretos que guarda el bosque mientras vuela sobre
+                  las copas de los árboles ante una magnífica vista del Parque Nacional Braulio Carrillo y
+                  nuestra reserva privada, una experiencia inmersa en la naturaleza, así como un glorioso
+                  vuelo sobre el canopy del bosque lluvioso. Ofrecemos el viaje más largo en teleférico y el
+                  único guiado en el país. El paseo en góndola de 1.10 horas incluye una caminata guiada
+                  naturalista en nuestros senderos naturales pavimentados, una visita a nuestro hermoso y
+                  especializado Mariposario y Jardín de Colibríes donde podrás aprender mucho entre
+                  coloridas alas; otra visita a nuestro Jardín de Orquídeas comprendida por orquídeas
+                  rescatadas de troncos caídos y finalmente una tranquila caminata en nuestros terrarios
+                  donde podrás observar muchas especies interesantes de anfibios y reptiles. Hospedaje
+                  en San José.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="amigoticoDay5" role="tabpanel"
+                aria-labelledby="amigoticoDay5-tab">
+                <h5>DÍA 05: SAN JOSÉ – AEROPUERTO INTERNACIONAL JUAN SANTAMARÍA</h5>
+                <p>
+                  Desayuno en el hotel. A la hora indicada traslado al Aeropuerto Internacional Juan
+                  Santamaría para abordar vuelo regular de vuelta hacia su país de origen.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="amigoticoInclusions" role="tabpanel"
+                aria-labelledby="amigoticoInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>4 noches de alojamiento en hotel de su escogencia: hospedaje, desayunos e impuestos.</li>
+                  <li>Traslado terrestre del Aeropuerto Internacional Juan Santamaría a San José.</li>
+                  <li>Traslado terrestre de San José al Aeropuerto Internacional Juan Santamaría.</li>
+                  <li>City Tour de San José con compras y almuerzo.</li>
+                  <li>Volcán Irazú, Valle Orosi y Jardín Lankester: transporte, guía y almuerzo.</li>
+                  <li>Isla Tortuga: transporte, guía y almuerzo.</li>
+                  <li>Teleférico: transporte, almuerzo, guía naturalista bilingüe, teleférico, Sendero temático (Jardín de Orquídeas, Jardín de Colibríes, Herpetario y Mariposario).</li>
+              </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>Servicios o comidas no especificadas.</li>
+                  <li>Gastos personales.</li>
+                  <li>Propina a mucamas, botones, guías, choferes.</li>
+              </ul>              
+              </div>
+              <div class="tab-pane fade" id="amigoticoRecommendations" role="tabpanel"
+                aria-labelledby="amigoticoRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                  <li>Reservas sujetas a disponibilidad.</li>
+                  <li>Precios sujetos a cambio sin previo aviso.</li>
+                  <li>Consultar el precio de persona viajando sola, dado que las excursiones operan con un mínimo.</li>
+                  <li>Tarifas netas por persona expresadas en dólares estadounidenses.</li>
+                  <li>El orden de los servicios podría modificarse en función de la disponibilidad terrestre.</li>
+                  <li>La excursión panorámica por San José no incluye las entradas a museos, teatros, etc.</li>
+                  <li>Las camas extras tienen un costo adicional y dependen de la disponibilidad del hotel; en ocupación TPL o CUA deben compartir cama, ya que son habitaciones con 2 camas queen o full.</li>
+                  <li>Los traslados y excursiones regulares cuentan con horario preestablecido y pueden variar sin previo aviso.</li>
+                  <li>Por regulaciones internas del Aeropuerto Internacional Juan Santamaría, los pasajeros deben estar mínimo 03:00 horas antes de la salida de los vuelos internacionales.</li>
+              </ul>
+              
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: HONDURAS - ROATAN -->
+    <div class="modal fade hondurasRoatan" tabindex="-1" role="dialog" aria-labelledby="hondurasRoatanLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="hondurasRoatanLabel" data-section="daytour1" data-value="name">
+                HONDURAS - ROATÁN
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="hondurasRoatanHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/caprograms/caprogram4_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram4_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram4_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#hondurasRoatanHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hondurasRoatanHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="hondurasRoatanItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="amigoticoDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#hondurasRoatanDay1" type="button" role="tab"
+                  aria-controls="hondurasRoatanDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hondurasRoatanDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#hondurasRoatanDay2" type="button" role="tab"
+                  aria-controls="hondurasRoatanDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hondurasRoatanDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#hondurasRoatanDay3" type="button" role="tab"
+                  aria-controls="hondurasRoatanDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hondurasRoatanDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#hondurasRoatanDay4" type="button" role="tab"
+                  aria-controls="hondurasRoatanDay4" aria-selected="false">
+                  Días 4-7
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hondurasRoatanDay5-tab" data-bs-toggle="tab"
+                  data-bs-target="#hondurasRoatanDay5" type="button" role="tab"
+                  aria-controls="hondurasRoatanDay5" aria-selected="false">
+                  Día 8
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hondurasRoatanInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#hondurasRoatanInclusions" type="button" role="tab"
+                  aria-controls="hondurasRoatanInclusions" aria-selected="false">
+                  Inclusiones
+                </button>
+              </li>
+              <!-- <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hondurasRoatanRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#hondurasRoatanRecommendations" type="button" role="tab"
+                  aria-controls="hondurasRoatanRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li> -->
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="hondurasRoatanItineraryTabsContent">
+              <div class="tab-pane fade show active" id="hondurasRoatanDay1" role="tabpanel"
+                aria-labelledby="hondurasRoatanDay1-tab">
+                <h5>DÍA 01 LUNES O JUEVES</h5>
+                <p>
+                  SAN PEDRO SULA / COPÁN RUINAS Recepción en el Aeropuerto Internacional de San
+                  Pedro Sula (Ramón Villeda Morales) y traslado a las Ruinas de Copán. El resto de la tarde
+                  libre para caminar por las calles adoquinadas y admirar esta pintoresca ciudad agrícola con
+                  encanto colonial. Alojamiento en Copán Ruinas.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="hondurasRoatanDay2" role="tabpanel"
+                aria-labelledby="hondurasRoatanDay2-tab">
+                <h5>DÍA 02 MARTES O VIERNES</h5>
+                <p>
+                  COPÁN RUINAS Desayuno y traslado al Sitio Arqueológico Principal, la Acrópolis, el Campo
+                  de Pelota, la Escalinata Jeroglífica y la Gran Plaza de las Estelas; Así como el Museo de
+                  Escultura Maya, aclamado por los expertos como único en el mundo maya. Una obra
+                  maestra dentro del museo es la réplica del tamaño exacto del famoso Templo de Rosalila,
+                  descubierto en 1989. Por la tarde visitaremos El Parque de aves Macaw, Una innovadora
+                  reserva de aves tropicales en las Ruinas de Copán que se ocupa de las aves rescatadas y en
+                  peligro de extinción del trópico americano. Ofrece una experiencia de primera clase en una
+                  parte virgen del mundo. Aquí aprenderá e interactuará con aves inteligentes y coloridas de
+                  Centroamérica. Alojamiento en Copán.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="hondurasRoatanDay3" role="tabpanel"
+                aria-labelledby="hondurasRoatanDay3-tab">
+                <h5>DÍA 03 MIÉRCOLES O SÁBADO</h5>
+                <p>
+                  COPÁN RUINAS / SAN PEDRO SULA / ROATÁN Desayuno y salida hacia San Pedro Sula. En
+                  el camino, se detendrá en la Finca Santa Isabel para el Tour del Café en Copán. Aquí usted
+                  caminará cuesta abajo a través de senderos agradables y verá con sus propios ojos el
+                  proceso de cultivar, cosechar y de asar el café, la manera tradicional desde el cuidado de la
+                  planta hasta el último proceso de los granos de café. Almorzará en un bonito lugar dentro
+                  del bosque, cerca de una pequeña cascada. Después del almuerzo, traslado al aeropuerto
+                  internacional de San Pedro Sula para tomar vuelo a Roatán. Alojamiento en Roatán.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="hondurasRoatanDay4" role="tabpanel"
+                aria-labelledby="hondurasRoatanDay4-tab">
+                <h5>DÍAS 04-07 JUEVES -DOMINGO O DOMINGO-MIÉRCOLES</h5>
+                <p>
+                  ROATAN En estos días tendrá tiempo libre para disfrutar de las diferentes actividades de la
+                  isla. Roatán es las más grandes y más desarrollada de las tres islas que conforman las Islas
+                  de la Bahía, donde se puede disfrutar de uno de los mejores sitios de buceo en el Caribe. El
+                  terreno montañoso de Roatán, además de las playas de arena blanca, aguas turquesas, rica
+                  vida marina, actividades deportivas, parques temáticos, museos y muelles de cruceros.
+                  Roatán es la mejor opción para concentrarse en el Caribe, un paraíso donde el verano nunca
+                  termina. La isla está completamente rodeada de increíbles arrecifes de coral, ya que está
+                  ubicada en el segundo arrecife de coral más grande del mundo. Alojamiento en Roatán.
+                  CIRCUITO INCLUYE DÍAS 04-07 JUEVES -DOMINGO O DOMINGO-MIÉRCOLES
+                </p>
+              </div>
+              <div class="tab-pane fade" id="hondurasRoatanDay5" role="tabpanel"
+                aria-labelledby="hondurasRoatanDay5-tab">
+                <h5>DIA 08 LUNES O JUEVES</h5>
+                <p>
+                  ROATÁN / SAN PEDRO SULA Desayuno y traslado al aeropuerto para tomar vuelo a San
+                  Pedro Sula. Luego para tomar vuelo de regreso a su país.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="hondurasRoatanInclusions" role="tabpanel"
+                aria-labelledby="hondurasRoatanInclusions-tab">
+                <h5>INCLUSIONES</h5>
+                <ul>
+                  <li>Traslado terrestre según itinerario</li>
+                  <li>Boleto aéreo San Pedro Sula – Roatán – San Pedro Sula</li>
+                  <li>Guía especializado en todo el recorrido en Copán ruinas</li>
+                  <li>02 noches de alojamiento en Copán Ruinas (Desayuno Incluido)</li>
+                  <li>Impuestos aeroportuarios</li>
+                  <li>Impuestos hoteleros</li>
+                  <li>05 noches de alojamiento en Roatán (Sistema TODO INCLUIDO)</li>
+                  <li>Admisiones a los lugares a visitar</li>
+                  <li>Servicios en regular o privado</li>
+              </ul>            
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: NICARAGUA - RUTA COLONIAL -->
+    <div class="modal fade nicaraguaColonial" tabindex="-1" role="dialog" aria-labelledby="nicaraguaColonialLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="amigoticoLabel" data-section="daytour1" data-value="name">
+                NICARAGUA - RUTA COLONIAL
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="nicaraguaColonialHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/caprograms/caprogram5_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram5_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/caprograms/caprogram5_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#nicaraguaColonialHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#nicaraguaColonialHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="nicaraguaColonialItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="nicaraguaColonialDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#nicaraguaColonialDay1" type="button" role="tab"
+                  aria-controls="nicaraguaColonialDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nicaraguaColonialDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#nicaraguaColonialDay2" type="button" role="tab"
+                  aria-controls="nicaraguaColonialDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nicaraguaColonialDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#nicaraguaColonialDay3" type="button" role="tab"
+                  aria-controls="nicaraguaColonialDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nicaraguaColonialDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#nicaraguaColonialDay4" type="button" role="tab"
+                  aria-controls="nicaraguaColonialDay4" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nicaraguaColonialDay5-tab" data-bs-toggle="tab"
+                  data-bs-target="#nicaraguaColonialDay5" type="button" role="tab"
+                  aria-controls="nicaraguaColonialDay5" aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nicaraguaColonialInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#nicaraguaColonialInclusions" type="button" role="tab"
+                  aria-controls="nicaraguaColonialInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nicaraguaColonialRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#nicaraguaColonialRecommendations" type="button" role="tab"
+                  aria-controls="nicaraguaColonialRecommendations" aria-selected="false">
+                  Notas
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="nicaraguaColonialItineraryTabsContent">
+              <div class="tab-pane fade show active" id="nicaraguaColonialDay1" role="tabpanel"
+                aria-labelledby="nicaraguaColonialDay1-tab">
+                <h5>DÍA 01 - AEROPUERTO DE MANAGUA - MANAGUA</h5>
+                <p>
+                  Recibimiento a su llegada al aeropuerto y traslado al hotel en Managua.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="nicaraguaColonialDay2" role="tabpanel"
+                aria-labelledby="nicaraguaColonialDay2-tab">
+                <h5>DÍA 02: MANAGUA</h5>
+                <p>
+                  Después del desayuno realizaremos un City Tour de la capital de Managua. Iniciaremos con
+                  una visita al Parque Histórico Loma de Tiscapa. Luego bajaremos por la Avenida Bolívar
+                  en dirección al centro histórico de la ciudad, donde se encuentran importantes sitios como
+                  el Parque Central, las ruinas de la Catedral de Santiago, el Palacio Nacional de la Cultura
+                  y el Teatro Rubén Darío.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="nicaraguaColonialDay3" role="tabpanel"
+                aria-labelledby="nicaraguaColonialDay3-tab">
+                <h5>DÍA 03: MANAGUA - LEÓN</h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia la ciudad colonial de León, fundada en 1610. La
+                  ciudad funcionó como capital de Nicaragua en múltiples ocasiones luego de la
+                  independencia en 1821, alternándose el título con Granada hasta que Managua fue
+                  nombrada capital oficial.
+                  Durante el trayecto visitaremos las Ruinas de León Viejo, localizadas a orillas de Lago de
+                  Managua y resguardadas por el imponente volcán Momotombo.
+                  Al llegar a la ciudad de Leon visitaremos la Basílica Catedral de la Asunción, una de las
+                  más hermosas del continente y la más grande de Centroamérica, nombrada en 2011
+                  como Patrimonio de la Humanidad. En ella descansan los restos del Poeta Rubén Darío y
+                  de otros personajes.
+                  Continuaremos con una visita a la Galería de Arte Ortiz-Gurdián donde encontrará una
+                  interesante colección que incluye obras de destacados artistas nicaragüenses, de
+                  reconocidos artistas internacionales como Picasso, Chagall, Miró; y de maestros
+                  latinoamericanos como Diego Rivera, Rufino Tamayo, Fernando Botero y Roberto Matta.
+                  Además, visitaremos la Casa-Museo Rubén Darío, donde el gran poeta vivió durante 14
+                  años.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="nicaraguaColonialDay4" role="tabpanel"
+                aria-labelledby="nicaraguaColonialDay4-tab">
+                <h5>DÍA 04: LEÓN - PARQUE VOLCÁN NACIONAL MASAYA - MERCADO DE ARTESANÍA - GRANADA</h5>
+                <p>
+                  Desayuno en el hotel. Traslado a la ciudad de Granada, la ciudad colonial más antigua del
+                  hemisferio occidental de las Américas que aún permanece en su lugar de construcción
+                  original. La ciudad fue fundada en 1524 a orillas del Lago Cocibolca.
+                  En la ruta visitaremos el Parque Nacional Volcán Masaya. Una carretera pavimentada nos
+                  lleva hasta el borde del impresionante y activo cráter Santiago. Es uno de los pocos
+                  lugares del mundo donde un cráter se puede observar a tan poca distancia.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="nicaraguaColonialDay5" role="tabpanel"
+                aria-labelledby="nicaraguaColonialDay5-tab">
+                <h5>DÍA 05: GRANADA - AEROPUERTO</h5>
+                <p>
+                  Desayuno en el hotel. Por la mañana recorreremos las principales calles de la ciudad de
+                  Granada, para conocer las iglesias estilo colonial, el Convento San Francisco, La Casa de
+                  los tres Mundos, la Plaza y Parque Central. Posteriormente haremos un recorrido por los
+                  canales de las encantadoras Isletas, un archipiélago de más de 300 islas ubicadas en el
+                  Lago Cocibolca. Durante el recorrido disfrutará de bellos paisajes del Volcán Mombacho y
+                  de la flora y fauna de las islas. Podrá observar tangaras, halcones y urracas.
+
+                  Traslado al Aeropuerto Internacional de Managua según la hora de salida de su vuelo.
+                  Recomendamos estar en el aeropuerto 02 horas antes.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="nicaraguaColonialInclusions" role="tabpanel"
+                aria-labelledby="nicaraguaColonialInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>Transporte</li>
+                  <li>Traslados terrestres privados en vehículo con A/A</li>
+                  <li>Alojamiento: Incluye desayunos e impuestos hoteleros</li>
+                  <li>02 noches en Managua / Habitación Estándar</li>
+                  <li>01 noche en León / Habitación Estándar</li>
+                  <li>01 noche en Granada / Habitación Estándar</li>
+                  <li>Tours: Incluyen transporte, entradas y guía</li>
+                  <li>Tour de las ciudades de Managua, León y Granada</li>
+                  <li>Visita al Parque Nacional Volcán Masaya y mercado de artesanía</li>
+                  <li>Tour por las Isletas</li>
+              </ul>
+              
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>Impuestos de aeropuerto (Generalmente incluidos en el boleto aéreo).</li>
+                  <li>Tarjeta de turismo (Se paga a su entrada al país).</li>
+                  <li>Alimentación no mencionada.</li>
+                  <li>Gastos personales ni propinas.</li>
+                  <li>Seguro.</li>
+              </ul>                           
+              </div>
+              <div class="tab-pane fade" id="nicaraguaColonialRecommendations" role="tabpanel"
+                aria-labelledby="nicaraguaColonialRecommendations-tab">
+                <h5>NOTAS</h5>
+                <ul>
+                  <li>Tour cúpulas de la Catedral de León cerrado en domingo.</li>
+                  <li>Museo Rubén Darío y Fundación Ortiz-Gurdián cerrados en lunes.</li>
+                  <li>Tarifas no aplican: Semana Santa y fin de año.</li>
+              </ul>          
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <!-- <a href="./quote.html" class="btn btn-primary">Cotizar</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <div class="fixed-help-center" title="Centro de ayuda">
+    <a href="" class="nav-link">
+      <i class="bi bi-headset"></i>
+    </a>
+  </div>
+  <div class="fixed-whatsapp" title="Whatsapp">
+    <a href="" class="nav-link">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+</body>
+<footer class="text-center text-white footer-background">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-google"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitter - X -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="bi bi-twitter-x"></i>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023
+    <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- End of container -->
+<script src="/assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</html>

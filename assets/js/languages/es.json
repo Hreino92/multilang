@@ -1,7 +1,8 @@
 {
     "menu":{
         "home":"Inicio",
-        "services": "Otros destinos del mundo",
+        "elsalvador": "El Salvador",
+        "other": "Turismo Internacional",
         "tickets": "Boletos aéreos",
         "who": "¿Quiénes  somos?",
         "contact":"Contacto"
@@ -61,6 +62,7 @@
     },
     "tickets_form":{
         "title":"Cotiza tu próximo boleto",
+        "instructions":"Por favor, complete el formulario proporcionando información precisa y actualizada para poder ofrecerle la cotización más adecuada para su boleto aéreo. Garantizamos la total confidencialidad de sus datos, los cuales serán utilizados exclusivamente para procesar su solicitud y mejorar la calidad de nuestro servicio. ¡Gracias por confiar en nosotros!",
         "required":"*Campo requerido",
         "yes":"SI",
         "name":"Nombre:",
@@ -96,5 +98,8 @@
         "text":"Nuestro equipo combina tecnología de punta con un trato cercano y personalizado para que planificar tu próximo viaje sea una experiencia fácil y emocionante. Ya sea por chat, correo o redes sociales, estamos listos para responder tus preguntas y ayudarte a crear la aventura perfecta. Contáctanos y descubre lo sencillo que es viajar con nosotros.",
         "endline":"¡Tu próxima aventura comienza con un clic!",
         "ourcontact":"Nuestros contactos:"
+    },
+    "tierraencanto":{
+        "name":"El Salvador, tierra de encanto"
     }
 }

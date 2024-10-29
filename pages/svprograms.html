@@ -1,0 +1,2512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Banderas -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+
+  <!--Referencia a la pagina de estilos-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!--Referencia al favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon.ico" />
+
+  <!--Referencia para FontAwesome-->
+  <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Referencias para mask-input -->
+  <!-- Incluir jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Incluir Inputmask -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+  <title>reserve503.travel</title>
+</head>
+
+<body>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img class="nav-logo" src="/assets/img/logoreserve503_Mesa de trabajo 1.png" alt="" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+                <!-- Flags Section -->
+                <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
+                    <div class="flags__item" data-language="es">
+                        <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
+                        <p class="fw-lighter m-0">es</p>
+                    </div>
+                    <div class="flags__item" data-language="en">
+                        <img src="../assets/icons/us.svg" alt="" style="width: 25px;">
+                        <p class="fw-lighter m-0">en</p>
+                    </div>
+                </div>
+                <!-- Nav Items -->
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="../index.html" data-section="menu" data-value="home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active nav-hover" href="./el-salvador.html" data-section="menu" data-value="elsalvador">El Salvador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="./contact.html" data-section="menu" data-value="contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+  <!-- Barra de navegacion-->
+
+  <!-- Cuatro cuadritos -->
+  <!-- Cuatro cuadritos -->
+
+  <!-- Contenedor para los botones, alineados al centro -->
+  <div class="container my-4 d-flex justify-content-center" style="padding: 0%;">
+    <button class="btn btn-success btn-md me-3" onclick="scrollToSection('programs_sv')">Con origen en El
+      Salvador</button>
+    <button class="btn btn-success btn-`md me-3" onclick="scrollToSection('svgtprograms')">Con origen en
+      Guatemala</button>
+    <button class="btn btn-success btn-md" onclick="scrollToSection('svwestprograms')">Con origen en el occidente de El
+      Salvador</button>
+  </div>
+
+  <div class="container mt-5" id="programs_sv">
+    <h2 class="text-center green-text">Programas en El Salvador</h2>
+    <div class="row">
+      <!-- PROGRAMA 1 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".tierraencanto">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram1">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none" >
+            <h3>El Salvador,</h3>
+            <h3>tierra de encanto</h3>
+            <h6>5 días / 4 noches</h6>
+          </a>
+        </div>
+      </div>
+
+      <!-- PROGRAMA 2 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".tierranaturaleza">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram2">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador,</h3>
+            <h3>tierra de naturaleza</h3>
+            <h6>6 días / 5 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 2 -->
+
+      <!-- PROGRAMA 3 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".tierramaravillas">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram3">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador,</h3>
+            <h3>tierra de maravillas</h3>
+            <h6>7 días / 6 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 3 -->
+
+
+
+    </div>
+    <!-- Fila independiente para el PROGRAMA 5 centrado -->
+    <div class="row justify-content-center mt-3">
+      <!-- PROGRAMA 4 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".tierrafe">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram4">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador,</h3>
+            <h3>tierra de fe</h3>
+            <h6>5 días / 4 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 4 -->
+      <!-- PROGRAMA 5 -->
+      <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".tierraenergia">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram5">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador,</h3>
+            <h3>tierra de energia</h3>
+            <h6>5 días / 4 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 5 -->
+    </div>
+    <!-- Modal: El Salvador, tierra de encanto -->
+    <div class="modal fade tierraencanto" tabindex="-1" role="dialog" aria-labelledby="tierraencantoLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6">
+              <h5 class="modal-title green-text" id="tierraencantoLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR, TIERRA DE ENCANTO
+              </h5>
+            </div>
+            <div class="col-md-6">
+              <div id="tierraencantoHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program1_1.png" class="d-block w-100" alt="San Salvador"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program1_2.png" class="d-block w-100" alt="Ruta de las Flores"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program1_3.png" class="d-block w-100" alt="Joya de Cerén"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program1_4.png" class="d-block w-100" alt="Suchitoto"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program1_5.png" class="d-block w-100" alt="Playa El Tunco"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#tierraencantoHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#tierraencantoHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="tierraencantoItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tierraencantoDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#tierraencantoDay1" type="button" role="tab" aria-controls="tierraencantoDay1"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraencantoDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#tierraencantoDay2" type="button" role="tab" aria-controls="tierraencantoDay2"
+                  aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraencantoDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#tierraencantoDay3" type="button" role="tab" aria-controls="tierraencantoDay3"
+                  aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraencantoDay4-tab" data-bs-toggle="tab"
+                  data-bs-target="#tierraencantoDay4" type="button" role="tab" aria-controls="tierraencantoDay4"
+                  aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraencantoDay5-tab" data-bs-toggle="tab"
+                  data-bs-target="#tierraencantoDay5" type="button" role="tab" aria-controls="tierraencantoDay5"
+                  aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraencantoInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#tierraencantoInclusions" type="button" role="tab"
+                  aria-controls="tierraencantoInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraencantoRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#tierraencantoRecommendations" type="button" role="tab"
+                  aria-controls="tierraencantoRecommendations" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="tierraencantoItineraryTabsContent">
+              <div class="tab-pane fade show active" id="tierraencantoDay1" role="tabpanel"
+                aria-labelledby="tierraencantoDay1-tab">
+                <h5>DIA 1 - SAN SALVADOR</h5>
+                <p>
+                  Bienvenida por nuestro representante en el aeropuerto
+                  internacional San Oscar Arnulfo Romero (SAL). Tour de Ciudad
+                  por San Salvador visitando el centro histórico, así como
+                  zonas residenciales y comerciales. Cena MAYA de bienvenida
+                  que incluye la principal comida típica salvadoreña: las
+                  pupusas. Traslado y registro en hotel en San Salvador.
+                  Alojamiento en Hotel en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="tierraencantoDay2" role="tabpanel" aria-labelledby="tierraencantoDay2-tab">
+                <h5>DIA 2 - RUTA DE LAS FLORES</h5>
+                <p>
+                  Desayuno en el hotel. Recorrido por el centro histórico de
+                  Ahuachapán, para conocer la historia de grandes personajes
+                  en la vida de los salvadoreños como Isidro Menéndez y
+                  Alfredo Espino. Nos trasladaremos hacia la ciudad de
+                  Concepción de Ataco y observar el proceso de elaboración de
+                  telares artesanales de lindos colores y diseños propios de
+                  la zona, teniendo la oportunidad de comprar artesanías.
+                  Almuerzo libre en restaurante de la zona. Recorreremos los
+                  pueblos que forman la Ruta de Las Flores: Apaneca, Juayúa y
+                  Salcoatitán. Alojamiento en hotel en Ruta de Las Flores.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="tierraencantoDay3" role="tabpanel" aria-labelledby="tierraencantoDay3-tab">
+                <h5>DIA 3 - ARQUEOLOGÍA Y SUCHITOTO</h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia Sitio arqueológico San
+                  Andrés. Llegaremos a San Andrés, Parque arqueológico situado
+                  a 30 min. de San Salva¬dor, ubicado en el valle de
+                  Zapotitán. San Andrés es considerado uno de los centros
+                  prehispá¬nicos más grandes de El Salvador. Posteriormente,
+                  Visitaremos el Sitio Arqueológico Joya de Cerén. Cercano al
+                  desvío de San Juan Opico se encuentra ubicado este
+                  patrimonio cultural de la humanidad, el cual muestra su
+                  importancia mundial la cual detalla la historia y el
+                  encuentro con las raíces de la vida familiar de los
+                  salvadoreños hace 1400 años. Almuerzo libre en restaurante
+                  de la zona, traslado a Suchitoto. Alojamiento en hotel en
+                  Suchitoto.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="tierraencantoDay4" role="tabpanel" aria-labelledby="tierraencantoDay4-tab">
+                <h5>DIA 4 - SUCHITOTO - PLAYA LA LIBERTAD</h5>
+                <p>
+                  Desayuno en el hotel. Tiempo libre y Recorrido guiado en la
+                  ciudad del pájaro y la flor, Suchitoto, famosa por toda su
+                  historia nacional y cultura que puede ser contemplada en la
+                  arquitectura de la zona entre otros sitios de interés; así
+                  como la forma de vida de los salvadoreños en la campiña.
+                  Traslado hacia hotel de Playa, donde disfrutaremos de una
+                  tarde en la costa del océano pacífico y poder hacer uso de
+                  las instalaciones del hotel para descansar previo a su
+                  retorno. Traslado y alojamiento en hotel en La Libertad.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="tierraencantoDay5" role="tabpanel" aria-labelledby="tierraencantoDay5-tab">
+                <h5>DIA 5 - TRASLADO HACIA EL AEROPUERTO</h5>
+                <p>
+                  Desayuno en el hotel y traslado al aeropuerto, según
+                  itinerario de vuelo. Fin de los servicios
+                </p>
+              </div>
+              <div class="tab-pane fade" id="tierraencantoInclusions" role="tabpanel"
+                aria-labelledby="tierraencantoInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de Guía de turismo durante todo el recorrido y
+                    su estadía/alimentación.
+                  </li>
+                  <li>Paquete informativo de bienvenida.</li>
+                  <li>
+                    Entradas a los sitios de los tours descritos en el
+                    itinerario.
+                  </li>
+                  <li>
+                    4 noches de Alojamiento en habitación según su elección.
+                  </li>
+                  <li>Desayunos en los hoteles a partir del día 2.</li>
+                  <li>Cena de pupusas el día 1.</li>
+                  <li>Agua a bordo</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo, u otros servicios no descritos explícitamente.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="tierraencantoRecommendations" role="tabpanel"
+                aria-labelledby="tierraencantoRecommendations-tab">
+                <h5>RECOMENDACIONES</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Gorra</li>
+                  <li>Ropa de baño</li>
+                  <li>Sandalias</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal El Salvador, tierra de naturaleza -->
+    <div class="modal fade tierranaturaleza" tabindex="-1" role="dialog" aria-labelledby="tierranaturalezaModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6">
+              <h5 class="modal-title green-text" id="tierranaturalezaLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR, TIERRA DE NATURALEZA
+              </h5>
+            </div>
+            <div class="col-md-6">
+              <div id="tierranaturalezaHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program2_1.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_2.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_4.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_5.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#tierranaturalezaHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#tierranaturalezaHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Divisor -->
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="tierranaturalezaTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tierranaturalezaday1-tab" data-bs-toggle="tab"
+                  data-bs-target="#day1-tierranaturaleza" type="button" role="tab" aria-controls="day1-tierranaturaleza"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierranaturalezaday2-tab" data-bs-toggle="tab"
+                  data-bs-target="#day2-tierranaturaleza" type="button" role="tab" aria-controls="day2-tierranaturaleza"
+                  aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierranaturalezaday3-tab" data-bs-toggle="tab"
+                  data-bs-target="#day3-tierranaturaleza" type="button" role="tab" aria-controls="day3-tierranaturaleza"
+                  aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierranaturalezaday4-tab" data-bs-toggle="tab"
+                  data-bs-target="#day4-tierranaturaleza" type="button" role="tab" aria-controls="day4-tierranaturaleza"
+                  aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierranaturalezaday5-tab" data-bs-toggle="tab"
+                  data-bs-target="#day5-tierranaturaleza" type="button" role="tab" aria-controls="day5-tierranaturaleza"
+                  aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierranaturalezaday6-tab" data-bs-toggle="tab"
+                  data-bs-target="#day6-tierranaturaleza" type="button" role="tab" aria-controls="day6-tierranaturaleza"
+                  aria-selected="false">
+                  Día 6
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="inclusions-tierranaturaleza-tab" data-bs-toggle="tab"
+                  data-bs-target="#inclusions-tierranaturaleza" type="button" role="tab"
+                  aria-controls="inclusions-tierranaturaleza" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="recommendations-tierranaturaleza-tab" data-bs-toggle="tab"
+                  data-bs-target="#recommendations-tierranaturaleza" type="button" role="tab"
+                  aria-controls="recommendations-tierranaturaleza" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="tierranaturalezaTabsContent">
+              <div class="tab-pane fade show active" id="day1-tierranaturaleza" role="tabpanel"
+                aria-labelledby="tierranaturalezaday1-tab">
+                <h5>DIA 1 - SAN SALVADOR</h5>
+                <p>
+                  Llegada al aeropuerto y recibimiento de nuestro
+                  representante. Con base en la hora de llegada, traslado al
+                  hotel en San Salvador para su registro y asignación de
+                  habitaciones. Alojamiento en Hotel en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day2-tierranaturaleza" role="tabpanel"
+                aria-labelledby="tierranaturalezaday2-tab">
+                <h5>
+                  DIA 2 - PARQUE NACIONAL LOS VOLCANES - RUTA DE LAS FLORES
+                </h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia Parque Nacional Los
+                  Volcanes (Cerro Verde), y recorrido guiado en el sendero
+                  “Una Ventana a la Naturaleza” lo que permitirá apreciar las
+                  maravillosas vistas del Volcán de Izalco, Santa Ana y Lago
+                  de Coatepeque. Un sendero de baja dificultad, con un
+                  recorrido de aproximadamente 1 hora. Tiempo libre para
+                  almorzar en restaurante en lago de Coatepeque (no incluido).
+                  Salida hacia la Ruta de Las Flores, formada por varios
+                  municipios del occidente del país visitando los pueblos de
+                  Nahuizalco y Apaneca cada uno con su particular historia
+                  salvadoreña y su amor por las artesanías, llegada al
+                  municipio de Concepción de Ataco. Registro en el hotel y
+                  tiempo para descansar. Tiempo libre para cenar en
+                  restaurante de la zona. Alojamiento en hotel en Ruta de Las
+                  Flores.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day3-tierranaturaleza" role="tabpanel"
+                aria-labelledby="tierranaturalezaday3-tab">
+                <h5>DIA 3 - TERMALES - RUTA DE LAS FLORES</h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia Termales de Santa
+                  Teresa. Día de Spa y termales para disfrutar de los
+                  beneficios de las aguas termales con sus minerales, los
+                  beneficios para la salud y belleza de la caolinita y del
+                  vapor natural de las fumarolas en la sauna. Almuerzo
+                  incluido y una hielera con agua y jugos para su hidratación.
+                  Retorno a Concepción de Ataco, tiempo para cena (no
+                  incluida) y descanso. Alojamiento en hotel en Ruta de Las
+                  Flores.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day4-tierranaturaleza" role="tabpanel"
+                aria-labelledby="tierranaturalezaday4-tab">
+                <h5>DIA 4 - CAFÉ - RUTA DE LAS FLORES - SANTA ANA</h5>
+                <p>
+                  Desayuno en el hotel. Traslado al Beneficio El Carmen para
+                  el desarrollo del Tour del Café, se conocerá todo el proceso
+                  desde la recolección del fruto del café en las fincas, hasta
+                  que es empacado para su distribución y listo para el
+                  consumo. Salida hacia el pueblo de Juayúa famoso por su
+                  cultura y su fervor religioso en honor al Cristo Negro.
+                  Traslado hacia la ciudad de Santa Ana, para hacer un
+                  recorrido por el Centro Histórico, visita a la Catedral y al
+                  Teatro. Tiempo libre para almuerzo en restaurante de la zona
+                  (no incluido). Traslado hacia San Salvador y tiempo libre.
+                  Alojamiento en hotel en San Salvador
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day5-tierranaturaleza" role="tabpanel"
+                aria-labelledby="tierranaturalezaday5-tab">
+                <h5>DIA 5 - EL BOQUERON - SAN SALVADOR</h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia Ruta El Boquerón para
+                  visitar el Parque Nacional El Boquerón y recorrido por sus
+                  senderos, luego traslado hacia San Salvador para iniciar el
+                  Tour de Ciudad de San Salvador, visitando sitios
+                  emblemáticos del centro histórico, y conocer historia de
+                  personajes importantes en la vida de los salvadoreños, sus
+                  costumbres y tradiciones. También se hará un recorrido por
+                  las principales zonas comerciales y residenciales de San
+                  Salvador. Tiempo libre para almorzar (almuerzo no incluido).
+                  Por la tarde, traslado hacia Los Planes de Renderos para
+                  visitar el Mirador de Cristal y después, Cena típica Maya de
+                  despedida (Pupusas y Chocolate). Alojamiento en hotel en San
+                  Salvador
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day6-tierranaturaleza" role="tabpanel"
+                aria-labelledby="tierranaturalezaday6-tab">
+                <h5>DIA 6 - TRASLADO HACIA EL AEROPUERTO</h5>
+                <p>
+                  Desayuno en el hotel. Registro de salida y traslado al
+                  aeropuerto 4 horas antes de la salida de su vuelo. Fin de
+                  los servicios
+                </p>
+              </div>
+              <div class="tab-pane fade" id="inclusions-tierranaturaleza" role="tabpanel"
+                aria-labelledby="inclusions-tierranaturaleza-tab">
+                <h5>Inclusiones</h5>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Entradas a los sitios de los tours descritos en el
+                    itinerario
+                  </li>
+                  <li>
+                    Asistencia de guía de turismo durante todo el recorrido y
+                    su estadía/alimentación
+                  </li>
+                  <li>
+                    5 noches de alojamiento con base en su elección de
+                    ocupación en hoteles descritos por día.
+                  </li>
+                  <li>5 desayunos en los hoteles, a partir del día 2</li>
+                  <li>1 cena típica de pupusas y chocolate del día 5</li>
+                  <li>
+                    1 almuerzo en termales de Santa Teresa y uso del spa,
+                    hielera con agua y jugos
+                  </li>
+                  <li>Agua abordo</li>
+                </ul>
+                <h5>No incluye</h5>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="recommendations-tierranaturaleza" role="tabpanel"
+                aria-labelledby="recommendations-tierranaturaleza-tab">
+                <h5>Recomendaciones</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Lentes de sol</li>
+                  <li>Gorra</li>
+                  <li>Ropa de baño</li>
+                  <li>Sandalias</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de página del modal (opcional) -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal El Salvador, tierra de maravillas -->
+    <div class="modal fade tierramaravillas" tabindex="-1" role="dialog" aria-labelledby="tierramaravillasModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6">
+              <h5 class="modal-title green-text" id="tierrramaravillasLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR, TIERRA DE MARAVILLAS
+              </h5>
+            </div>
+            <div class="col-md-6">
+              <div id="tierrramaravillasHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program3_1.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program3_2.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program3_3.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program3_4.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program3_5.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program3_6.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program3_7.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#tierrramaravillasHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#tierrramaravillasHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="tierramaravillasTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tierramaravillasday1-tab" data-bs-toggle="tab"
+                  data-bs-target="#day1-tierramaravillas" type="button" role="tab" aria-controls="day1-tierramaravillas"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierramaravillasday2-tab" data-bs-toggle="tab"
+                  data-bs-target="#day2-tierramaravillas" type="button" role="tab"
+                  aria-controls="day2-tierranmaravillas" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierramaravillasday3-tab" data-bs-toggle="tab"
+                  data-bs-target="#day3-tierramaravillas" type="button" role="tab" aria-controls="day3-tierramaravillas"
+                  aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierramaravillasday4-tab" data-bs-toggle="tab"
+                  data-bs-target="#day4-tierramaravillas" type="button" role="tab" aria-controls="day4-tierramaravillas"
+                  aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierramaravillasday5-tab" data-bs-toggle="tab"
+                  data-bs-target="#day5-tierramaravillas" type="button" role="tab" aria-controls="day5-tierramaravillas"
+                  aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierramaravillasday6-tab" data-bs-toggle="tab"
+                  data-bs-target="#day6-tierramaravillas" type="button" role="tab" aria-controls="day6-tierramaravillas"
+                  aria-selected="false">
+                  Día 6
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierramaravillasday7-tab" data-bs-toggle="tab"
+                  data-bs-target="#day7-tierramaravillas" type="button" role="tab" aria-controls="day7-tierramaravillas"
+                  aria-selected="false">
+                  Día 7
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="inclusions-tierramaravillas-tab" data-bs-toggle="tab"
+                  data-bs-target="#inclusions-tierramaravillas" type="button" role="tab"
+                  aria-controls="inclusions-tierramaravillas" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="recommendations-tierramaravillas-tab" data-bs-toggle="tab"
+                  data-bs-target="#recommendations-tierramaravillas" type="button" role="tab"
+                  aria-controls="recommendations-tierramaravillas" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="tierramaravillasTabsContent">
+              <div class="tab-pane fade show active" id="day1-tierramaravillas" role="tabpanel"
+                aria-labelledby="tierramaravillasday1-tab">
+                <h5>DIA 1 - SAN SALVADOR</h5>
+                <p>
+                  Recibimiento de nuestro representante en el aeropuerto,
+                  según horario de llegada. Traslado y registro en el hotel.
+                  Tiempo libre. Alojamiento con base en su elección, en hotel
+                  en San Salvador. Alojamiento en Hotel en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day2-tierramaravillas" role="tabpanel"
+                aria-labelledby="tierramaravillasday2-tab">
+                <h5>
+                  DIA 2 - PARQUE NACIONAL LOS VOLCANES Y LAGO DE COATEPEQUE.
+                </h5>
+                <p>
+                  Desayuno en el hotel. Salida con destino al Parque Nacional
+                  Los Volcanes, para realizar una caminata en el sendero “Una
+                  ventana a la Naturaleza”, caminata suave pero que permite
+                  oxigenar los pulmones y disfrutar de la vegetación antigua;
+                  así como se disfruta de la maravillosa vista de los volcanes
+                  Izalco y Santa Ana. Posteriormente, traslado hacia el Lago
+                  de Coatepeque con tiempo para disfrutar de impresionantes
+                  vistas del lago y de deliciosos platillos de la zona,
+                  almuerzo no incluido. Retorno a San Salvador. Alojamiento
+                  con base en su elección en San Salvador. Alojamiento en
+                  Hotel en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day3-tierramaravillas" role="tabpanel"
+                aria-labelledby="tierramaravillasday3-tab">
+                <h5>
+                  DIA 3 - VISITA A PARQUE ARQUEOLÓGICO JOYA DE CERÉN, SAN
+                  ANDRÉS Y RUINAS DEL TAZUMAL (CERRADOS LOS LUNES)
+                </h5>
+                <p>
+                  Desayuno en el hotel. Salida programada hacia el sitio
+                  arqueológico Joya de Cerén, cercano al desvío de San Juan
+                  Opico se encuentra ubicado este patrimonio cultural de la
+                  humanidad, el cual muestra su importancia mundial y detalla
+                  la historia y el encuentro con las raíces de la vida
+                  familiar de los mayas hace 1400 años. Posteriormente, nos
+                  dirigiremos hacia el Sitio Arqueológico San Andrés, el cual
+                  es uno de los centros prehispánicos más grandes de El
+                  Salvador. Disfrutaremos de un delicioso almuerzo en la zona,
+                  el cual no está incluido; para luego conducirnos hacia las
+                  Ruinas del Tazumal y poder apreciar esta hermosa estructura
+                  llena de historia y tradiciones ubicada en la ciudad de
+                  Chalchuapa. Retorno a San Salvador. Alojamiento en Hotel en
+                  San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day4-tierramaravillas" role="tabpanel"
+                aria-labelledby="tierramaravillasday4-tab">
+                <h5>DIA 4 - SUCHITOTO.</h5>
+                <p>
+                  Desayuno en el hotel. Partiremos con destino hacia la bella
+                  ciudad de Suchitoto, que en náhuatl significa la ciudad del
+                  "Pájaro y la Flor ". Al llegar a Suchitoto nos trasladaremos
+                  hacia el Muelle de San Juan para realizar un recorrido en
+                  lancha por el lago de Suchitlán, pasando por la Isla de los
+                  pájaros donde tendremos la oportunidad de observar muchas
+                  espacies de aves locales, así como aves migratorias que
+                  vienen desde Norte América. Pasaremos por el salitre y por
+                  la Isla de Los Enamorados. Disfrutaremos de un delicioso
+                  almuerzo de la zona con exquisitas recetas del lugar en uno
+                  de los restaurantes (almuerzo no incluido). Por la tarde,
+                  recorreremos las calles empedradas del pueblo para visitar
+                  La Iglesia de Santa Lucía, así como galerías de arte, la
+                  casa donde vive una artesana que elabora puros manualmente,
+                  entre otras atracciones. Apreciaremos la vida de un típico
+                  pueblo salvadoreño. Tiempo Libre. Retorno a San Salvador.
+                  Alojamiento en Hotel en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day5-tierramaravillas" role="tabpanel"
+                aria-labelledby="tierramaravillasday5-tab">
+                <h5>DIA 5 - TOUR DE SAN SALVADOR</h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia la galería de arte El
+                  Árbol de Dios, del famoso artista Fernando Llort, lugar
+                  donde se encontrará toda la magia del artista en sus
+                  pinturas sobre diferentes materiales como vidrio, madera,
+                  tela entre otros; se tendrá la oportunidad de aprender y
+                  aplicar la técnica del artista, y llevarte un souvenir
+                  pintado por ti mismo. Tiempo libre para almorzar (almuerzo
+                  no incluido) y luego recorrido por el centro de San
+                  Salvador, se visitarán lugares emblemáticos del centro
+                  histórico como la tumba de San Romero de América en la
+                  catedral metropolitana, la Iglesia El Rosario, Plaza
+                  Libertad entre otros; también se recorrerá la zona moderna y
+                  comercial de San Salvador, así como zonas residenciales, sin
+                  dejar de visitar el monumento “AL SLAVADOR DEL MUNDO”.
+                  Alojamiento en Hotel en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day6-tierramaravillas" role="tabpanel"
+                aria-labelledby="tierramaravillasday6-tab">
+                <h5>DIA 6 - LA LIBERTAD</h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia el Puerto de La
+                  Libertad para visitar el muelle artesanal y el parque de
+                  atracciones Sunset Park en Surf City, luego se hará un
+                  recorrido por la zona de la playa El Tunco, tendremos la
+                  oportunidad de observar la formación rocosa y las
+                  impresionantes olas de surf que posiciona a El Salvador en
+                  un puesto privilegiado para la práctica de este deporte.
+                  Luego se seleccionará un lugar para almorzar (no incluido) y
+                  se aprovechará el tiempo libre para disfrutar de las cálidas
+                  aguas del mar. Retorno a San Salvador. Alojamiento en Hotel
+                  en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day7-tierramaravillas" role="tabpanel"
+                aria-labelledby="tierramaravillasday7-tab">
+                <h5>DIA 7 - RETORNO A SU LUGAR DE ORIGEN.</h5>
+                <p>
+                  Desayuno en el hotel. En base a su horario de vuelo se
+                  programa la salida al aeropuerto. Fin de los servicios.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="inclusions-tierramaravillas" role="tabpanel"
+                aria-labelledby="inclusions-tierramaravillas-tab">
+                <h5>Inclusiones</h5>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de guía de turismo durante todo el recorrido y
+                    su estadía/alimentación
+                  </li>
+                  <li>
+                    6 noches de alojamiento en Hotel con base en su elección.
+                  </li>
+                  <li>6 desayunos en los hoteles a partir del día 2</li>
+                  <li>
+                    Tours guiados con entradas a todos los sitios mencionados
+                    en el itinerario.
+                  </li>
+                  <li>Agua abordo</li>
+                </ul>
+                <h5>No incluye</h5>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="recommendations-tierramaravillas" role="tabpanel"
+                aria-labelledby="recommendations-tierramaravillas-tab">
+                <h5>Recomendaciones</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Lentes de sol</li>
+                  <li>Gorra</li>
+                  <li>Ropa de baño</li>
+                  <li>Sandalias</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de página del modal (opcional) -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal El Salvador, tierra de fe -->
+    <div class="modal fade tierrafe" tabindex="-1" role="dialog" aria-labelledby="tierrafeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="tierrafeLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR, TIERRA DE FE
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="tierrafeHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program4_1.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program4_2.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program4_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program4_4.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program4_5.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_1.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program3_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#tierrafeHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#tierrafeHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="tierrafeTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tierrafeday1-tab" data-bs-toggle="tab"
+                  data-bs-target="#day1-tierrafe" type="button" role="tab" aria-controls="day1-tierrafe"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierrafeday2-tab" data-bs-toggle="tab" data-bs-target="#day2-tierrafe"
+                  type="button" role="tab" aria-controls="day2-tierrafe" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierrafeday3-tab" data-bs-toggle="tab" data-bs-target="#day3-tierrafe"
+                  type="button" role="tab" aria-controls="day3-tierrafe" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierrafeday4-tab" data-bs-toggle="tab" data-bs-target="#day4-tierrafe"
+                  type="button" role="tab" aria-controls="day4-tierrafe" aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierrafeday5-tab" data-bs-toggle="tab" data-bs-target="#day5-tierrafe"
+                  type="button" role="tab" aria-controls="day5-tierrafe" aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="inclusions-tierrafe-tab" data-bs-toggle="tab"
+                  data-bs-target="#inclusions-tierrafe" type="button" role="tab" aria-controls="inclusions-tierrafe"
+                  aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="recommendations-tierrafe-tab" data-bs-toggle="tab"
+                  data-bs-target="#recommendations-tierrafe" type="button" role="tab"
+                  aria-controls="recommendations-tierrafe" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="tierrafeTabsContent">
+              <div class="tab-pane fade show active" id="day1-tierrafe" role="tabpanel"
+                aria-labelledby="tierrafeday1-tab">
+                <h5>DIA 1 - SAN SALVADOR</h5>
+                <p>
+                  Bienvenida por nuestro representante. Entregaremos un kit
+                  informativo de bienvenida. Traslado al hotel y asignación de
+                  habitaciones. Cena MAYA de bienvenida que incluye la
+                  principal comida típica “las pupusas”. Traslado y
+                  alojamiento en hotel de su elección en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day2-tierrafe" role="tabpanel" aria-labelledby="tierrafeday2-tab">
+                <h5>DIA 2 - EL PAISNAL</h5>
+                <p>
+                  Desayuno en el hotel. Punto de encuentro en el lobby del
+                  hotel con nuestro guía de turismo y salida programada hacia
+                  El Paisnal, donde conoceremos la historia de los 3 mártires,
+                  el padre Rutilio Grande, Manuel Solorzano y Nelson Rutilio
+                  Lemus y visitaremos la parroquia San José, lugar donde yacen
+                  los restos de los mártires. Tiempo libre para almorzar.
+                  Traslado y visita al Museo de la Palabra para ver la
+                  exposición de fotografías exclusivas de San Romero, algunas
+                  tomadas por él mismo, fotografías que se entregó a una amiga
+                  antes de su martirio. Después, visita al Centro Histórico de
+                  San Salvador, recorrido guiado por la famosa Iglesia El
+                  Rosario, Plaza Libertad, Biblioteca Nacional BINAES.
+                  Traslado hacia Catedral Metropolitana de San Salvador para
+                  visitar la tumba de San Romero de América y asistir a la
+                  Santa Misa. Traslado y alojamiento en hotel de su elección
+                  en San Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day3-tierrafe" role="tabpanel" aria-labelledby="tierrafeday3-tab">
+                <h5>DIA 3 - SAN SALVADOR - SAN OSCAR ARNULFO ROMERO</h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia el Hospital Divina
+                  Providencia para conocer lo acontecido y la capilla donde
+                  falleció San Romero, guiado por una hermana de la
+                  congregación de las “Hermanas Carmelitas de San José”. Se
+                  podrá visitar la habitación en la que él dormía y en la que
+                  aún se encuentran sus pertenencias. Seguidamente visitaremos
+                  el taller del famoso artista Fernando Llort, quien jugó un
+                  papel importante en los acuerdos de paz en El Salvador.
+                  Tiempo libre para almorzar en San Salvador (almuerzo no
+                  incluido). Traslado hacia el Centro Monseñor Romero, veremos
+                  reliquias de los mártires y de San Romero, así como el
+                  Jardín de Las Rosas en la Universidad Centroamericana José
+                  Simeón Cañas UCA. Traslado al Centro Comercial La Gran Vía y
+                  tiempo libre para compras. Traslado y alojamiento en hotel
+                  de su elección en San Salvador
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day4-tierrafe" role="tabpanel" aria-labelledby="tierrafeday4-tab">
+                <h5>
+                  DIA 4 - PARQUE NACIONAL CERRO VERDE Y ARQUEOLOGIA MAYA .
+                </h5>
+                <p>
+                  Desayuno en el hotel. Traslado hacia Parque Nacional Cerro
+                  Verde, para realizar un recorrido por el sendero Una Ventana
+                  a la Naturaleza y tener una vista impresionante de los
+                  volcanes y del lago de Coatepeque. Tiempo libre para
+                  almorzar en la zona (almuerzo no incluido). Posteriormente,
+                  Se visitará el Sitio Arqueológico Joya de Cerén. Cercano al
+                  desvío de San Juan Opico se encuentra ubicado este
+                  patrimonio cultural de la humanidad, el cual muestra su
+                  importancia mundial la cual detalla la historia y el
+                  encuentro con las raíces de la vida familiar de los
+                  salvadoreños hace 1400 años. Retorno a San Salvador.
+                  Traslado y Alojamiento en hotel de su elección en San
+                  Salvador.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day5-tierrafe" role="tabpanel" aria-labelledby="tierrafeday5-tab">
+                <h5>DIA 5 - TRASLADO HACIA EL AEROPUERTO</h5>
+                <p>
+                  Desayuno en el hotel y traslado al aeropuerto, según
+                  itinerario de vuelo. Fin de los servicios
+                </p>
+              </div>
+              <div class="tab-pane fade" id="inclusions-tierrafe" role="tabpanel"
+                aria-labelledby="inclusions-aventura-tab">
+                <h5>Inclusiones</h5>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de guía de turismo durante todo el recorrido y
+                    su estadía/alimentación
+                  </li>
+                  <li>
+                    4 noches de alojamiento en Hotel en base a su elección.
+                  </li>
+                  <li>4 desayunos en los hoteles a partir de día 2</li>
+                  <li>
+                    Tours guiados con entradas a todos los sitios mencionados
+                    en el itinerario.
+                  </li>
+                  <li>Agua abordo</li>
+                </ul>
+                <h5>No incluye</h5>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="recommendations-tierrafe" role="tabpanel"
+                aria-labelledby="recommendations-tierrafe-tab">
+                <h5>Recomendaciones</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Lentes de sol</li>
+                  <li>Gorra</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de página del modal (opcional) -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal El Salvador, tierra de energia -->
+    <div class="modal fade tierraenergia" tabindex="-1" role="dialog" aria-labelledby="tierrafeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="tierraenergiaLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR, TIERRA DE ENERGIA
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="tierraenergiaHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program5_1.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program5_2.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program5_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program5_4.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program5_5.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program5_6.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#tierraenergiaHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#tierraenergiaHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="tierraenergiaTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tierraenergiaday1-tab" data-bs-toggle="tab"
+                  data-bs-target="#day1-tierraenergia" type="button" role="tab" aria-controls="day1-tierraenergia"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraenergiaday2-tab" data-bs-toggle="tab"
+                  data-bs-target="#day2-tierraenergia" type="button" role="tab" aria-controls="day2-tierraenergia"
+                  aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraenergiaday3-tab" data-bs-toggle="tab"
+                  data-bs-target="#day3-tierraenergia" type="button" role="tab" aria-controls="day3-tierraenergia"
+                  aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraenergiaday4-tab" data-bs-toggle="tab"
+                  data-bs-target="#day4-tierraenergia" type="button" role="tab" aria-controls="day4-tierraenergia"
+                  aria-selected="false">
+                  Día 4
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tierraenergiaday5-tab" data-bs-toggle="tab"
+                  data-bs-target="#day5-tierraenergia" type="button" role="tab" aria-controls="day5-tierraenergia"
+                  aria-selected="false">
+                  Día 5
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="inclusions-tierraenergia-tab" data-bs-toggle="tab"
+                  data-bs-target="#inclusions-tierraenergia" type="button" role="tab"
+                  aria-controls="inclusions-tierraenergia" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="recommendations-tierraenergia-tab" data-bs-toggle="tab"
+                  data-bs-target="#recommendations-tierraenergia" type="button" role="tab"
+                  aria-controls="recommendations-tierraenergia" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="tierraenergiaTabsContent">
+              <div class="tab-pane fade show active" id="day1-tierraenergia" role="tabpanel"
+                aria-labelledby="tierraenergiaday1-tab">
+                <h5>DIA 1 - SAN SALVADOR</h5>
+                <p>
+                  Recibimiento de nuestro representante en el aeropuerto, según horario de llegada. Traslado y registro en el hotel. Tiempo libre. Alojamiento con base en su elección, en hotel en San Salvador. Alojamiento en Hotel en San Salvador. 
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day2-tierraenergia" role="tabpanel"
+                aria-labelledby="tierraenergiaday2-tab">
+                <h5>DIA 2 - SANTA ANA - VOLCANES Y LAGO</h5>
+                <p>
+                  Desayuno en el hotel. Salida desde San Salvador con nuestro guía de turismo. Traslado y Llegada a la zona indicada donde le encontrará el guía local. Inicio al ascenso al volcán de Santa Ana, para ello le recomendamos seguir las instrucciones de su guía y el recorrido podrá tomar 2 horas, dependiendo de las condiciones del grupo. Llegada al Cráter del Volcán.  Al llegar disfrutaremos de una vista espectacular y una hermosa laguna de azufre en el fondo del cráter, así como de tiempo para conocer la naturaleza que rodea la zona y tiempo libre para fotografías. Finalmente, comenzaremos el descenso y estaremos al pie del volcán de Santa Ana. Retorno a San Salvador y parada en restaurante de la zona para disfrutar del almuerzo (no incluido). Posteriormente traslado al hotel en Lago de Coatepeque. Alojamiento en Hotel en Lago de Coatepeque.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day3-tierraenergia" role="tabpanel"
+                aria-labelledby="tierraenergiaday3-tab">
+                <h5>DÍA 3 – AHUACHAPÁN – LABERINTO, FUMAROLAS Y TERMALES</h5>
+                <p>
+                  Desayuno en el hotel. Salida con destino al Laberinto de Albania ubicado en Apaneca en la Ruta de Las Flores, donde tendrás acceso incluido a este emocionante parque. Disfruta de tiempo libre para experimentar actividades de adrenalina como la bicicleta y tabla de surf en el aire, y adéntrate en el laberinto natural más grande de Centroamérica. A la hora del almuerzo, podrás deleitarte con las opciones culinarias del restaurante en Albania (almuerzo no incluido), disfrutando del entorno natural y la hospitalidad local. Salida hacia Ahuachapán para realizar una caminata por los ausoles (fumarolas) en la zona alterada y disfrutar de un baño en las aguas termales. Retorno a San Salvador. Alojamiento en Hotel en San Salvador. 
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day4-tierraenergia" role="tabpanel"
+                aria-labelledby="tierraenergiaday4-tab">
+                <h5>
+                  DÍA 4 – LA LIBERTAD – OLAS DE SURF PARA NO SURFEADORES + SAN SALVADOR CENTRO HISTÓRICO
+                </h5>
+                <p>
+                  Desayuno en el hotel. Salida desde un lugar céntrico de la zona hotelera de San Salvador hacia Playa San Blas en La Libertad. Las lecciones de surf se programarán según los niveles de habilidad de los surfistas. Los horarios de clase se establecerán según la marea de la mañana y tendrán una duración de 1 hora. La lección incluye una tabla de surf, un instructor profesional y cobertura fotográfica.  Luego traslado y recorrido por la zona de la playa El Tunco, famosa por sus olas, tiempo libre para almorzar en la zona. Traslado hacia San Salvador y recorrido por el centro histórico de la capital salvadoreña, para conocer lugares icónicos del país y de nuestra historia, visitando lugares como La Dalia, entre otros. Alojamiento en Hotel en San Salvador. 
+                </p>
+              </div>
+              <div class="tab-pane fade" id="day5-tierraenergia" role="tabpanel"
+                aria-labelledby="tierraenergiaday5-tab">
+                <h5>DIA 5 - TRASLADO HACIA EL AEROPUERTO</h5>
+                <p>
+                  Desayuno en el hotel y traslado al aeropuerto, según itinerario de vuelo.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="inclusions-tierraenergia" role="tabpanel"
+                aria-labelledby="inclusions-energia-tab">
+                <h5>Inclusiones</h5>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de guía de turismo durante todo el recorrido y
+                    su estadía/alimentación
+                  </li>
+                  <li>
+                    4 noches de alojamiento en Hotel en base a su elección.
+                  </li>
+                  <li>4 desayunos en los hoteles a partir de día 2</li>
+                  <li>
+                    Tours guiados con entradas a todos los sitios mencionados
+                    en el itinerario.
+                  </li>
+                  <li>Agua abordo</li>
+                </ul>
+                <h5>No incluye</h5>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="recommendations-tierraenergia" role="tabpanel"
+                aria-labelledby="recommendations-tierraenergia-tab">
+                <h5>Recomendaciones</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Lentes de sol</li>
+                  <li>Gorra</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de página del modal (opcional) -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <a href="./quote.html" class="btn btn-primary">Cotizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GUATEMALA -->
+  <!-- GUATEMALA -->
+  <!-- GUATEMALA -->
+  <div class="container mt-5" id="svgtprograms">
+    <h2 class="text-center green-text">Programas con origen en Guatemala</h2>
+    <div class="row">
+      <!-- PROGRAMA 1 -->
+      <div class="col-sm-6" data-bs-toggle="modal" data-bs-target=".svalcance">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram6">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador</h3>
+            <h3>a tu alcance</h3>
+            <h6>3 días / 2 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 1 -->
+      <!-- PROGRAMA 2 -->
+      <div class="col-sm-6" data-bs-toggle="modal" data-bs-target=".svfinde">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram7">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador</h3>
+            <h3>en fin de semana</h3>
+            <h6>3 días / 2 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 2 -->
+    </div>
+    <!-- Modal: El Salvador a tu alcance -->
+    <div class="modal fade svalcance" tabindex="-1" role="dialog" aria-labelledby="svalcanceLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6">
+              <h5 class="modal-title green-text" id="svalcanceLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR A TU ALCANCE
+              </h5>
+            </div>
+            <div class="col-md-6">
+              <div id="svalcanceHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program6_1.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program6_2.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program6_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program6_4.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program5_5.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_4.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#svalcanceHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#svalcanceHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="svalcanceItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="svalcanceDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#svalcanceDay1" type="button" role="tab" aria-controls="svalcanceDay1"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svalcanceDay2-tab" data-bs-toggle="tab" data-bs-target="#svalcanceDay2"
+                  type="button" role="tab" aria-controls="svalcanceDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svalcanceDay3-tab" data-bs-toggle="tab" data-bs-target="#svalcanceDay3"
+                  type="button" role="tab" aria-controls="svalcanceDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svalcanceInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#svalcanceInclusions" type="button" role="tab" aria-controls="svalcanceInclusions"
+                  aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svalcanceRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#svalcanceRecommendations" type="button" role="tab"
+                  aria-controls="svalcanceRecommendations" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="svalcanceItineraryTabsContent">
+              <div class="tab-pane fade show active" id="svalcanceDay1" role="tabpanel"
+                aria-labelledby="svalcanceDay1-tab">
+                <h5>DÍA 1 – RECORRIDO POR RUTA DE LAS FLORES Y VISITA AL LABERINTO ALBANIA.</h5>
+                <ul>
+                  <li>Salida en Transportes del Sol desde Ciudad de Guatemala</li>
+                  <li>Hora aproximada a punto de recepción en Ahuachapán 8:30 a.m.</li>
+                  <li>Recorrido guiado por Ahuachapán y recibimiento con un café/Horchata con rosquillas.</li>
+                  <li>Traslado y visita al Laberinto de Albania. Tiempo libre para adentrarse en actividades llenas de
+                    Adrenalina y tiempo libre para almuerzo.</li>
+                  <li>2pm Recorridos guiados por los pueblos de Juayúa, Salcoatitán y Apaneca.</li>
+                  <li>Traslado hacia Concepción de Ataco y registro en hotel Casa 1800 / Ataco o similar categoría.</li>
+                  <li>Tiempo libre</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svalcanceDay2" role="tabpanel" aria-labelledby="svalcanceDay2-tab">
+                <h5>DÍA 2 – DÍA DE TERMALES Y SAUNA</h5>
+                <ul>
+                  <li>Desayuno en el hotel</li>
+                  <li>Traslado hacia piscinas termales uso de piscinas de agua termal y sauna.</li>
+                  <li>Almuerzo incluido.</li>
+                  <li>Al final de la tarde, retorno hacia Concepción de Ataco y alojamiento en Casa 1800 o similar
+                    categoría.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svalcanceDay3" role="tabpanel" aria-labelledby="svalcanceDay3-tab">
+                <h5>DÍA 3 – SANTA ANA</h5>
+                <ul>
+                  <li>Desayuno en el hotel.</li>
+                  <li>Traslado y Recorrido guiado por Ruinas del Tazumal y Santa Ana Centro Histórico.</li>
+                  <li>Visita a Metrocentro Santa Ana.</li>
+                  <li>Traslado a punto de abordaje del autobús, Gasolinera PUMA (ó FERTICA) 4:00 p.m.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svalcanceInclusions" role="tabpanel"
+                aria-labelledby="svalcanceInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de Guía de turismo durante todo el recorrido y
+                    su estadía/alimentación.
+                  </li>
+                  <li>Paquete informativo de bienvenida.</li>
+                  <li>
+                    Entradas a los sitios de los tours descritos en el
+                    itinerario.
+                  </li>
+                  <li>
+                    2 noches de Alojamiento en habitación según su elección.
+                  </li>
+                  <li>Desayunos en los hoteles a partir del día 2.</li>
+                  <li>Agua a bordo</li>
+                  <li>Boletos de Transportes del Sol (Guatemala - El Salvador - Guatemala)</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo, u otros servicios no descritos explícitamente.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svalcanceRecommendations" role="tabpanel"
+                aria-labelledby="svalcanceRecommendations-tab">
+                <h5>RECOMENDACIONES</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Gorra</li>
+                  <li>Ropa de baño</li>
+                  <li>Sandalias</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: El Salvador en fin de semana -->
+    <div class="modal fade svfinde" tabindex="-1" role="dialog" aria-labelledby="svfindeLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="svfindeLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR EN FIN DE SEMANA
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="svfindeHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program1_5.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program3_6.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program7_1.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program7_2.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_5.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#svfindeHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#svfindeHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="svfindeItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="svfindeDay1-tab" data-bs-toggle="tab" data-bs-target="#svfindeDay1"
+                  type="button" role="tab" aria-controls="svfindeDay1" aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svfindeDay2-tab" data-bs-toggle="tab" data-bs-target="#svfindeDay2"
+                  type="button" role="tab" aria-controls="svfindeDay2" aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svfindeDay3-tab" data-bs-toggle="tab" data-bs-target="#svfindeDay3"
+                  type="button" role="tab" aria-controls="svfindeDay3" aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svfindeInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#svfindeInclusions" type="button" role="tab" aria-controls="svfindeInclusions"
+                  aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svfindeRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#svfindeRecommendations" type="button" role="tab"
+                  aria-controls="svfindeRecommendations" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="svfindeItineraryTabsContent">
+              <div class="tab-pane fade show active" id="svfindeDay1" role="tabpanel"
+                aria-labelledby="svalcanceDay1-tab">
+                <h5>DÍA 1 – VIERNES.</h5>
+                <ul>
+                  <li>Salida en Transportes del Sol desde Ciudad de Guatemala</li>
+                  <li>Llegada y traslado al hotel para dejar el equipaje.</li>
+                  <li>Tiempo libre para almorzar por su cuenta.</li>
+                  <li>Registro en el hotel 2:00 pm y entrega de habitación en el Hotel Sheraton.</li>
+                  <li>Tiempo libre.</li>
+                  <li>6:00 p.m. Salida hacia Playa EL Tunco para recorrido por la zona y tiempo libre para disfrutar de
+                    bares y restaurantes.</li>
+                  <li>12:00 m Retorno al hotel.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svfindeDay2" role="tabpanel" aria-labelledby="svfindeDay2-tab">
+                <h5>DÍA 2 – SÁBADO</h5>
+                <ul>
+                  <li>Desayuno en el hotel</li>
+                  <li>Mañana libre.</li>
+                  <li>2:30 p.m. Salida hacia Planes de Renderos para Visitar la Puerta del Diablo y Mirador de Cristal.
+                    Luego recorrido por el Centro Histórico visitando la Iglesia EL Rosario, Catedral Metropolitana,
+                    Plaza Gerardo Barrios y tiempo libre para recorrer las calles, así como para Cenar en San Salvador.
+                  </li>
+                  <li>10:00 p.m. Retorno al Hotel.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svfindeDay3" role="tabpanel" aria-labelledby="svfindeDay3-tab">
+                <h5>DÍA 3 – DOMINGO</h5>
+                <ul>
+                  <li>Desayuno en el hotel y check out.</li>
+                  <li>Traslado hacia Ruta del Boquerón – PicNic para juegos de aventura y almuerzo (no incluido).</li>
+                  <li>2:00 p.m. Traslado hacia Oficina de Transportes Del Sol para traslado hacia Guatemala.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svfindeInclusions" role="tabpanel" aria-labelledby="svfindeInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de Guía de turismo durante todo el recorrido y
+                    su estadía/alimentación.
+                  </li>
+                  <li>Paquete informativo de bienvenida.</li>
+                  <li>
+                    Entradas a los sitios de los tours descritos en el
+                    itinerario.
+                  </li>
+                  <li>
+                    2 noches de Alojamiento en habitación según su elección.
+                  </li>
+                  <li>Desayunos en los hoteles a partir del día 2.</li>
+                  <li>Agua a bordo</li>
+                  <li>Boletos de Transportes del Sol (Guatemala - El Salvador - Guatemala)</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo, u otros servicios no descritos explícitamente.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svfindeRecommendations" role="tabpanel"
+                aria-labelledby="svfindeRecommendations-tab">
+                <h5>RECOMENDACIONES</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Gorra</li>
+                  <li>Ropa de baño</li>
+                  <li>Sandalias</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- GUATEMALA -->
+  <!-- GUATEMALA -->
+  <!-- GUATEMALA -->
+
+  <!-- OCCIDENTE -->
+  <!-- OCCIDENTE -->
+  <!-- OCCIDENTE -->
+  <div class="container mt-5" id="svwestprograms">
+    <h2 class="text-center green-text">Programas con origen en el occidente de El Salvador</h2>
+    <div class="row">
+      <!-- PROGRAMA 1 -->
+      <div class="col-sm-4" data-bs-toggle="modal" data-bs-target=".svculturanat">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram8">
+          <!-- Contenido de la columna 1 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador</h3>
+            <h3>cultura y naturaleza</h3>
+            <h6>2 días / 1 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 1 -->
+
+      <!-- PROGRAMA 2 -->
+      <div class="col-sm-4" data-bs-toggle="modal" data-bs-target=".svcafeaventura">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram9">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador,</h3>
+            <h3>café y aventura</h3>
+            <h6>2 días / 1 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 2 -->
+
+      <!-- PROGRAMA 3 -->
+      <div class="col-sm-4" data-bs-toggle="modal" data-bs-target=".svhistorianat">
+        <div class="border text-center p-3 d-flex align-items-center justify-content-center zoom-effect"
+          id="svprogram10">
+          <!-- Contenido de la columna 2 -->
+          <a class="link-light text-decoration-none" style="color: white" >
+            <h3>El Salvador,</h3>
+            <h3>historia y naturaleza</h3>
+            <h6>3 días / 2 noches</h6>
+          </a>
+        </div>
+      </div>
+      <!-- PROGRAMA 3 -->
+    </div>
+    <!-- Modal: El Salvador, cultura y naturaleza -->
+    <div class="modal fade svculturanat" tabindex="-1" role="dialog" aria-labelledby="svculturanatLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="svculturanatLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR, CULTURA Y NATURALEZA
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="svculturanatHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program8_1.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_4.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program6_4.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#svculturanatHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#svculturanatHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="svculturanatItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="svculturanatDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#svculturanatDay1" type="button" role="tab" aria-controls="svculturanatDay1"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svculturanatDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#svculturanatDay2" type="button" role="tab" aria-controls="svculturanatDay2"
+                  aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svculturanatInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#svculturanatInclusions" type="button" role="tab"
+                  aria-controls="svculturanatInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svculturanatRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#svculturanatRecommendations" type="button" role="tab"
+                  aria-controls="svculturanatRecommendations" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="svculturanatItineraryTabsContent">
+              <div class="tab-pane fade show active" id="svculturanatDay1" role="tabpanel"
+                aria-labelledby="svculturanatDay1-tab">
+                <h5>DÍA 1 – SANTA ANA Y AHUACHAPÁN</h5>
+                <ul>
+                  <li>Recorrido por el centro histórico de Santa Ana, para descubrir el majestuoso Teatro de la ciudad,
+                    Catedral y el parque. Luego visita al Museo Regional de Occidente (Museo de la moneda) y conocer la
+                    historia de algunos pueblos de EL Salvador. Luego visita al museo de anatomía de la UNASA.</li>
+                  <li>Tiempo libre para almorzar en restaurante de la zona.</li>
+                  <li>Traslado hacia Chalchuapa y visita al Sitio Arqueológico Tazumal, para descubrir parte de la
+                    herencia Maya en lo que fue este asentamiento.</li>
+                  <li>Traslado hacia Ahuachapán y registro en hotel Casa de Mamapán.</li>
+                  <li>Tiempo libre.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svculturanatDay2" role="tabpanel" aria-labelledby="svculturanatDay2-tab">
+                <h5>DÍA 2 – DÍA DE TERMALES</h5>
+                <ul>
+                  <li>Desayuno en el hotel.</li>
+                  <li>Recorrido por el centro histórico de Ahuachapán.</li>
+                  <li>Traslado y entrada hacia Termales de Santa Teresa, tiempo libre para disfrutar el día con la
+                    sauna, baño de caolinita y uso de las piscinas termales, almuerzo incluido.</li>
+                  <li>Retorno hacia Santa Ana a punto de origen.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svculturanatInclusions" role="tabpanel"
+                aria-labelledby="svculturanatInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de Guía de turismo durante todo el recorrido y
+                    su estadía/alimentación.
+                  </li>
+                  <li>Paquete informativo de bienvenida.</li>
+                  <li>
+                    Entradas a los sitios de los tours descritos en el
+                    itinerario.
+                  </li>
+                  <li>
+                    1 noches de Alojamiento en habitación según su elección.
+                  </li>
+                  <li>1 Desayuno en hotel.</li>
+                  <li>Agua a bordo</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo, u otros servicios no descritos explícitamente.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svculturanatRecommendations" role="tabpanel"
+                aria-labelledby="svculturanatRecommendations-tab">
+                <h5>RECOMENDACIONES</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Gorra</li>
+                  <li>Lentes de sol</li>
+                  <li>Ropa de baño</li>
+                  <li>Sandalias</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: El Salvador, café y aventura-->
+    <div class="modal fade svcafeaventura" tabindex="-1" role="dialog" aria-labelledby="svcafeaventuraLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="svcafeaventuraLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR, CAFÉ Y AVENTURA
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="svcafeaventuraHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program9_1.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program2_4.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program9_2.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program9_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program5_5.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program6_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#svcafeaventuraHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#svcafeaventuraHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="svcafeaventuraItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="svcafeaventuraDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#svcafeaventuraDay1" type="button" role="tab" aria-controls="svcafeaventuraDay1"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svcafeaventuraDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#svcafeaventuraDay2" type="button" role="tab" aria-controls="svcafeaventuraDay2"
+                  aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svcafeaventuraInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#svcafeaventuraInclusions" type="button" role="tab"
+                  aria-controls="svcafeaventuraInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svcafeaventuraRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#svcafeaventuraRecommendations" type="button" role="tab"
+                  aria-controls="svcafeaventuraRecommendations" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="svcafeaventuraItineraryTabsContent">
+              <div class="tab-pane fade show active" id="svcafeaventuraDay1" role="tabpanel"
+                aria-labelledby="svcafeaventuraDay1-tab">
+                <h5>DÍA 1 – SANTA ANA, TOUR DEL CAFÉ EN JUAYÚA Y CONCEPCIÓN DE ATACO.</h5>
+                <ul>
+                  <li>Recorrido por el centro histórico de Santa Ana, para descubrir el majestuoso Teatro de la ciudad,
+                    Catedral y el parque.</li>
+                  <li>Traslado hacia San José La Majada, para disfrutar del Tour del café y conocer todo sobre el
+                    proceso de ésta maravillosa bebida desde que se cosecha el grano hasta que se sirve una taza de
+                    café.</li>
+                  <li>Tiempo libre para almorzar en la zona.</li>
+                  <li>Traslado hacia Concepción de Ataco para disfrutar de un tour guiado por el pueblo y luego registro
+                    en el hotel Casa 1800 o categoría similar.</li>
+                  <li>Tiempo libre.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svcafeaventuraDay2" role="tabpanel"
+                aria-labelledby="svcafeaventuraDay2-tab">
+                <h5>DÍA 2 – AHUACHAPÁN Y SANTA ANA</h5>
+                <ul>
+                  <li>Desayuno en el hotel</li>
+                  <li>Traslado hacia el Laberinto de Albania, para realizar actividades de aventura durante la mañana y
+                    contar con tiempo libre para el almuerzo.</li>
+                  <li>Por la tarde recorrido guiado por los pueblos de Apaneca, Salcoatitán y Juayúa para conocer la
+                    historia, cultura y tradiciones de los pueblos de la Ruta de Las Flores.</li>
+                  <li>Traslado hacia Santa Ana.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svcafeaventuraInclusions" role="tabpanel"
+                aria-labelledby="svcafeaventuraInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de Guía de turismo durante todo el recorrido y
+                    su estadía/alimentación.
+                  </li>
+                  <li>Paquete informativo de bienvenida.</li>
+                  <li>
+                    Entradas a los sitios de los tours descritos en el
+                    itinerario.
+                  </li>
+                  <li>
+                    1 noches de Alojamiento en habitación según su elección.
+                  </li>
+                  <li>1 desayuno en hotel.</li>
+                  <li>Agua a bordo</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo, u otros servicios no descritos explícitamente.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svcafeaventuraRecommendations" role="tabpanel"
+                aria-labelledby="svcafeaventuraRecommendations-tab">
+                <h5>RECOMENDACIONES</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Gorra</li>
+                  <li>Lentes de sol</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: El Salvador, café y aventura-->
+    <div class="modal fade svhistorianat" tabindex="-1" role="dialog" aria-labelledby="svhistorianatLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Encabezado del modal con carrusel -->
+          <!-- Encabezado del modal con carrusel -->
+          <div class="modal-header">
+            <div class="col-md-6 col-sm-4">
+              <h5 class="modal-title green-text" id="svhistorianatLabel" data-section="daytour1" data-value="name">
+                EL SALVADOR, HISTORIA Y NATURALEZA
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <div id="svhistorianatHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
+                style="width: 100%; height: auto; margin-left: auto">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/svprograms/program10_1.png" class="d-block w-100" alt="Imagen 1"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program10_2.png" class="d-block w-100" alt="Imagen 2"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program1_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program8_1.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program9_1.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/svprograms/program10_3.png" class="d-block w-100" alt="Imagen 3"
+                      style="height: auto; object-fit: cover" />
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#svhistorianatHeaderCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#svhistorianatHeaderCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <!-- Contenido del modal -->
+          <div class="modal-body">
+            <!-- Navegación de las pestañas -->
+            <ul class="nav nav-tabs" id="svhistorianatItineraryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="svhistorianatDay1-tab" data-bs-toggle="tab"
+                  data-bs-target="#svhistorianatDay1" type="button" role="tab" aria-controls="svhistorianatDay1"
+                  aria-selected="true">
+                  Día 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svhistorianatDay2-tab" data-bs-toggle="tab"
+                  data-bs-target="#svhistorianatDay2" type="button" role="tab" aria-controls="svhistorianatDay2"
+                  aria-selected="false">
+                  Día 2
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svhistorianatDay3-tab" data-bs-toggle="tab"
+                  data-bs-target="#svhistorianatDay3" type="button" role="tab" aria-controls="svhistorianatDay3"
+                  aria-selected="false">
+                  Día 3
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svhistorianatInclusions-tab" data-bs-toggle="tab"
+                  data-bs-target="#svhistorianatInclusions" type="button" role="tab"
+                  aria-controls="svhistorianatInclusions" aria-selected="false">
+                  Inclusiones y exclusiones
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="svhistorianatRecommendations-tab" data-bs-toggle="tab"
+                  data-bs-target="#svhistorianatRecommendations" type="button" role="tab"
+                  aria-controls="svhistorianatRecommendations" aria-selected="false">
+                  Recomendaciones
+                </button>
+              </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content mt-3" id="svhistorianatItineraryTabsContent">
+              <div class="tab-pane fade show active" id="svhistorianatDay1" role="tabpanel"
+                aria-labelledby="svhistorianatDay1-tab">
+                <h5>DÍA 1 – SANTA ANA, VOLCÁN Y CERRO VERDE.</h5>
+                <ul>
+                  <li>Traslado y salida hacia Volcán de Santa Ana. Traslado y Llegada a la zona indicada donde le
+                    encontrará el guía local. Inicio al ascenso al volcán de Santa Ana, para ello le recomendamos seguir
+                    las instrucciones de su guía y el recorrido podrá tomar 2 horas, dependiendo de las condiciones del
+                    grupo. Llegada al Cráter del Volcán. Al llegar disfrutaremos de una vista espectacular y una hermosa
+                    laguna de azufre en el fondo del cráter, así como de tiempo para conocer la naturaleza que rodea la
+                    zona y tiempo libre para las fotografías. Finalmente, comenzaremos el descenso y estaremos al pie
+                    del volcán de Santa Ana.</li>
+                  <li>Traslado hacia el Parque Nacional Cerro Verde y alojamiento en hotel Casa 1800.</li>
+                  <li>Tiempo libre</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svhistorianatDay2" role="tabpanel" aria-labelledby="svhistorianatDay2-tab">
+                <h5>DÍA 2 – SANTA ANA</h5>
+                <ul>
+                  <li>Desayuno en el hotel y traslado hacia el Sitio Arqueológico Joya de Cerén, cercano al desvío de
+                    San Juan Opico se encuentra ubicado este patrimonio cultural de la humanidad, el cual muestra su
+                    importancia mundial y detalla la historia y el encuentro con las raíces de la vida familiar de los
+                    mayas hace 1400 años.</li>
+                  <li>Traslado hacia Santa Ana.</li>
+                  <li>Tiempo libre para almorzar en la zona.</li>
+                  <li>Recorrido por el centro histórico de Santa Ana, para descubrir el majestuoso Teatro de la ciudad,
+                    Catedral y el parque. Luego visita al Museo Regional de Occidente (Museo de la moneda) y conocer la
+                    historia de algunos pueblos de EL Salvador. Luego visita al museo de anatomía de la UNASA.</li>
+                  <li>Alojamiento en hotel Remfort en Santa Ana</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svhistorianatDay3" role="tabpanel" aria-labelledby="svhistorianatDay3-tab">
+                <h5>DÍA 3 – AHUACHAPÁN</h5>
+                <ul>
+                  <li>Desayuno en el hotel.</li>
+                  <li>Traslado hacia la Barra de Santiago.</li>
+                  <li>Tour en lancha para observación de cocodrilos en los manglares de la Barra de Santiago.</li>
+                  <li>Tiempo libre para disfrutar de la playa y tomar almuerzo (no incluido).</li>
+                  <li>Salida hacia Concepción de Ataco a la hora indicada.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svhistorianatInclusions" role="tabpanel"
+                aria-labelledby="svhistorianatInclusions-tab">
+                <h5>INCLUSIONES Y EXCLUSIONES</h5>
+                <p><strong>Incluye:</strong></p>
+                <ul>
+                  <li>
+                    Transporte privado durante el recorrido en El Salvador,
+                    dependiendo del número de pasajeros se detallará la unidad
+                    a utilizar.
+                  </li>
+                  <li>
+                    Asistencia de Guía de turismo durante todo el recorrido y
+                    su estadía/alimentación.
+                  </li>
+                  <li>Paquete informativo de bienvenida.</li>
+                  <li>
+                    Entradas a los sitios de los tours descritos en el
+                    itinerario.
+                  </li>
+                  <li>
+                    2 noches de Alojamiento en habitación según su elección.
+                  </li>
+                  <li>2 desayunos en hotel.</li>
+                  <li>Agua a bordo</li>
+                  <li>Tour en lancha para observación de cocodrilos</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul>
+                  <li>
+                    Comidas no descritas, modificaciones al itinerario,
+                    entradas a sitios no indicados en los tours, llamadas
+                    telefónicas, propinas, servicios en las habitaciones con
+                    cargo, u otros servicios no descritos explícitamente.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="svhistorianatRecommendations" role="tabpanel"
+                aria-labelledby="svhistorianatRecommendations-tab">
+                <h5>RECOMENDACIONES</h5>
+                <ul>
+                  <li>Ropa cómoda</li>
+                  <li>Zapatos cómodos</li>
+                  <li>Protector solar</li>
+                  <li>Gorra</li>
+                  <li>Ropa de baño</li>
+                  <li>Lentes de sol</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Pie de modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- OCCIDENTE -->
+  <!-- OCCIDENTE -->
+  <!-- OCCIDENTE -->
+
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <div class="fixed-help-center" title="Centro de ayuda">
+    <a href="" class="nav-link">
+      <i class="bi bi-headset"></i>
+    </a>
+  </div>
+  <div class="fixed-whatsapp" title="Whatsapp">
+    <a href="" class="nav-link">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+</body>
+<footer class="text-center text-white footer-background">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-google"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitter - X -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="bi bi-twitter-x"></i>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023
+    <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- End of container -->
+<script src="/assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</html>

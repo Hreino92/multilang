@@ -67,29 +67,10 @@ $(document).ready(function(){
   $('#phone').inputmask('(999) 9999-9999'); // Máscara para número de teléfono
   
 });
-
-//Mostrar dinamicamente
-function displaysv() {
-  const sv = document.getElementById("sv");
-  const programs_list = document.getElementById("programs_list");
-
-  // Verificar si programs_list está visible y ocultarlo si es necesario
-  if (programs_list.style.display === "block") {
-    programs_list.style.display = "none";
-  }
-
-  // Toggle entre mostrar y ocultar
-  sv.style.display = (sv.style.display === "none") ? "block" : "none";
-  if (sv.style.display === "block") {
-    // Opción 1: Usando document.documentElement
-    document.documentElement.scrollTop = sv.offsetTop;
-  }
-}
-function display_programs(){
-  const programs_list = document.getElementById("programs_list");
-  programs_list.style.display = (programs_list.style.display === "none")? "block":"none";
-  if (programs_list.style.display === "block") {
-    // Opción 1: Usando document.documentElement
-    document.documentElement.scrollTop = programs_list.offsetTop;
-  }
+function scrollToSection(sectionId) {
+  // Scroll suave hacia el inicio del div
+  document.getElementById(sectionId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'  // Asegura que el div se alinee al inicio
+  });
 }
