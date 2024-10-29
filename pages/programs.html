@@ -49,7 +49,21 @@
                     <!-- Flags -->
                     <!-- Flags -->
                     <!-- Flags -->
-                    <div id="flags" class="flags nav-item align-self-center">
+                    <div id="google_translate_element" class="d-flex justify-content-end p-2 bg-light border rounded"></div>
+                    <script type="text/javascript">
+                      function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                          pageLanguage: 'es',
+                          includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
+                          layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
+                          gaTrack: true,
+                          gaId: 'UA-12345678-XX'
+                        }, 'google_translate_element');
+                      }
+                    </script>
+                    <script type="text/javascript"
+                      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <!-- <div id="flags" class="flags nav-item align-self-center">
                         <div class="flags__item" data-language="es">
                             <img src="/assets/icons/sv.svg" alt="">
                             <p class="fw-lighter">es</p>
@@ -58,7 +72,7 @@
                             <img src="/assets/icons/us.svg" alt="">
                             <p class="fw-lighter">en</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Flags -->
                     <!-- Flags -->
                     <!-- Flags -->

@@ -47,9 +47,24 @@
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            
               <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
                   <!-- Flags Section -->
-                  <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
+                  <div id="google_translate_element" class="d-flex justify-content-end p-2 bg-light border rounded"></div>
+                  <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                      new google.translate.TranslateElement({
+                        pageLanguage: 'es',
+                        includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
+                        layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
+                        gaTrack: true,
+                        gaId: 'UA-12345678-XX'
+                      }, 'google_translate_element');
+                    }
+                  </script>
+                  <script type="text/javascript"
+                    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                  <!-- <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
                       <div class="flags__item" data-language="es">
                           <img src="./assets/icons/sv.svg" alt="" style="width: 25px;">
                           <p class="fw-lighter m-0">es</p>
@@ -58,7 +73,7 @@
                           <img src="./assets/icons/us.svg" alt="" style="width: 25px;">
                           <p class="fw-lighter m-0">en</p>
                       </div>
-                  </div>
+                  </div> -->
                   <!-- Nav Items -->
                   <li class="nav-item zoom-effect">
                       <a class="nav-link active nav-hover" aria-current="page" href="./index.html" data-section="menu" data-value="home">Inicio</a>
