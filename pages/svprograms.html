@@ -53,7 +53,7 @@
                   function googleTranslateElementInit() {
                     new google.translate.TranslateElement({
                       pageLanguage: 'es',
-                      includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
+                      includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
                       layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
                       gaTrack: true,
                       gaId: 'UA-12345678-XX'
@@ -82,8 +82,16 @@
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                <!-- Dropdown Menu for Cotizar -->
+                <li class="nav-item dropdown zoom-effect">
+                  <a class="nav-link dropdown-toggle nav-hover" href="#" id="cotizarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Cotizar
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+                  <li><a class="dropdown-item" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a></li>
+                  <li><a class="dropdown-item" href="./quote.html" data-section="menu" data-value="quote">Cotizar Servicios</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
@@ -103,14 +111,17 @@
   <!-- Cuatro cuadritos -->
 
   <!-- Contenedor para los botones, alineados al centro -->
-  <div class="container my-4 d-flex justify-content-center" style="padding: 0%;">
-    <button class="btn btn-success btn-md me-3" onclick="scrollToSection('programs_sv')">Con origen en El
-      Salvador</button>
-    <button class="btn btn-success btn-`md me-3" onclick="scrollToSection('svgtprograms')">Con origen en
-      Guatemala</button>
-    <button class="btn btn-success btn-md" onclick="scrollToSection('svwestprograms')">Con origen en el occidente de El
-      Salvador</button>
+  <div class="container my-4 d-flex align-items-center gap-2 p-2">
+    <button class="btn btn-secondary btn-md me-auto" onclick="history.back()" alt="Atrás"><i class="bi bi-arrow-left-square"></i> Regresar</button>
+    
+    <div class="d-flex justify-content-center flex-grow-1 gap-2">
+      <button class="btn btn-success btn-md" onclick="scrollToSection('programs_sv')">Con origen en El Salvador</button>
+      <button class="btn btn-success btn-md" onclick="scrollToSection('svgtprograms')">Con origen en Guatemala</button>
+      <button class="btn btn-success btn-md" onclick="scrollToSection('svwestprograms')">Con origen en el occidente de El Salvador</button>
+    </div>
   </div>
+  
+  
 
   <div class="container mt-5" id="programs_sv">
     <h2 class="text-center green-text">Programas en El Salvador</h2>
@@ -702,12 +713,12 @@
         <div class="modal-content">
           <!-- Encabezado del modal con carrusel -->
           <div class="modal-header">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-4">
               <h5 class="modal-title green-text" id="tierrramaravillasLabel" data-section="daytour1" data-value="name">
                 EL SALVADOR, TIERRA DE MARAVILLAS
               </h5>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-8">
               <div id="tierrramaravillasHeaderCarousel" class="carousel slide" data-bs-ride="carousel"
                 style="width: 100%; height: auto; margin-left: auto">
                 <div class="carousel-inner">
@@ -719,11 +730,11 @@
                     <img src="../assets/img/svprograms/program3_2.png" class="d-block w-100" alt="Imagen 1"
                       style="height: auto; object-fit: cover" />
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="../assets/img/svprograms/program3_3.png" class="d-block w-100" alt="Imagen 1"
                       style="height: auto; object-fit: cover" />
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item ">
                     <img src="../assets/img/svprograms/program3_4.png" class="d-block w-100" alt="Imagen 1"
                       style="height: auto; object-fit: cover" />
                   </div>
@@ -1618,7 +1629,7 @@
                   <li>Desayuno en el hotel.</li>
                   <li>Traslado y Recorrido guiado por Ruinas del Tazumal y Santa Ana Centro Histórico.</li>
                   <li>Visita a Metrocentro Santa Ana.</li>
-                  <li>Traslado a punto de abordaje del autobús, Gasolinera PUMA (ó FERTICA) 4:00 p.m.</li>
+                  <li>Traslado a punto de abordaje del autobús, hora aproximada: 3:30 pm.</li>
                 </ul>
               </div>
               <div class="tab-pane fade" id="svalcanceInclusions" role="tabpanel"
@@ -1698,7 +1709,7 @@
                 style="width: 100%; height: auto; margin-left: auto">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../assets/img/svprograms/program1_5.png" class="d-block w-100" alt="Imagen 1"
+                    <img src="../assets/img/svprograms/program7_3.png" class="d-block w-100" alt="Imagen 1"
                       style="height: auto; object-fit: cover" />
                   </div>
                   <div class="carousel-item">
@@ -2476,12 +2487,12 @@
   <!--Centro de ayuda-->
   <!--Centro de ayuda-->
   <div class="fixed-help-center" title="Centro de ayuda">
-    <a href="" class="nav-link">
+    <a href="./contact.html" class="nav-link">
       <i class="bi bi-headset"></i>
     </a>
   </div>
   <div class="fixed-whatsapp" title="Whatsapp">
-    <a href="" class="nav-link">
+    <a href="https://wa.me/50368542459" class="nav-link">
       <i class="bi bi-whatsapp"></i>
     </a>
   </div>
@@ -2489,6 +2500,8 @@
   <!--Centro de ayuda-->
   <!--Centro de ayuda-->
 </body>
+
+
 <footer class="text-center text-white footer-background">
   <!-- Grid container -->
   <div class="container pt-4">
@@ -2497,9 +2510,11 @@
       <!-- Facebook -->
       <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
           class="fab fa-facebook-f"></i></a>
+
       <!-- Google -->
       <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
           class="fab fa-google"></i></a>
+
       <!-- Instagram -->
       <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
           class="fab fa-instagram"></i></a>
@@ -2507,18 +2522,26 @@
       <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
           class="bi bi-twitter-x"></i>
       </a>
+
     </section>
     <!-- Section: Social media -->
   </div>
   <!-- Grid container -->
+
   <!-- Copyright -->
-  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2023
-    <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
-  </div>
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © <span id="currentYear"></span>
+    <a class="text-dark" href="#">reserve503.travel</a>
+</div>
+
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
   <!-- Copyright -->
 </footer>
-<!-- End of container -->
+
+<!-- End of .container -->
 <script src="/assets/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

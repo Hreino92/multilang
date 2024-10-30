@@ -11,10 +11,10 @@ document.getElementById('form')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn2.value = 'Send Email';
-      alert('Sent!');
+      btn2.value = 'Enviar Cotización';
+      alert('Cotización enviada');
     }, (err) => {
-      btn2.value = 'Send Email';
+      btn2.value = 'Enviar Cotización';
       alert(JSON.stringify(err));
     });
 });

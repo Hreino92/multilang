@@ -49,19 +49,19 @@
                 <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
                     <!-- Flags Section -->
                     <div id="google_translate_element" class="d-flex justify-content-end p-2 bg-light border rounded"></div>
-          <script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({
-                pageLanguage: 'es',
-                includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
-                layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
-                gaTrack: true,
-                gaId: 'UA-12345678-XX'
-              }, 'google_translate_element');
-            }
-          </script>
-          <script type="text/javascript"
-            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <script type="text/javascript">
+                      function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                          pageLanguage: 'es',
+                          includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
+                          layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
+                          gaTrack: true,
+                          gaId: 'UA-12345678-XX'
+                        }, 'google_translate_element');
+                      }
+                    </script>
+                    <script type="text/javascript"
+                      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     <!-- <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
                         <div class="flags__item" data-language="es">
                             <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
@@ -82,8 +82,16 @@
                     <li class="nav-item">
                         <a class="nav-link nav-hover" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-hover active" href="#" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                    <!-- Dropdown Menu for Cotizar -->
+                    <li class="nav-item dropdown zoom-effect">
+                        <a class="nav-link dropdown-toggle nav-hover active" href="#" id="cotizarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cotizar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+                        <li><a class="dropdown-item active" href="#" data-section="menu" data-value="tickets">Boletos aéreos</a></li>
+                        <li><a class="dropdown-item" href="./quote.html" data-section="menu" data-value="quote">Cotizar Servicios</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
@@ -108,7 +116,7 @@
     <div class="container mt-4 border border-success p-3 rounded " id="tickets_form">
         <h1 class="green-text text-center" data-section="tickets_form" data-value="title">Cotiza tu próximo vuelo</h1>
         <br>
-        <h5 data-section="tickets_form" data-value="instructions">Por favor, complete el formulario proporcionando información precisa y actualizada para poder ofrecerle la cotización más adecuada para su boleto aéreo. Garantizamos la total confidencialidad de sus datos, los cuales serán utilizados exclusivamente para procesar su solicitud y mejorar la calidad de nuestro servicio. ¡Gracias por confiar en nosotros!</h5>
+        <h5 data-section="tickets_form" data-value="instructions" style="text-align: justify;">Por favor, complete el formulario proporcionando información precisa y actualizada para poder ofrecerle la cotización más adecuada para su boleto aéreo. Garantizamos la total confidencialidad de sus datos, los cuales serán utilizados exclusivamente para procesar su solicitud y mejorar la calidad de nuestro servicio. ¡Gracias por confiar en nosotros!</h5>
         <form id="form">
             <div class="row">
                 <!-- Columna 1 -->
@@ -264,61 +272,65 @@
 
 
 
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-
-    <div class="fixed-help-center" title="Centro de ayuda">
-        <a href="" class="nav-link">
-            <i class="bi bi-headset"></i>
-        </a>
-    </div>
-    <div class="fixed-whatsapp" title="Whatsapp">
-        <a href="" class="nav-link">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-    </div>
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
+   <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <div class="fixed-help-center" title="Centro de ayuda">
+    <a href="./contact.html" class="nav-link">
+      <i class="bi bi-headset"></i>
+    </a>
+  </div>
+  <div class="fixed-whatsapp" title="Whatsapp">
+    <a href="https://wa.me/50368542459" class="nav-link">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
 </body>
 
 
-<footer class="text-center text-white footer-background ">
-    <!-- Grid container -->
-    <div class="container pt-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+<footer class="text-center text-white footer-background">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
 
-            <!-- Google -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-google"></i></a>
 
-            <!-- Instagram -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-            <!-- Twitter - X -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="bi bi-twitter-x"></i>
-            </a>
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitter - X -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="bi bi-twitter-x"></i>
+      </a>
 
-        </section>
-        <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
 
-    <!-- Copyright -->
-    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023
-        <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
-    </div>
-    <!-- Copyright -->
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © <span id="currentYear"></span>
+    <a class="text-dark" href="#">reserve503.travel</a>
+</div>
+
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+  <!-- Copyright -->
 </footer>
-<!-- End of container -->
 
+<!-- End of .container -->
 
 
 <script src="../assets/js/script.js"></script>

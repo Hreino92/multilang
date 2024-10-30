@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +26,13 @@
 
     <!-- Referencias para mask-input -->
     <!-- Incluir jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Incluir Inputmask -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 
     <title>reserve503.travel</title>
 </head>
+
 <body>
     <!-- Barra de navegacion-->
     <!-- Barra de navegacion-->
@@ -44,58 +46,67 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse col align-self-end flex-row-reverse" id="navbarNav">
-                <ul class="navbar-nav text-center nav-text ">
-                    <!-- Flags -->
-                    <!-- Flags -->
-                    <!-- Flags -->
-                    <div id="google_translate_element" class="d-flex justify-content-end p-2 bg-light border rounded"></div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+                    <!-- Flags Section -->
+                    <div id="google_translate_element" class="d-flex justify-content-end p-2 bg-light border rounded">
+                    </div>
                     <script type="text/javascript">
-                      function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({
-                          pageLanguage: 'es',
-                          includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
-                          layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
-                          gaTrack: true,
-                          gaId: 'UA-12345678-XX'
-                        }, 'google_translate_element');
-                      }
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'es',
+                                includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
+                                layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
+                                gaTrack: true,
+                                gaId: 'UA-12345678-XX'
+                            }, 'google_translate_element');
+                        }
                     </script>
                     <script type="text/javascript"
-                      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                    <!-- <div id="flags" class="flags nav-item align-self-center">
+                        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <!-- <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
                         <div class="flags__item" data-language="es">
-                            <img src="../assets/icons/sv.svg" alt="">
-                            <p class="fw-lighter">es</p>
+                            <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
+                            <p class="fw-lighter m-0">es</p>
                         </div>
                         <div class="flags__item" data-language="en">
-                            <img src="../assets/icons/us.svg" alt="">
-                            <p class="fw-lighter">en</p>
+                            <img src="../assets/icons/us.svg" alt="" style="width: 25px;">
+                            <p class="fw-lighter m-0">en</p>
                         </div>
                     </div> -->
-                    <!-- Flags -->
-                    <!-- Flags -->
-                    <!-- Flags -->
+                    <!-- Nav Items -->
                     <li class="nav-item">
                         <a class="nav-link nav-hover" href="../index.html" data-section="menu"
                             data-value="home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-hover" href="./el-salvador.html" data-section="menu" data-value="elsalvador">El Salvador</a>
+                        <a class="nav-link nav-hover" href="./el-salvador.html" data-section="menu"
+                            data-value="elsalvador">El Salvador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-hover" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
+                        <a class="nav-link nav-hover" href="./services.html" data-section="menu"
+                            data-value="other">Turismo Internacional</a>
+                    </li>
+                    <!-- Dropdown Menu for Cotizar -->
+                    <li class="nav-item dropdown zoom-effect">
+                        <a class="nav-link dropdown-toggle nav-hover active" href="#" id="cotizarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cotizar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+                            <li><a class="dropdown-item" href="./tickets.html" data-section="menu"
+                                    data-value="tickets">Boletos aéreos</a></li>
+                            <li><a class="dropdown-item active" href="#" data-section="menu" data-value="quote">Cotizar
+                                    Servicios</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-hover " href="./tickets.html" data-section="menu"
-                            data-value="tickets">Boletos aéreos</a>
+                        <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu"
+                            data-value="who">¿Quiénes somos?</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link nav-hover " aria-current="page" href="./quienes-somos.html"
-                            data-section="menu" data-value="who">¿Quiénes somos?</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link nav-hover active" href="#" data-section="menu" data-value="contact">Contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./contact.html" data-section="menu"
+                            data-value="contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -109,32 +120,221 @@
     <!-- Form -->
     <!-- Form -->
     <div class="container mt-4 border border-success p-3 rounded" id="contact_form">
-        <h1 class="green-text text-center" data-section="contact_form" data-value="title">Cotiza tu próximo viaje</h1>
+        <h1 class="green-text text-center" data-section="contact_form" data-value="title">Cotizar</h1>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarPrograma">Cotizar Programa</button>
+                </div>
+                <div class="col-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarTour">Cotizar Tour de un día</button>
+                </div>
+                <div class="col-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarHotel">Cotizar Hotel</button>
+                </div>
+                <div class="col-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarTransfer">Cotizar Transfer</button>
+                </div>
+            </div>
+        </div>
+
         <br>
+
         <form id="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3" id="nameField">
+                        <label class="fw-bold" for="client_name">Nombre:</label>
+                        <input class="form-control" type="text" name="client_name" id="client_name" required
+                            placeholder="e.g. Juan Pérez">
+                        <p class="form-text">*Campo requerido</p>
+                    </div>
+                    <div class="mb-3" id="phoneField">
+                        <label class="fw-bold" for="client_phone">Teléfono de contacto:</label>
+                        <input class="form-control" type="text" name="client_phone" id="client_phone"
+                            placeholder="e.g. 503 7123-4567" required>
+                        <p class="form-text">*Campo requerido</p>
+                    </div>
+                    <div class="mb-3" id="emailField">
+                        <label class="fw-bold" for="client_email">Email:</label>
+                        <input class="form-control" type="email" name="client_email" id="client_email" required
+                            placeholder="e.g. juanperez@mail.com">
+                        <p class="form-text">*Campo requerido</p>
+                    </div>
+                    <div class="mb-3" id="travelDateField">
+                        <label class="fw-bold" for="travel_date">Fecha de viaje:</label>
+                        <input class="form-control" type="date" name="travel_date" id="travel_date">
+                    </div>
+                    <div class="mb-3" id="packageField">
+                        <label class="fw-bold" for="package">Programa de interés:</label>
+                        <select class="form-select" name="package" id="package">
+                            <option value="El Salvador, tierra de encanto (5 días/4 noches)">El Salvador, tierra de encanto (5 días/4 noches)</option>
+                            <option value="El Salvador, tierra de naturaleza (6 días / 5 noches)">El Salvador, tierra de naturaleza (6 días / 5 noches)</option>
+                            <option value="El Salvador, tierra de maravillas (7 días / 6 noches)">El Salvador, tierra de maravillas (7 días / 6 noches)</option>
+                            <option value="El Salvador, tierra de fe (5 días / 4 noches)">El Salvador, tierra de fe (5 días / 4 noches)</option>
+                            <option value="El Salvador, tierra de energía (5 días / 4 noches)">El Salvador, tierra de energía (5 días / 4 noches)</option>
+                            <option value="El Salvador a tu alcance (3 días / 2 noches)">El Salvador a tu alcance (3 días / 2 noches)</option>
+                            <option value="El Salvador en fin de semana (3 días / 2 noches)">El Salvador en fin de semana (3 días / 2 noches)</option>
+                            <option value="El Salvador, cultura y naturaleza (2 días / 1 noche) ">El Salvador, cultura y naturaleza (2 días / 1 noche) </option>
+                            <option value="El Salvador, café y aventura (2 días / 1 noche)">El Salvador, café y aventura (2 días / 1 noche)</option>
+                            <option value="El Salvador, historia y naturaleza (3 días / 2 noches)">El Salvador, historia y naturaleza (3 días / 2 noches)</option>
+                            <option value="Antigua Guatemala y Panajachel (3 días / 2 noches)">Antigua Guatemala y Panajachel (3 días / 2 noches)</option>
+                            <option value="Ciudad y Playa - Panamá (5 días / 4 noches)">Ciudad y Playa - Panamá (5 días / 4 noches)</option>
+                            <option value="Costa Rica, amigo tico (5 días / 4 noches)">Costa Rica, amigo tico (5 días / 4 noches)</option>
+                            <option value="Honduras (8 días / 7 noches)">Honduras (8 días / 7 noches)</option>
+                            <option value="Nicaragua -  Ruta colonial (5 días / 4 noches)">Nicaragua -  Ruta colonial (5 días / 4 noches)</option>
+                            <option value="La espectacular Las Vegas con vistas al Gran Cañón (4 días / 3 noches)">La espectacular Las Vegas con vistas al Gran Cañón (4 días / 3 noches)</option>
+                            <option value="Orlando imperdible (4 días / 3 noches)">Orlando imperdible (4 días / 3 noches)</option>
+                            <option value="Escápate a Miami Beach (4 días / 3 noches)">Escápate a Miami Beach (4 días / 3 noches)</option>
+                            <option value="Bogotá - Colombia (4 días / 3 noches)">Bogotá - Colombia (4 días / 3 noches)</option>
+                            <option value="Santiago de Chile (4 días / 3 noches)">Santiago de Chile (4 días / 3 noches)</option>
+                            <option value="Ica - Nazca (2 días / 1 noche)">Ica - Nazca(2 días / 1 noche)</option>
+                            <option value="Patagonia - Argentina (11 días / 10 noches)">Patagonia - Argentina (11 días / 10 noches)</option>
+                            <option value="Perú Ancestral (6 días / 5 noches)">Perú Ancestral (6 días / 5 noches)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3" id="flexibilityField">
+                        <label class="fw-bold">¿Tienes flexibilidad de fechas?:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexibility" id="flexibilityYes"
+                                value="SI">
+                            <label class="form-label">SI</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexibility" id="flexibilityNo"
+                                value="NO" checked>
+                            <label class="form-label">NO</label>
+                        </div>
+                    </div>
+                    <div class="mb-3" id="considerationsField">
+                        <label class="fw-bold" for="considerations">Consideraciones especiales:</label>
+                        <textarea class="form-control" name="considerations" id="considerations"
+                            placeholder="e.g. Comida vegana/Vegan food"></textarea>
+                    </div>
+                </div>
+                <input class="btn btn-primary btn-md" type="submit" id="button" value="Solicitar Cotización">
+            </div>
+        </form>
+
+
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Ocultar todo el formulario inicialmente
+            document.getElementById("form").style.display = "none";
+
+            // Función para mostrar los campos específicos para "Cotizar Programa"
+            function mostrarCamposCotizarPrograma() {
+                // Mostrar el formulario completo para poder manipular los campos específicos
+                document.getElementById("form").style.display = "block";
+
+                // Ocultar todos los campos primero
+                const allFields = document.querySelectorAll("#form .mb-3");
+                allFields.forEach(field => field.style.display = "none");
+
+                // IDs de los campos que queremos mostrar
+                const camposAmostrar = [
+                    "client_name",
+                    "client_phone",
+                    "client_email",
+                    "travel_date",
+                    "package",
+                    "flexibility",
+                    "considerations"
+                ];
+
+                // Mostrar solo los campos especificados
+                camposAmostrar.forEach(id => {
+                    const campo = document.getElementById(id);
+                    if (campo && campo.parentNode) {
+                        campo.parentNode.style.display = "block";
+                    }
+                });
+
+                // Asignar "No aplica" a todos los demás campos que no están en la lista de campos a mostrar
+                allFields.forEach(field => {
+                    const input = field.querySelector("input, select, textarea"); // Encuentra el input, select o textarea dentro del contenedor
+                    if (input && !camposAmostrar.includes(input.id)) {
+                        if (input.tagName === "INPUT" || input.tagName === "TEXTAREA") {
+                            input.value = "No aplica";
+                        } else if (input.tagName === "SELECT") {
+                            input.value = "No aplica";
+                            input.insertAdjacentHTML("beforeend", '<option value="No aplica">No aplica</option>');
+                        }
+                    }
+                });
+            }
+
+
+            // Alternar visibilidad de campos al hacer clic en "Cotizar Programa"
+            document.getElementById("btnCotizarPrograma").addEventListener("click", function () {
+                const formDisplay = document.getElementById("form").style.display;
+                if (formDisplay === "none") {
+                    mostrarCamposCotizarPrograma(); // Muestra los campos específicos
+                } else {
+                    document.getElementById("form").style.display = "none"; // Oculta el formulario si ya está visible
+                }
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('6796wf5wjcbDkXzy4')
+    </script>
+    <!-- Form -->
+    <!-- Form -->
+    <!-- Form -->
+
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <div class="fixed-help-center" title="Centro de ayuda">
+        <a href="./contact.html" class="nav-link">
+            <i class="bi bi-headset"></i>
+        </a>
+    </div>
+    <div class="fixed-whatsapp" title="Whatsapp">
+        <a href="https://wa.me/50368542459" class="nav-link">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <!-- <form id="form">
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label class="fw-bold" for="name" data-section="contact_form" data-value="name">Nombre:</label>
-                        <input class="form-control" type="text" name="client_name" id="client_name" required placeholder="e.g. Juan Pérez">
+                        <input class="form-control" type="text" name="client_name" id="client_name" required
+                            placeholder="e.g. Juan Pérez">
                         <p class="form-text" data-section="contact_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="phone" data-section="contact_form" data-value="phone">Teléfono de contacto:</label>
-                        <input class="form-control" type="text" name="client_phone" id="client_phone" placeholder="e.g. 503 7123-4567" required>
+                        <label class="fw-bold" for="phone" data-section="contact_form" data-value="phone">Teléfono de
+                            contacto:</label>
+                        <input class="form-control" type="text" name="client_phone" id="client_phone"
+                            placeholder="e.g. 503 7123-4567" required>
                         <p class="form-text" data-section="contact_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
                         <label class="fw-bold" for="email">email:</label>
-                        <input class="form-control" type="email" name="client_email" id="client_email" required placeholder="e.g. juanperez@mail.com">
+                        <input class="form-control" type="email" name="client_email" id="client_email" required
+                            placeholder="e.g. juanperez@mail.com">
                         <p class="form-text" data-section="contact_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="travel_date" data-section="contact_form" data-value="date_of_trip">Fecha de viaje:</label>
+                        <label class="fw-bold" for="travel_date" data-section="contact_form"
+                            data-value="date_of_trip">Fecha de viaje:</label>
                         <input class="form-control" type="date" name="travel_date" id="travel_date">
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="package" data-section="contact_form" data-value="package">Paquete de interés:</label>
+                        <label class="fw-bold" for="package" data-section="contact_form" data-value="package">Paquete de
+                            interés:</label>
                         <select class="form-select" name="package" id="package">
                             <option value="Paquete 1">Paquete 1 </option>
                             <option value="Paquete 2">Paquete 2 </option>
@@ -143,96 +343,58 @@
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label class="fw-bold" for="tour" data-section="contact_form" data-value="tour">Tour de interés:</label>
+                        <label class="fw-bold" for="tour" data-section="contact_form" data-value="tour">Tour de
+                            interés:</label>
                         <select class="form-select" name="tour" id="tour">
                             <option value="Tour 1"> Tour 1</option>
                             <option value="Tour 2"> Tour 2</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="hotel" data-section="contact_form" data-value="hotel">Hotel de interés:</label>
+                        <label class="fw-bold" for="hotel" data-section="contact_form" data-value="hotel">Hotel de
+                            interés:</label>
                         <select class="form-select" name="hotel" id="hotel">
                             <option value="Hotel 1">Hotel 1 </option>
                             <option value="Hotel 2">Hotel 2 </option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="transfer" data-section="contact_form" data-value="transfer">Traslado de interés:</label>
+                        <label class="fw-bold" for="transfer" data-section="contact_form" data-value="transfer">Traslado
+                            de interés:</label>
                         <select class="form-select" name="transfer" id="transfer">
                             <option value="Transfer 1"> Transfer 1</option>
                             <option value="Transfer 2"> Transfer 2</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="flexibility" data-section="contact_form" data-value="flexibility">¿Tienes flexibilidad de fechas?:</label>
+                        <label class="fw-bold" for="flexibility" data-section="contact_form"
+                            data-value="flexibility">¿Tienes flexibilidad de fechas?:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexibility" id="flexibility" value="SI">
                             <label class="form-label" data-section="contact_form" data-value="yes">SI</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexibility" id="flexibility" value="NO" checked>
+                            <input class="form-check-input" type="radio" name="flexibility" id="flexibility" value="NO"
+                                checked>
                             <label class="form-label">NO</label>
                         </div>
-                        
+
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="considerations" data-section="contact_form" data-value="considerations">Consideraciones especiales:</label>
-                        <textarea class="form-control" name="considerations" id="considerations" placeholder="e.g. Comida vegana/Vegan food"></textarea>
+                        <label class="fw-bold" for="considerations" data-section="contact_form"
+                            data-value="considerations">Consideraciones especiales:</label>
+                        <textarea class="form-control" name="considerations" id="considerations"
+                            placeholder="e.g. Comida vegana/Vegan food"></textarea>
                     </div>
-                    <input class="btn btn-primary btn-lg" type="submit" id="button" value="Solicitar Cotización" >
+                    <input class="btn btn-primary btn-lg" type="submit" id="button" value="Solicitar Cotización">
                 </div>
             </div>
-            
-        </form>
 
-        
-    </div>
-
-    <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script type="text/javascript">
-  emailjs.init('6796wf5wjcbDkXzy4')
-</script>
-    <!-- Form -->
-    <!-- Form -->
-    <!-- Form -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-
-    <div class="fixed-help-center" title="Centro de ayuda">
-        <a href="" class="nav-link">
-            <i class="bi bi-headset"></i>
-        </a>
-    </div>
-    <div class="fixed-whatsapp" title="Whatsapp">
-        <a href="" class="nav-link">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-    </div>
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
+        </form> -->
 </body>
 
 
-<footer class="text-center text-white footer-background ">
+<footer class="text-center text-white footer-background">
     <!-- Grid container -->
     <div class="container pt-4">
         <!-- Section: Social media -->
@@ -260,14 +422,18 @@
 
     <!-- Copyright -->
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023
-        <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
+        © <span id="currentYear"></span>
+        <a class="text-dark" href="#">reserve503.travel</a>
     </div>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
     <!-- Copyright -->
 </footer>
-<!-- End of container -->
 
-
+<!-- End of .container -->
 
 <script src="../assets/js/script2.js"></script>
 

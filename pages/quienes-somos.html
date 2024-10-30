@@ -46,12 +46,13 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+          <!-- Flags Section -->
           <div id="google_translate_element" class="d-flex justify-content-end p-2 bg-light border rounded"></div>
           <script type="text/javascript">
             function googleTranslateElementInit() {
               new google.translate.TranslateElement({
                 pageLanguage: 'es',
-                includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
+                includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
                 layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
                 gaTrack: true,
                 gaId: 'UA-12345678-XX'
@@ -60,8 +61,6 @@
           </script>
           <script type="text/javascript"
             src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-          <!-- Flags Section -->
           <!-- <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
             <div class="flags__item" data-language="es">
               <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
@@ -84,9 +83,16 @@
             <a class="nav-link nav-hover" href="./services.html" data-section="menu" data-value="other">Turismo
               Internacional</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos
-              aéreos</a>
+          <!-- Dropdown Menu for Cotizar -->
+          <li class="nav-item dropdown zoom-effect">
+            <a class="nav-link dropdown-toggle nav-hover" href="#" id="cotizarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Cotizar
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+            <li><a class="dropdown-item" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a></li>
+            <li><a class="dropdown-item" href="./quote.html" data-section="menu" data-value="quote">Cotizar Servicios</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link nav-hover active" aria-current="page" href="#" data-section="menu"
@@ -119,184 +125,139 @@
   <div class="container my-5 p-4 bg-light rounded shadow-lg">
     <div class="row card-text">
       <div class="col-md-8 col-12">
-        <h3 class="green-text text-start fw-bolder" data-section="who" data-value="title">
-          Nuestra historia
-        </h3>
-        <p class="lead container" data-section="who" data-value="story">
-          ¡Anunciamos con entusiasmo la renovación de nuestra imagen comercial! Como empresa de turismo en El Salvador
-          con
-          más de dos décadas de experiencia en turismo nacional e internacional, nos enorgullece presentar una nueva
-          etapa
-          en nuestra trayectoria. Durante más de 20 años, hemos sido pioneros en la industria turística, ofreciendo
-          productos y servicios de alta calidad que han encantado a nuestros viajeros. <br>
-          Presentamos la integración de nuestros servicios como agencia de viajes y operador de turismo receptivo en la
-          nueva plataforma reserve503.travel. Esta fusión marca un hito significativo en nuestra trayectoria,
-          permitiéndonos acercarnos aún más a nuestros valiosos clientes de manera ágil y versátil. <br>
-          reserve503.travel representa una evolución en la manera en que interactuamos con quienes confían en nuestros
-          servicios. Esta plataforma innovadora nos permite no solo ofrecer una amplia gama de opciones turísticas, sino
-          también brindar una atención más cercana y accesible a través de múltiples canales de comunicación. <br>
-          Esta actualización refleja nuestra evolución continua y nuestro compromiso con la excelencia. Nos hemos
-          destacado por desarrollar experiencias turísticas únicas y memorables, manteniendo siempre un estándar de
-          calidad incomparable. Nuestra vasta experiencia en la creación de viajes a medida, unida a la pasión por
-          mostrar
-          lo mejor de El Salvador y de otros destinos internacionales, nos posiciona como líderes en el mercado. <br>
-          Nuestro equipo, reconocido por su experiencia y compromiso, estará disponible para asesorar y guiar a nuestros
-          viajeros en cada paso del camino. La fusión de servicios en reserve503.travel nos posiciona para ofrecer una
-          experiencia de viaje integral y personalizada, adaptada a las necesidades individuales de cada cliente. <br>
-          Presentamos una serie de nuevos destinos turísticos y tours que encapsulan la belleza natural, el bienestar y
-          la
-          sostenibilidad en su máxima expresión. Nuestros programas han sido meticulosamente diseñados para sumergir a
-          los
-          viajeros en entornos que promueven la armonía con la naturaleza, ofreciendo experiencias enriquecedoras que
-          equilibran el disfrute con la preservación. Desde excursiones eco-conscientes en áreas protegidas hasta
-          retiros
-          de bienestar en paraísos naturales, cada tour se compromete con la excelencia y busca proporcionar lo mejor en
-          términos de conexión con el entorno, promoviendo el bienestar personal y el respeto por el medio ambiente en
-          cada paso del viaje. <br>
-          Nuestras colaboraciones estratégicas con destacadas organizaciones internacionales como ACTUAL, ALL XPERIENCE
-          y
-          TERMATALIA y el registro en RNT, nos mantienen a la vanguardia del turismo, permitiéndonos ofrecer
-          experiencias
-          de alta calidad y permanecer actualizados con las últimas tendencias y estándares globales. Estas alianzas no
-          solo enriquecen nuestra oferta, sino que también refuerzan nuestro compromiso con la excelencia y la
-          innovación
-          en cada experiencia que ofrecemos. Además, nuestra asociación con CATA (Central America Tourism Agency) nos
-          permite promover nuestra región como un destino turístico integral, destacando la diversidad y la riqueza de
-          Centroamérica como un todo, reforzando así nuestra posición como un destino imperdible en el mapa turístico
-          internacional. <br>
-          Estamos emocionados por esta nueva etapa que nos permite estar aún más cerca de ustedes, nuestros apreciados
-          viajeros. ¡Descubran con nosotros la comodidad, versatilidad y excelencia en cada experiencia de viaje a
-          través
-          de reserve503.travel! ¡Únete a nosotros en esta emocionante travesía mientras continuamos ofreciendo lo mejor
-          en
-          el turismo salvadoreño e internacional.
-        </p>
+        <div class="container my-5">
+          <div class="text-center mb-4">
+            <h1 class="display-4 fw-bold green-text">¡Renovamos nuestra Imagen Comercial!</h1>
+            <p class="lead">Más de 20 años liderando el turismo nacional e internacional en El Salvador</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <p class="text-justify">
+                Estamos emocionados de presentar <b>reserve503.travel</b>, nuestra nueva plataforma que integra los servicios de agencia de viajes y operador de turismo receptivo. Esta plataforma nos permite estar más cerca de nuestros clientes y ofrecerles una amplia gama de opciones turísticas y una atención ágil a través de múltiples canales de comunicación.
+              </p>
+              <p class="text-justify">
+                Nuestro compromiso con la excelencia y la personalización sigue intacto, ahora fortalecido por un equipo dedicado a crear experiencias únicas y memorables en El Salvador y destinos internacionales. Cada aventura es diseñada para cumplir con los más altos estándares de calidad, desde escapadas de bienestar en entornos naturales hasta eco-tours que promueven la sostenibilidad.
+              </p>
+              <p class="text-justify">
+                Gracias a alianzas estratégicas con GET-LATAM, ALL XPERIENCE, TERMATALIA, CATA y el respaldo de RNT, nos mantenemos a la vanguardia del turismo global. Estas colaboraciones no solo enriquecen nuestra oferta, sino que también posicionan a El Salvador y Centroamérica como destinos turísticos diversos y vibrantes en el mapa mundial.
+              </p>
+              <p class="text-justify">
+                ¡Descubre con nosotros la comodidad, versatilidad y excelencia en cada experiencia de viaje a través de <b>reserve503.travel</b>! Acompáñanos en esta emocionante travesía para ofrecer lo mejor del turismo salvadoreño e internacional.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
+  
       <div class="col-md-4 col-12 text-center">
         <div class="container align-items-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/fPRQ1z9219o?si=D292yZBG2w7v_s__"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/fPRQ1z9219o?si=D292yZBG2w7v_s__" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
           <p class="mt-2" data-section="video" data-value="description">
-            Descubre nuestra nueva página web, conoce y explora El Salvador, sus maravillas naturales y culturales, y
-            conoce tus destinos soñados a través de reserve503.travel</p>
+            Bienvenida por parte de nuestra directora
+          </p>
         </div>
         <hr>
         <div>
           <div class="container align-items-center">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
-                  aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4"
-                  aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="5"
-                  aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="6"
-                  aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="7"
-                  aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="8"
-                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="8" aria-label="Slide 9"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs1.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs1.png" class="d-block w-100" alt="Alianzas estratégicas">
                   <div class="carousel-caption d-md-block">
-                    <p data-section="carousel2" data-value="text1">Alianzas estratégicas a nivel nacional e
-                      internacional</p>
+                    <p data-section="carousel2" data-value="text1">Alianzas estratégicas a nivel nacional e internacional</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs2.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs2.png" class="d-block w-100" alt="ANATO Colombia">
                   <div class="carousel-caption d-md-block">
                     <p data-section="carousel2" data-value="text1">ANATO Colombia</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs3.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs3.png" class="d-block w-100" alt="Entrevistas en televisión nacional">
                   <div class="carousel-caption d-md-block">
                     <p data-section="carousel2" data-value="text1">Entrevistas en televisión nacional</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs4.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs4.png" class="d-block w-100" alt="Firma de convenios">
                   <div class="carousel-caption d-md-block">
                     <p data-section="carousel2" data-value="text1">Firma de convenios</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs5.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs5.png" class="d-block w-100" alt="Turismo receptivo en El Salvador">
                   <div class="carousel-caption d-md-block">
                     <p data-section="carousel2" data-value="text1">Turismo receptivo en El Salvador</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs6.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs6.png" class="d-block w-100" alt="Cámara Salvadoreña de Turismo">
                   <div class="carousel-caption d-md-block">
                     <p data-section="carousel2" data-value="text1">Pertenencia a Cámara Salvadoreña de Turismo</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs7.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs7.png" class="d-block w-100" alt="Participación en ferias">
                   <div class="carousel-caption d-md-block">
                     <p data-section="carousel2" data-value="text1">Participación en ferias</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs8.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs8.png" class="d-block w-100" alt="Premios a nivel nacional e internacional">
                   <div class="carousel-caption d-md-block">
                     <p data-section="carousel2" data-value="text1">Premios a nivel nacional e internacional</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img src="../assets/img/quienes-somos/qs9.png" class="d-block w-100" alt="...">
+                  <img src="../assets/img/quienes-somos/qs9.png" class="d-block w-100" alt="Presentación termatalia, Brasil">
                   <div class="carousel-caption d-md-block">
                     <p data-section="carousel2" data-value="text1">Presentación termatalia, Brasil</p>
                   </div>
                 </div>
-
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previo</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
               </button>
             </div>
-            <p data-section="carousel2" data-value="carouseldescription" class="mt-2">Explora nuestra trayectoria a
-              través de imágenes que capturan momentos significativos y el crecimiento de nuestras marcas, reflejando
-              nuestra evolución y compromiso con la excelencia.</p>
+            <p data-section="carousel2" data-value="carouseldescription" class="mt-2">Explora nuestra trayectoria a través de imágenes que capturan momentos significativos y el crecimiento de nuestras marcas, reflejando nuestra evolución y compromiso con la excelencia.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
 
-
+  
   <hr>
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-12">
-        <img src="../assets/img/quienes-somos/logoac.png" alt="">
+        <!-- <img src="../assets/img/quienes-somos/logoac.png" alt=""> -->
         <img src="../assets/img/quienes-somos/logoas.png" alt="">
         <img src="../assets/img/quienes-somos/logoca.png" alt="">
         <img src="../assets/img/quienes-somos/logoes.png" alt="">
         <img src="../assets/img/quienes-somos/logomm.png" alt="">
         <img src="../assets/img/quienes-somos/logoae.png" alt="">
-        <h3 class="green-text"><b>Nuestras alianzas</b></h3>
+        <h3 class="green-text"><b>Marcas que nos respaldan</b></h3>
       </div>
     </div>
   </div>
@@ -310,13 +271,16 @@
   <!--Centro de ayuda-->
   <!--Centro de ayuda-->
 
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
   <div class="fixed-help-center" title="Centro de ayuda">
-    <a href="" class="nav-link">
+    <a href="./contact.html" class="nav-link">
       <i class="bi bi-headset"></i>
     </a>
   </div>
   <div class="fixed-whatsapp" title="Whatsapp">
-    <a href="" class="nav-link">
+    <a href="https://wa.me/50368542459" class="nav-link">
       <i class="bi bi-whatsapp"></i>
     </a>
   </div>
@@ -326,7 +290,7 @@
 </body>
 
 
-<footer class="text-center text-white footer-background ">
+<footer class="text-center text-white footer-background">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Section: Social media -->
@@ -354,12 +318,18 @@
 
   <!-- Copyright -->
   <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023
-    <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
-  </div>
+    © <span id="currentYear"></span>
+    <a class="text-dark" href="#">reserve503.travel</a>
+</div>
+
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
   <!-- Copyright -->
 </footer>
-<!-- End of container -->
+
+<!-- End of .container -->
 
 
 

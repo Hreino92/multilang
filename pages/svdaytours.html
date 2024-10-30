@@ -54,7 +54,7 @@
                       function googleTranslateElementInit() {
                         new google.translate.TranslateElement({
                           pageLanguage: 'es',
-                          includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
+                          includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
                           layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
                           gaTrack: true,
                           gaId: 'UA-12345678-XX'
@@ -83,8 +83,16 @@
                     <li class="nav-item">
                         <a class="nav-link nav-hover" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                    <!-- Dropdown Menu for Cotizar -->
+                    <li class="nav-item dropdown zoom-effect">
+                        <a class="nav-link dropdown-toggle nav-hover" href="#" id="cotizarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cotizar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+                        <li><a class="dropdown-item" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a></li>
+                        <li><a class="dropdown-item" href="./quote.html" data-section="menu" data-value="quote">Cotizar Servicios</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
@@ -106,6 +114,13 @@
     <!-- DAYTOURS -->
     <!-- DAYTOURS -->
     <div class="container">
+          <!-- Contenedor para los botones, alineados al centro -->
+          <div class="container my-4 d-flex flex-wrap align-items-center gap-2 p-2">
+            <button class="btn btn-secondary btn-md d-flex align-items-center me-auto" onclick="history.back()" alt="Atrás">
+              <i class="bi bi-arrow-left-square me-2"></i> Regresar
+            </button>
+          </div>
+          
         <div class="row text-center">
             <h1 class="green-text">Tours de un día en El Salvador</h1>
             <div class="col-md-4 mb-3" data-bs-toggle="modal" data-bs-target=".daytour1">
@@ -376,7 +391,7 @@
                                         style="height: auto; object-fit: cover" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/img/svprograms/program3_2.png" class="d-block w-100" alt="Imagen 2"
+                                    <img src="../assets/img/svprograms/svday2_2.png" class="d-block w-100" alt="Imagen 2"
                                         style="height: auto; object-fit: cover" />
                                 </div>
                                 <div class="carousel-item">
@@ -498,7 +513,7 @@
                                         style="height: auto; object-fit: cover" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/img/svprograms/program3_2.png" class="d-block w-100" alt="Imagen 2"
+                                    <img src="../assets/img/svprograms/svday2_1.png" class="d-block w-100" alt="Imagen 2"
                                         style="height: auto; object-fit: cover" />
                                 </div>
                                 <div class="carousel-item">
@@ -740,7 +755,7 @@
                                         style="height: auto; object-fit: cover" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/img/svprograms/program10_2.png" class="d-block w-100" alt="Imagen 2"
+                                    <img src="../assets/img/svprograms/svday5_3.png" class="d-block w-100" alt="Imagen 2"
                                         style="height: auto; object-fit: cover" />
                                 </div>
                                 <div class="carousel-item">
@@ -1453,57 +1468,64 @@
 
 
     <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-
-    <div class="fixed-help-center" title="Centro de ayuda">
-        <a href="" class="nav-link">
-            <i class="bi bi-headset"></i>
-        </a>
-    </div>
-    <div class="fixed-whatsapp" title="Whatsapp">
-        <a href="" class="nav-link">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-    </div>
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <div class="fixed-help-center" title="Centro de ayuda">
+    <a href="./contact.html" class="nav-link">
+      <i class="bi bi-headset"></i>
+    </a>
+  </div>
+  <div class="fixed-whatsapp" title="Whatsapp">
+    <a href="https://wa.me/50368542459" class="nav-link">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
 </body>
-<footer class="text-center text-white footer-background ">
-    <!-- Grid container -->
-    <div class="container pt-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
-            <!-- Google -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
 
-            <!-- Instagram -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-            <!-- Twitter - X -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="bi bi-twitter-x"></i>
-            </a>
+<footer class="text-center text-white footer-background">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
 
-        </section>
-        <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-google"></i></a>
 
-    <!-- Copyright -->
-    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023
-        <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
-    </div>
-    <!-- Copyright -->
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitter - X -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="bi bi-twitter-x"></i>
+      </a>
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © <span id="currentYear"></span>
+    <a class="text-dark" href="#">reserve503.travel</a>
+</div>
+
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+  <!-- Copyright -->
 </footer>
-<!-- End of container -->
+
+<!-- End of .container -->
 
 
 

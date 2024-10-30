@@ -54,7 +54,7 @@
                   function googleTranslateElementInit() {
                     new google.translate.TranslateElement({
                       pageLanguage: 'es',
-                      includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
+                      includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
                       layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
                       gaTrack: true,
                       gaId: 'UA-12345678-XX'
@@ -83,8 +83,16 @@
                 <li class="nav-item">
                     <a class="nav-link nav-hover active" href="#" data-section="menu" data-value="other">Turismo Internacional</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                <!-- Dropdown Menu for Cotizar -->
+                <li class="nav-item dropdown zoom-effect">
+                  <a class="nav-link dropdown-toggle nav-hover" href="#" id="cotizarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Cotizar
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+                  <li><a class="dropdown-item" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a></li>
+                  <li><a class="dropdown-item" href="./quote.html" data-section="menu" data-value="quote">Cotizar Servicios</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
@@ -113,28 +121,12 @@
       </div>
       <!-- Contenido -->
       <div class="col-md-8 custom-container zoom-effect">
-        <h2 class="text-primary">El mundo a tu alcance</h2>
-        <p>reserve503.travel es tu puerta de entrada a un mundo de aventuras y experiencias
-          inolvidables. Ofrecemos paquetes de turismo a cualquier destino del mundo, diseñados
-          para adaptarse a tus gustos, presupuesto y necesidades. Ya sea que estés buscando
-          explorar los paisajes naturales más impresionantes, sumergirte en la cultura de ciudades
-          históricas o relajarte en playas paradisíacas, tenemos opciones para cada tipo de viajero.
-          Con reserve503.travel, puedes estar seguro de que tu experiencia será personalizada,
-          cómoda y llena de momentos memorables.
-          Además, contamos con paquetes exclusivos de luna de miel, ideales para que tú y tu
-          pareja disfruten de una escapada romántica y mágica en los destinos más encantadores
-          del mundo. También ofrecemos emocionantes opciones de cruceros que te permitirán
-          disfrutar de múltiples destinos en un solo viaje, con todas las comodidades a bordo. Si
-          prefieres recorrer el destino a tu ritmo, ponemos a tu disposición un servicio de renta de
-          autos con tarifas competitivas y facilidades de reserva; así como de hoteles u otras formas
-          de alojamiento.
-          Para aquellos que buscan inspiración, presentamos algunos modelos de programas
-          turísticos en América Latina, destacando experiencias culturales y naturales que resaltan
-          la riqueza de la región. Sin embargo, estos son solo ejemplos de los programas que
-          ofrecemos, ya que trabajamos a la medida de las preferencias de cada cliente. En
-          reserve503.travel, nos adaptamos a tus deseos y necesidades, desde asistencia de viaje
-          integral hasta traslados cómodos y seguros, para que vivas una aventura diseñada
-          exclusivamente para ti.</p>      
+        <h2 class="text-primary text-center">El mundo a tu alcance</h2>
+        <h4 style="text-align: justify;">
+          En reserve503.travel, somos tu puerta a un mundo de experiencias diseñadas a la medida. Ofrecemos paquetes turísticos a cualquier destino, adaptados a tus gustos y presupuesto, ya sea que busques explorar paisajes únicos, sumergirte en la cultura o relajarte en playas paradisíacas.
+          Para los viajeros en pareja, contamos con exclusivos paquetes de luna de miel en destinos románticos. Si prefieres recorrer por tu cuenta, te ofrecemos renta de autos, alojamiento y más, con tarifas competitivas.
+          Descubre programas inspiradores por América Latina o crea el tuyo con nosotros. En reserve503.travel, cada detalle se adapta a ti para una aventura única y personalizada.
+        </h4>      
       </div>
     </div>
   </div>
@@ -201,14 +193,13 @@
   <!--Centro de ayuda-->
   <!--Centro de ayuda-->
   <!--Centro de ayuda-->
-
   <div class="fixed-help-center" title="Centro de ayuda">
-    <a href="" class="nav-link">
+    <a href="./contact.html" class="nav-link">
       <i class="bi bi-headset"></i>
     </a>
   </div>
   <div class="fixed-whatsapp" title="Whatsapp">
-    <a href="" class="nav-link">
+    <a href="https://wa.me/50368542459" class="nav-link">
       <i class="bi bi-whatsapp"></i>
     </a>
   </div>
@@ -218,7 +209,7 @@
 </body>
 
 
-<footer class="text-center text-white footer-background ">
+<footer class="text-center text-white footer-background">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Section: Social media -->
@@ -246,13 +237,18 @@
 
   <!-- Copyright -->
   <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023
-    <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
-  </div>
+    © <span id="currentYear"></span>
+    <a class="text-dark" href="#">reserve503.travel</a>
+</div>
+
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
   <!-- Copyright -->
 </footer>
-<!-- End of container -->
 
+<!-- End of .container -->
 
 
 <script src="../assets/js/script.js"></script>

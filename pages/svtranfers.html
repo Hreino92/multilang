@@ -52,7 +52,7 @@
                     function googleTranslateElementInit() {
                       new google.translate.TranslateElement({
                         pageLanguage: 'es',
-                        includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
+                        includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
                         layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
                         gaTrack: true,
                         gaId: 'UA-12345678-XX'
@@ -81,8 +81,16 @@
                   <li class="nav-item">
                       <a class="nav-link nav-hover" href="./services.html" data-section="menu" data-value="other">Turismo Internacional</a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link nav-hover" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a>
+                  <!-- Dropdown Menu for Cotizar -->
+                  <li class="nav-item dropdown zoom-effect">
+                    <a class="nav-link dropdown-toggle nav-hover" href="#" id="cotizarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Cotizar
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+                    <li><a class="dropdown-item" href="./tickets.html" data-section="menu" data-value="tickets">Boletos aéreos</a></li>
+                    <li><a class="dropdown-item" href="./quote.html" data-section="menu" data-value="quote">Cotizar Servicios</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu" data-value="who">¿Quiénes somos?</a>
@@ -94,41 +102,32 @@
           </div>
       </div>
   </nav>
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es',
-                includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi',
-                layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
-                gaTrack: true,
-                gaId: 'UA-12345678-XX'
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 
     <!-- Barra de navegacion-->
     <!-- Barra de navegacion-->
     <!-- Barra de navegacion-->
     <div class="container">
+      <!-- Contenedor para los botones, alineados al centro -->
+      <div class="container my-4 d-flex flex-wrap align-items-center gap-2 p-2">
+        <button class="btn btn-secondary btn-md d-flex align-items-center me-auto" onclick="history.back()" alt="Atrás">
+          <i class="bi bi-arrow-left-square me-2"></i> Regresar
+        </button>
+      </div>
         <div class="row">
           <!-- Imagen -->
           <div class="col-md-4 image-container">
-            <img src="../assets/img/svtransfers/transfers.png" alt="Imagen de ejemplo">
+            <img src="../assets/img/svtransfers/transfers.png" alt="">
           </div>
           <!-- Contenido -->
                     <!-- Contenido -->
-                    <div class="col-12 col-md-8 custom-container zoom-effect order-2 order-md-1">
-                        <h2 class="text-primary">Traslados</h2>
+                    <div class="col-12 col-md-8 custom-container order-2 order-md-1">
+                        <h2 class="text-primary text-center">Traslados</h2>
                   
                         <!-- Cards de contenido -->
                         <div class="row">
                           <!-- Primera tarjeta con contenido actual -->
-                          <div class="col-12 col-md-6 mb-3">
-                            <div class="card h-100">
+                          <div class="col-12 col-md-6 mb-3 zoom-effect">
+                            <div class="card h-100 ">
                               <div class="card-body">
                                 <h5 class="card-title text-primary">Traslados Aeropuerto – Hotel – Aeropuerto</h5>
                                 <p class="card-text">¿Llegas o te vas? Nosotros nos encargamos. Ofrecemos traslados cómodos y eficientes para viajeros individuales, grupos o empresas, con una variedad de vehículos que van desde sedanes hasta autobuses de lujo. Disponibles en El Salvador y ¡en cualquier parte del mundo!</p>
@@ -137,7 +136,7 @@
                           </div>
                   
                           <!-- Segunda tarjeta para contenido nuevo -->
-                          <div class="col-12 col-md-6 mb-3">
+                          <div class="col-12 col-md-6 mb-3 zoom-effect">
                             <div class="card h-100">
                               <div class="card-body">
                                 <h5 class="card-title text-primary">Traslados Internos en El Salvador y Más Allá</h5>
@@ -149,7 +148,7 @@
                   
                         <!-- Botón de cotización -->
                         <div class="text-center mt-3">
-                          <a href="./quote.html" class="btn btn-primary">Cotizar renta de autos</a>
+                          <a href="./quote.html" class="btn btn-primary">Cotizar traslado</a>
                         </div>
                       </div>
         </div>
@@ -163,13 +162,13 @@
           </div>
           
           <!-- Contenido -->
-          <div class="col-12 col-md-8 custom-container zoom-effect order-2 order-md-1">
-            <h2 class="text-primary">Renta de autos</h2>
+          <div class="col-12 col-md-8 custom-container order-2 order-md-1">
+            <h2 class="text-primary text-center">Renta de autos</h2>
       
             <!-- Cards de contenido -->
             <div class="row">
               <!-- Primera tarjeta con contenido actual -->
-              <div class="col-12 col-md-6 mb-3">
+              <div class="col-12 col-md-6 mb-3 zoom-effect">
                 <div class="card h-100">
                   <div class="card-body">
                     <h5 class="card-title text-primary">Renta de Autos en El Salvador</h5>
@@ -179,7 +178,7 @@
               </div>
       
               <!-- Segunda tarjeta para contenido nuevo -->
-              <div class="col-12 col-md-6 mb-3">
+              <div class="col-12 col-md-6 mb-3 zoom-effect">
                 <div class="card h-100">
                   <div class="card-body">
                     <h5 class="card-title text-primary">Renta de autos a nivel mundial</h5>
@@ -199,57 +198,65 @@
       
       
       
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
+   <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <div class="fixed-help-center" title="Centro de ayuda">
+    <a href="./contact.html" class="nav-link">
+      <i class="bi bi-headset"></i>
+    </a>
+  </div>
+  <div class="fixed-whatsapp" title="Whatsapp">
+    <a href="https://wa.me/50368542459" class="nav-link">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+  <!--Centro de ayuda-->
+</body>
 
-    <div class="fixed-help-center" title="Centro de ayuda">
-        <a href="" class="nav-link">
-            <i class="bi bi-headset"></i>
-        </a>
-    </div>
-    <div class="fixed-whatsapp" title="Whatsapp">
-        <a href="" class="nav-link">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-    </div>
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <!--Centro de ayuda-->
-    <footer class="text-center text-white footer-background ">
-        <!-- Grid container -->
-        <div class="container pt-4">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-    
-                <!-- Google -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-    
-                <!-- Instagram -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-                <!-- Twitter - X -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="bi bi-twitter-x"></i>
-                </a>
-    
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-    
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023
-            <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- End of container -->
+
+<footer class="text-center text-white footer-background">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitter - X -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+          class="bi bi-twitter-x"></i>
+      </a>
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © <span id="currentYear"></span>
+    <a class="text-dark" href="#">reserve503.travel</a>
+</div>
+
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+  <!-- Copyright -->
+</footer>
+
+<!-- End of .container -->
     <script src="../assets/js/script.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
