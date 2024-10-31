@@ -119,162 +119,460 @@
     <!-- Form -->
     <!-- Form -->
     <!-- Form -->
-    <div class="container mt-4 border border-success p-3 rounded" id="contact_form">
+    <div class="container border border-success p-3 rounded" id="contact_form">
         <h1 class="green-text text-center" data-section="contact_form" data-value="title">Cotizar</h1>
         <div class="container mt-3">
-            <div class="row">
-                <div class="col-6 col-md-3 mb-2">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
                     <button class="btn btn-primary w-100" id="btnCotizarPrograma">Cotizar Programa</button>
                 </div>
-                <div class="col-6 col-md-3 mb-2">
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
                     <button class="btn btn-primary w-100" id="btnCotizarTour">Cotizar Tour de un día</button>
                 </div>
-                <div class="col-6 col-md-3 mb-2">
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
                     <button class="btn btn-primary w-100" id="btnCotizarHotel">Cotizar Hotel</button>
                 </div>
-                <div class="col-6 col-md-3 mb-2">
-                    <button class="btn btn-primary w-100" id="btnCotizarTransfer">Cotizar Transfer</button>
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarTransporte">Cotizar Transporte</button>
+                </div>
+
+                <!-- Modal para Cotizar Transporte -->
+                <div class="modal fade" id="transportModal" tabindex="-1" aria-labelledby="transportModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="transportModalLabel">Seleccione el tipo de transporte</h5>
+                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                            </div>
+                            <div class="modal-body text-center">
+                                <button class="btn btn-primary w-100 mb-2" id="transfer">Tipo de Transporte
+                                    1</button>
+                                <button class="btn btn-primary w-100 mb-2" id="btnTransportType2">Tipo de Transporte
+                                    2</button>
+                                <button class="btn btn-primary w-100" id="btnTransportType3">Tipo de Transporte
+                                    3</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <br>
+        <form id="form" class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="row">
+                        <!-- DATOS GENERALES -->
+                        <div class="col-6" id="contactInfoField">
+                            <label class="fw-bold">Información de contacto:</label>
 
-        <form id="form">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mb-3" id="nameField">
-                        <label class="fw-bold" for="client_name">Nombre:</label>
-                        <input class="form-control" type="text" name="client_name" id="client_name" required
-                            placeholder="e.g. Juan Pérez">
-                        <p class="form-text">*Campo requerido</p>
-                    </div>
-                    <div class="mb-3" id="phoneField">
-                        <label class="fw-bold" for="client_phone">Teléfono de contacto:</label>
-                        <input class="form-control" type="text" name="client_phone" id="client_phone"
-                            placeholder="e.g. 503 7123-4567" required>
-                        <p class="form-text">*Campo requerido</p>
-                    </div>
-                    <div class="mb-3" id="emailField">
-                        <label class="fw-bold" for="client_email">Email:</label>
-                        <input class="form-control" type="email" name="client_email" id="client_email" required
-                            placeholder="e.g. juanperez@mail.com">
-                        <p class="form-text">*Campo requerido</p>
-                    </div>
-                    <div class="mb-3" id="travelDateField">
-                        <label class="fw-bold" for="travel_date">Fecha de viaje:</label>
-                        <input class="form-control" type="date" name="travel_date" id="travel_date">
-                    </div>
-                    <div class="mb-3" id="packageField">
-                        <label class="fw-bold" for="package">Programa de interés:</label>
-                        <select class="form-select" name="package" id="package">
-                            <option value="El Salvador, tierra de encanto (5 días/4 noches)">El Salvador, tierra de encanto (5 días/4 noches)</option>
-                            <option value="El Salvador, tierra de naturaleza (6 días / 5 noches)">El Salvador, tierra de naturaleza (6 días / 5 noches)</option>
-                            <option value="El Salvador, tierra de maravillas (7 días / 6 noches)">El Salvador, tierra de maravillas (7 días / 6 noches)</option>
-                            <option value="El Salvador, tierra de fe (5 días / 4 noches)">El Salvador, tierra de fe (5 días / 4 noches)</option>
-                            <option value="El Salvador, tierra de energía (5 días / 4 noches)">El Salvador, tierra de energía (5 días / 4 noches)</option>
-                            <option value="El Salvador a tu alcance (3 días / 2 noches)">El Salvador a tu alcance (3 días / 2 noches)</option>
-                            <option value="El Salvador en fin de semana (3 días / 2 noches)">El Salvador en fin de semana (3 días / 2 noches)</option>
-                            <option value="El Salvador, cultura y naturaleza (2 días / 1 noche) ">El Salvador, cultura y naturaleza (2 días / 1 noche) </option>
-                            <option value="El Salvador, café y aventura (2 días / 1 noche)">El Salvador, café y aventura (2 días / 1 noche)</option>
-                            <option value="El Salvador, historia y naturaleza (3 días / 2 noches)">El Salvador, historia y naturaleza (3 días / 2 noches)</option>
-                            <option value="Antigua Guatemala y Panajachel (3 días / 2 noches)">Antigua Guatemala y Panajachel (3 días / 2 noches)</option>
-                            <option value="Ciudad y Playa - Panamá (5 días / 4 noches)">Ciudad y Playa - Panamá (5 días / 4 noches)</option>
-                            <option value="Costa Rica, amigo tico (5 días / 4 noches)">Costa Rica, amigo tico (5 días / 4 noches)</option>
-                            <option value="Honduras (8 días / 7 noches)">Honduras (8 días / 7 noches)</option>
-                            <option value="Nicaragua -  Ruta colonial (5 días / 4 noches)">Nicaragua -  Ruta colonial (5 días / 4 noches)</option>
-                            <option value="La espectacular Las Vegas con vistas al Gran Cañón (4 días / 3 noches)">La espectacular Las Vegas con vistas al Gran Cañón (4 días / 3 noches)</option>
-                            <option value="Orlando imperdible (4 días / 3 noches)">Orlando imperdible (4 días / 3 noches)</option>
-                            <option value="Escápate a Miami Beach (4 días / 3 noches)">Escápate a Miami Beach (4 días / 3 noches)</option>
-                            <option value="Bogotá - Colombia (4 días / 3 noches)">Bogotá - Colombia (4 días / 3 noches)</option>
-                            <option value="Santiago de Chile (4 días / 3 noches)">Santiago de Chile (4 días / 3 noches)</option>
-                            <option value="Ica - Nazca (2 días / 1 noche)">Ica - Nazca(2 días / 1 noche)</option>
-                            <option value="Patagonia - Argentina (11 días / 10 noches)">Patagonia - Argentina (11 días / 10 noches)</option>
-                            <option value="Perú Ancestral (6 días / 5 noches)">Perú Ancestral (6 días / 5 noches)</option>
-                        </select>
-                    </div>
-                    <div class="mb-3" id="flexibilityField">
-                        <label class="fw-bold">¿Tienes flexibilidad de fechas?:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexibility" id="flexibilityYes"
-                                value="SI">
-                            <label class="form-label">SI</label>
+                            <div class="mb-3" id="nameField">
+                                <label class="fw-bold" for="client_name">Nombre:</label>
+                                <input class="form-control" type="text" name="client_name" id="client_name" required
+                                    placeholder="e.g. Juan Pérez">
+                                <p class="form-text">*Campo requerido</p>
+                            </div>
+
+                            <div class="mb-3" id="phoneField">
+                                <label class="fw-bold" for="client_phone">Teléfono de contacto:</label>
+                                <input class="form-control" type="text" name="client_phone" id="client_phone"
+                                    placeholder="e.g. 503 7123-4567" required>
+                                <p class="form-text">*Campo requerido</p>
+                            </div>
+
+                            <div class="mb-3" id="emailField">
+                                <label class="fw-bold" for="client_email">Email:</label>
+                                <input class="form-control" type="email" name="client_email" id="client_email" required
+                                    placeholder="e.g. juanperez@mail.com">
+                                <p class="form-text">*Campo requerido</p>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexibility" id="flexibilityNo"
-                                value="NO" checked>
-                            <label class="form-label">NO</label>
+                        <!-- DATOS GENERALES -->
+
+                        <!-- PROGRAM -->
+                        <div class="col-6">
+                            <div id="programInfoField">
+                                <div class="mb-3" id="packageField">
+                                    <label class="fw-bold" for="package">Programa de interés:</label>
+                                    <select class="form-select" name="package" id="package">
+                                        <option value="El Salvador, tierra de encanto (5 días/4 noches)">El Salvador,
+                                            tierra de
+                                            encanto (5 días/4 noches)</option>
+                                        <option value="El Salvador, tierra de naturaleza (6 días / 5 noches)">El
+                                            Salvador, tierra de
+                                            naturaleza (6 días / 5 noches)</option>
+                                        <option value="El Salvador, tierra de maravillas (7 días / 6 noches)">El
+                                            Salvador, tierra de
+                                            maravillas (7 días / 6 noches)</option>
+                                        <option value="El Salvador, tierra de fe (5 días / 4 noches)">El Salvador,
+                                            tierra de fe (5
+                                            días / 4 noches)</option>
+                                        <option value="El Salvador, tierra de energía (5 días / 4 noches)">El Salvador,
+                                            tierra de
+                                            energía (5 días / 4 noches)</option>
+                                        <option value="El Salvador a tu alcance (3 días / 2 noches)">El Salvador a tu
+                                            alcance (3
+                                            días / 2 noches)</option>
+                                        <option value="El Salvador en fin de semana (3 días / 2 noches)">El Salvador en
+                                            fin de
+                                            semana (3 días / 2 noches)</option>
+                                        <option value="El Salvador, cultura y naturaleza (2 días / 1 noche) ">El
+                                            Salvador, cultura y
+                                            naturaleza (2 días / 1 noche) </option>
+                                        <option value="El Salvador, café y aventura (2 días / 1 noche)">El Salvador,
+                                            café y aventura
+                                            (2 días / 1 noche)</option>
+                                        <option value="El Salvador, historia y naturaleza (3 días / 2 noches)">El
+                                            Salvador, historia
+                                            y naturaleza (3 días / 2 noches)</option>
+                                        <option value="Antigua Guatemala y Panajachel (3 días / 2 noches)">Antigua
+                                            Guatemala y
+                                            Panajachel (3 días / 2 noches)</option>
+                                        <option value="Ciudad y Playa - Panamá (5 días / 4 noches)">Ciudad y Playa -
+                                            Panamá (5 días
+                                            / 4 noches)</option>
+                                        <option value="Costa Rica, amigo tico (5 días / 4 noches)">Costa Rica, amigo
+                                            tico (5 días /
+                                            4 noches)</option>
+                                        <option value="Honduras (8 días / 7 noches)">Honduras (8 días / 7 noches)
+                                        </option>
+                                        <option value="Nicaragua -  Ruta colonial (5 días / 4 noches)">Nicaragua - Ruta
+                                            colonial (5
+                                            días / 4 noches)</option>
+                                        <option
+                                            value="La espectacular Las Vegas con vistas al Gran Cañón (4 días / 3 noches)">
+                                            La
+                                            espectacular Las Vegas con vistas al Gran Cañón (4 días / 3 noches)</option>
+                                        <option value="Orlando imperdible (4 días / 3 noches)">Orlando imperdible (4
+                                            días / 3
+                                            noches)</option>
+                                        <option value="Escápate a Miami Beach (4 días / 3 noches)">Escápate a Miami
+                                            Beach (4 días /
+                                            3 noches)</option>
+                                        <option value="Bogotá - Colombia (4 días / 3 noches)">Bogotá - Colombia (4 días
+                                            / 3 noches)
+                                        </option>
+                                        <option value="Santiago de Chile (4 días / 3 noches)">Santiago de Chile (4 días
+                                            / 3 noches)
+                                        </option>
+                                        <option value="Ica - Nazca (2 días / 1 noche)">Ica - Nazca(2 días / 1 noche)
+                                        </option>
+                                        <option value="Patagonia - Argentina (11 días / 10 noches)">Patagonia -
+                                            Argentina (11 días /
+                                            10 noches)</option>
+                                        <option value="Perú Ancestral (6 días / 5 noches)">Perú Ancestral (6 días / 5
+                                            noches)
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="mb-3" id="travelDateField">
+                                    <label class="fw-bold" for="travel_date">Fecha de inicio del programa:</label>
+                                    <input class="form-control" type="date" name="travel_date" id="travel_date">
+                                </div>
+                                <div class="mb-3" id="flexibilityField">
+                                    <label class="fw-bold" for="flexibility">¿Tienes flexibilidad de fechas?:</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexibility"
+                                            id="flexibilityYes" value="SI">
+                                        <label class="form-check-label" for="flexibilityYes">SI</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexibility"
+                                            id="flexibilityNo" value="NO" checked>
+                                        <label class="form-check-label" for="flexibilityNo">NO</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3" id="adultsProgramField">
+                                    <div class="fw-bold">Adultos participando en programa:</div>
+                                    <input class="form-control" type="number" name="adults_program" id="adults_program"
+                                        value="1">
+                                </div>
+                                <div class="mb-3" id="childrenProgramField">
+                                    <div class="fw-bold">Niños participando en programa:</div>
+                                    <input class="form-control" type="number" name="children_program"
+                                        id="children_program" value="0">
+                                </div>
+                                <div class="mb-3" id="considerationsField">
+                                    <label class="fw-bold" for="considerations">Consideraciones especiales:</label>
+                                    <textarea class="form-control" name="considerations" id="considerations"
+                                        placeholder="e.g. Comida vegana/Vegan food"></textarea>
+                                </div>
+                            </div>
+                            <!-- PROGRAM -->
+
+                            <!-- DAYTOUR -->
+                            <div id="tourInfoField">
+                                <div class="mb-3" id="tourField">
+                                    <label class="fw-bold" for="tour">Tour de interés:</label>
+                                    <select class="form-select" name="tour" id="tour">
+                                        <option value="Ruta de las Flores">Ruta de las Flores</option>
+                                        <option value="City Tour San Salvador">City Tour San Salvador</option>
+                                        <option value="Tour a la Playa El Tunco">Tour a la Playa El Tunco</option>
+                                        <option value="Excursión a Lago de Coatepeque">Excursión a Lago de Coatepeque
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="mb-3" id="tourtravelDateField">
+                                    <label class="fw-bold" for="travel_date">Fecha del tour:</label>
+                                    <input class="form-control" type="date" name="tourtravel_date" id="tourtravel_date">
+                                </div>
+                                <div class="mb-3" id="adultsTourField">
+                                    <div class="fw-bold">Adultos participando en tour:</div>
+                                    <input class="form-control" type="number" name="tour_adults" id="tour_adults"
+                                        value="1">
+                                </div>
+                                <div class="mb-3" id="childrenTourField">
+                                    <div class="fw-bold">Niños participando en tour:</div>
+                                    <input class="form-control" type="number" name="tour_children" id="tour_children"
+                                        value="0">
+                                </div>
+                                <div class="mb-3" id="TourConsiderationsField">
+                                    <label class="fw-bold" for="considerations">Consideraciones especiales del
+                                        tour:</label>
+                                    <textarea class="form-control" name="tour_considerations" id="tour_considerations"
+                                        placeholder="e.g. Comida vegana/Vegan food"></textarea>
+                                </div>
+                            </div>
+                            <!-- DAYTOUR  -->
+
+                            <!-- HOTEL -->
+                            <div class="mb-3" id="hotelField">
+                                <label for="hotel" class="fw-bold">Hotel de interés:</label>
+                                <select class="form-select" name="hotel" id="hotel">
+                                    <option value="Hotel 1">Hotel 1</option>
+                                    <option value="Hotel 1">Hotel 1</option>
+                                    <option value="Hotel 1">Hotel 1</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="hotelTravelDateField">
+                                <label class="fw-bold" for="hoteltravel_date">Fecha inicio de reservación:</label>
+                                <input class="form-control" type="date" name="hotel_travel_date" id="hotel_travel_date">
+                            </div>
+                            <div class="mb-3" id="hotelEndDateField">
+                                <label class="fw-bold" for="hotel_end_date">Fecha final de reservación:</label>
+                                <input class="form-control" type="date" name="hotel_end_date" id="hotel_end_date">
+                            </div>
+                            <div class="mb-3" id="adultsHotelField">
+                                <div class="fw-bold">Adultos en la reservación:</div>
+                                <input class="form-control" type="number" name="hotel_adults" id="hotel_adults"
+                                    value="1">
+                            </div>
+                            <div class="mb-3" id="childrenHotelField">
+                                <div class="fw-bold">Niños en la reservación:</div>
+                                <input class="form-control" type="number" name="hotel_children" id="hotel_children"
+                                    value="0">
+                            </div>
+                            <div class="mb-3" id="roomTypeField">
+                                <label for="room_type" class="fw-bold">Tipo de habitación:</label>
+                                <select class="form-select" name="room_type" id="room_type">
+                                    <option value="Sencilla">Sencilla</option>
+                                    <option value="Doble">Doble</option>
+                                    <option value="Triple">Triple</option>
+                                    <option value="Suite">Suite</option>
+                                    <option value="Cabaña">Cabaña</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="hotelConsiderationsField">
+                                <label class="fw-bold" for="hotel_considerations">Consideraciones especiales del
+                                    tour:</label>
+                                <textarea class="form-control" name="hotel_considerations" id="hotel_considerations"
+                                    placeholder="e.g. Comida vegana/Vegan food"></textarea>
+                            </div>
+                            <!-- HOTEL -->
+
+                            <!-- TRANSFER -->
+                            <div class="mb-3" id="transferField">
+                                <label for="transfer" class="fw-bold">Tipo de habitación:</label>
+                                <select class="form-select" name="transfer" id="transfer">
+                                    <option value="Aeropuerto/Hotel">Aeropuerto/Hotel</option>
+                                    <option value="Hotel/Aeropuerto">Hotel/Aeropuerto</option>
+                                    <option value="Otro destino (Especifique en el campo 'Consideraciones Especiales')">Otro destino (Especifique en el campo 'Consideraciones Especiales')</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="tranferDateField">
+                                <label class="fw-bold" for="transfer_date">Fecha de transfer:</label>
+                                <input class="form-control" type="date" name="transfer_date" id="transfer_date">
+                            </div>
+                            <div class="mb-3" id="vehicleField">
+                                <label for="vehicle" class="fw-bold">Tipo de habitación:</label>
+                                <select class="form-select" name="vehicle" id="vehicle">
+                                    <option value="Sedan">Sedan</option>
+                                    <option value="Camioneta SUV">Camioneta SUV</option>
+                                    <option value="Minibus tipo HIACE/URVAN">Minibus tipo HIACE/URVAN</option>
+                                    <option value="Minibus tipo COASTER/COUNTY">Minibus tipo COASTER/COUNTY</option>
+                                    <option value="Minibus tipo MINIPULLMAN">Minibus tipo MINIPULLMAN</option>
+                                    <option value="Autobús tipo PULLMAN">Autobús tipo PULLMAN</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="transferConsiderationsField">
+                                <label class="fw-bold" for="transfer_considerations">Consideraciones especiales del
+                                    tour:</label>
+                                <textarea class="form-control" name="transfer_considerations" id="transfer_considerations"
+                                    placeholder="e.g. Transfer desde San Miguel/Aeropuerto"></textarea>
+                            </div>
+                            <!-- TRANSFER -->
+
+
+                            <div class="text-center mt-4">
+                                <input class="btn btn-primary btn-md" type="submit" id="button"
+                                    value="Solicitar Cotización">
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3" id="considerationsField">
-                        <label class="fw-bold" for="considerations">Consideraciones especiales:</label>
-                        <textarea class="form-control" name="considerations" id="considerations"
-                            placeholder="e.g. Comida vegana/Vegan food"></textarea>
                     </div>
                 </div>
-                <input class="btn btn-primary btn-md" type="submit" id="button" value="Solicitar Cotización">
             </div>
         </form>
 
 
-
     </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Ocultar todo el formulario inicialmente
-            document.getElementById("form").style.display = "none";
+            // Establece la fecha mínima en el input de fecha
+            const today = new Date();
+            const dd = String(today.getDate()).padStart(2, '0');
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const yyyy = today.getFullYear();
+            const minDate = `${yyyy}-${mm}-${dd}`;
+            document.getElementById("travel_date").setAttribute("min", minDate);
+            document.getElementById("tourtravel_date").setAttribute("min", minDate);
+            document.getElementById("hotel_travel_date").setAttribute("min", minDate);
+            document.getElementById("transfer_date").setAttribute("min", minDate);
 
-            // Función para mostrar los campos específicos para "Cotizar Programa"
-            function mostrarCamposCotizarPrograma() {
-                // Mostrar el formulario completo para poder manipular los campos específicos
-                document.getElementById("form").style.display = "block";
+            // Ocultar el formulario inicialmente
+            const form = document.getElementById("form");
+            form.style.display = "none";
 
-                // Ocultar todos los campos primero
+            // Mostrar el modal de transporte
+            document.getElementById("btnCotizarTransporte").addEventListener("click", function () {
+                const transportModal = new bootstrap.Modal(document.getElementById("transportModal"));
+                transportModal.show();
+            });
+
+            // Función para mostrar campos específicos con "required" dinámico
+            function mostrarCampos(camposAmostrar) {
+                form.style.display = "block";
                 const allFields = document.querySelectorAll("#form .mb-3");
-                allFields.forEach(field => field.style.display = "none");
 
-                // IDs de los campos que queremos mostrar
-                const camposAmostrar = [
-                    "client_name",
-                    "client_phone",
-                    "client_email",
-                    "travel_date",
-                    "package",
-                    "flexibility",
-                    "considerations"
-                ];
-
-                // Mostrar solo los campos especificados
-                camposAmostrar.forEach(id => {
-                    const campo = document.getElementById(id);
-                    if (campo && campo.parentNode) {
-                        campo.parentNode.style.display = "block";
-                    }
+                allFields.forEach(field => {
+                    field.style.display = "none";
+                    const input = field.querySelector("input, textarea, select");
+                    if (input) input.required = false; // Elimina el required de todos los campos
                 });
 
-                // Asignar "No aplica" a todos los demás campos que no están en la lista de campos a mostrar
-                allFields.forEach(field => {
-                    const input = field.querySelector("input, select, textarea"); // Encuentra el input, select o textarea dentro del contenedor
-                    if (input && !camposAmostrar.includes(input.id)) {
-                        if (input.tagName === "INPUT" || input.tagName === "TEXTAREA") {
-                            input.value = "No aplica";
-                        } else if (input.tagName === "SELECT") {
-                            input.value = "No aplica";
-                            input.insertAdjacentHTML("beforeend", '<option value="No aplica">No aplica</option>');
-                        }
+                camposAmostrar.forEach(id => {
+                    const campo = document.getElementById(id);
+                    if (campo) {
+                        campo.style.display = "block";
+                        const input = campo.querySelector("input, textarea, select");
+                        if (input) input.required = true; // Añade el required solo a los campos visibles
                     }
                 });
             }
 
+            // Función para "Cotizar Programa"
+            function mostrarCamposCotizarPrograma() {
+                const camposAmostrar = [
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "travelDateField",
+                    "packageField",  // Programa de interés
+                    "flexibilityField",
+                    "considerationsField",
+                    "adultsProgramField",
+                    "childrenProgramField"
+                ];
+                mostrarCampos(camposAmostrar);
+            }
 
-            // Alternar visibilidad de campos al hacer clic en "Cotizar Programa"
+            // Función para "Cotizar Tour de un día"
+            function mostrarCamposCotizarTour() {
+                const camposAmostrar = [
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "tourField",
+                    "tourtravelDateField",
+                    "adultsTourField",
+                    "childrenTourField",
+                    "TourConsiderationsField",
+                ];
+                mostrarCampos(camposAmostrar);
+            }
+
+            // Función para "Cotizar Hotel"
+            function mostrarCamposCotizarHotel() {
+                const camposAmostrar = [
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "hotelField",
+                    "hotelTravelDateField",
+                    "hotelEndDateField",
+                    "adultsHotelField",
+                    "childrenHotelField",
+                    "roomTypeField",
+                    "hotelConsiderationsField"
+                ];
+                mostrarCampos(camposAmostrar);
+            }
+
+            // Mostrar campos para tipos de transporte específicos
+            document.getElementById("transfer").addEventListener("click", function () {
+                mostrarCampos([
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "transferField",
+                    "tranferDateField",
+                    "vehicleField",
+                    "transferConsiderationsField"
+                ]);
+                bootstrap.Modal.getInstance(document.getElementById("transportModal")).hide();
+            });
+
+            document.getElementById("btnTransportType2").addEventListener("click", function () {
+                mostrarCampos([
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "transportType2Field", // Campos específicos del tipo de transporte 2
+                    "adultsTransportField",
+                    "luggageField",
+                ]);
+                bootstrap.Modal.getInstance(document.getElementById("transportModal")).hide();
+            });
+
+            document.getElementById("btnTransportType3").addEventListener("click", function () {
+                mostrarCampos([
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "transportType3Field", // Campos específicos del tipo de transporte 3
+                    "pickupLocationField",
+                    "dropoffLocationField"
+                ]);
+                bootstrap.Modal.getInstance(document.getElementById("transportModal")).hide();
+            });
+
+            // Listener para "Cotizar Programa"
             document.getElementById("btnCotizarPrograma").addEventListener("click", function () {
-                const formDisplay = document.getElementById("form").style.display;
-                if (formDisplay === "none") {
-                    mostrarCamposCotizarPrograma(); // Muestra los campos específicos
-                } else {
-                    document.getElementById("form").style.display = "none"; // Oculta el formulario si ya está visible
-                }
+                const formDisplay = form.style.display;
+                formDisplay === "none" ? mostrarCamposCotizarPrograma() : form.style.display = "none";
+            });
+
+            // Listener para "Cotizar Tour de un día"
+            document.getElementById("btnCotizarTour").addEventListener("click", function () {
+                const formDisplay = form.style.display;
+                formDisplay === "none" ? mostrarCamposCotizarTour() : form.style.display = "none";
+            });
+
+            // Listener para "Cotizar Hotel"
+            document.getElementById("btnCotizarHotel").addEventListener("click", function () {
+                const formDisplay = form.style.display;
+                formDisplay === "none" ? mostrarCamposCotizarHotel() : form.style.display = "none";
             });
         });
 

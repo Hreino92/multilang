@@ -13,6 +13,8 @@ document.getElementById('form')
     .then(() => {
       btn2.value = 'Enviar Cotización';
       alert('Cotización enviada');
+      this.reset(); // Limpia todos los campos del formulario
+      // window.location("") // Si deseas redirigir después del envío
     }, (err) => {
       btn2.value = 'Enviar Cotización';
       alert(JSON.stringify(err));
