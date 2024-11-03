@@ -14,7 +14,7 @@ document.getElementById('form')
       btn2.value = 'Enviar Cotización';
       alert('Cotización enviada');
       this.reset(); // Limpia todos los campos del formulario
-      // window.location("") // Si deseas redirigir después del envío
+      window.location.href='/index.html';
     }, (err) => {
       btn2.value = 'Enviar Cotización';
       alert(JSON.stringify(err));
