@@ -148,7 +148,7 @@
                             <div class="modal-body text-center">
                                 <button class="btn btn-primary w-100 mb-2" id="transfer">Traslado</button>
                                 <button class="btn btn-primary w-100 mb-2" id="rentacar">Renta de Autos</button>
-                                <button class="btn btn-primary w-100" id="transportesdelsol">Transportes del Sol</button>
+                                <button class="btn btn-primary w-100" id="transportesdelsol">Transportes Del Sol</button>
                             </div>
                         </div>
                     </div>
@@ -289,13 +289,19 @@
                                     <div class="fw-bold">Niños participando en programa:</div>
                                     <input class="form-control" type="number" name="children_program"
                                         id="children_program" value="0">
-                                    <p class="form-text">*Menores de 12 años</p>
+                                    <p class="form-text">*Menores de 12 años cumplidos</p>
                                 </div>
                                 <div class="mb-3" id="considerationsField">
-                                    <label class="fw-bold" for="considerations">Consideraciones especiales:</label>
+                                    <label class="fw-bold" for="considerations">Consideraciones especiales del programa:</label>
                                     <textarea class="form-control" name="considerations" id="considerations"
-                                        placeholder="e.g. Comida vegana"></textarea>
+                                        placeholder="e.g. Comida vegana">-</textarea>
+                                <ul>
+                                    <li class="form-text">Consideraciones por enfermedades crónicas o preexistentes, alergias.</li>
+                                    <li class="form-text">Consideraciones para adultos mayores, capacidades especiales.</li>
+                                    <li class="form-text">Consideraciones por mascotas, alimentación, etc. </li>
+                                </ul>
                                 </div>
+                                
                             </div>
                             <!-- PROGRAM -->
 
@@ -339,14 +345,20 @@
                                     <div class="fw-bold">Niños participando en tour:</div>
                                     <input class="form-control" type="number" name="tour_children" id="tour_children"
                                         value="0">
-                                    <p class="form-text">*Menores de 12 años</p>
+                                    <p class="form-text">*Menores de 12 años cumplidos</p>
                                 </div>
                                 <div class="mb-3" id="TourConsiderationsField">
                                     <label class="fw-bold" for="considerations">Consideraciones especiales del
                                         tour:</label>
                                     <textarea class="form-control" name="tour_considerations" id="tour_considerations"
-                                        placeholder="e.g. Comida vegana/Vegan food"></textarea>
+                                        placeholder="e.g. Comida vegana/Vegan food">-</textarea>
+                                        <ul>
+                                            <li class="form-text">Consideraciones por enfermedades crónicas o preexistentes, alergias.</li>
+                                            <li class="form-text">Consideraciones para adultos mayores, capacidades especiales.</li>
+                                            <li class="form-text">Consideraciones por mascotas, alimentación, etc. </li>
+                                        </ul>
                                 </div>
+                                
                             </div>
                             <!-- DAYTOUR  -->
 
@@ -354,33 +366,32 @@
                             <div class="mb-3" id="hotelField">
                                 <label for="hotel" class="fw-bold">Hotel de interés:</label>
                                 <select class="form-select" name="hotel" id="hotel">
-                                    <option value="Hotel Sheraton Presidente">Hotel Sheraton Presidente</option>
-                                    <option value="Hotel Barceló">Hotel Barceló</option>
-                                    <option value="Hotel Hilton San Salvador">Hotel Hilton San Salvador</option>
-                                    <option value="Hotel Courtyard">Hotel Courtyard</option>
-                                    <option value="Hotel Intercontinental">Hotel Intercontinental</option>
-                                    <option value="Cardedeu Suites">Cardedeu Suites</option>
-                                    <option value="Cardedeu Express">Cardedeu Express</option>
-                                    <option value="Cardedeu Lago">Cardedeu Lago</option>
-                                    <option value="Cardedeu Residence">Cardedeu Residence</option>
+                                    <option value="Hotel Sheraton Presidente">Hotel Sheraton Presidente - San Salvador</option>
+                                    <option value="Hotel Barceló">Hotel Barceló - San Salvador</option>
+                                    <option value="Hotel Hilton San Salvador">Hotel Hilton San Salvador - San Salvador</option>
+                                    <option value="Hotel Courtyard">Hotel Courtyard - San Salvador</option>
+                                    <option value="Hotel Intercontinental">Hotel Intercontinental - San Salvador</option>
+                                    <option value="Cardedeu Suites">Cardedeu Suites - San Salvador</option>
+                                    <option value="Cardedeu Express">Cardedeu Express - San Salvador</option>
+                                    <option value="Cardedeu Lago">Cardedeu Lago - Santa Ana, Lago de Coatepeque</option>
+                                    <option value="Cardedeu Residence">Cardedeu Residence - Santa Ana, Lago de Coatepeque</option>
                                     <option value="Casa 1800 - Cerro Verde">Casa 1800 - Cerro Verde</option>
-                                    <option value="Hotel Sueños">Hotel Sueños</option>
-                                    <option value="Hotel Los Almendros">Hotel Los Almendros</option>
-                                    <option value="Casa 1800 - Suchitoto">Casa 1800 - Suchitoto</option>
-                                    <option value="La posada de Suchitlán">La posada de Suchitlán</option>
-                                    <option value="Casa 1800 - Ataco">Casa 1800 - Ataco</option>
-                                    <option value="Hotel Fleur de Lis">Hotel Fleur de Lis</option>
-                                    <option value="Hotel Casa de Graciela">Hotel Casa de Graciela</option>
+                                    <option value="Hotel Sueños">Hotel Sueños - San Salvador</option>
+                                    <option value="Hotel Los Almendros">Hotel Los Almendros - Suchitoto</option>
+                                    <option value="Casa 1800 - Suchitoto">Casa 1800 - Suchitoto - Suchitoto</option>
+                                    <option value="La posada de Suchitlán">La posada de Suchitlán - Suchitoto</option>
+                                    <option value="Casa 1800 - Ataco">Casa 1800 - Concepción de Ataco</option>
+                                    <option value="Hotel Fleur de Lis">Hotel Fleur de Lis - Concepción de Ataco</option>
+                                    <option value="Hotel Casa de Graciela">Hotel Casa de Graciela - Concepción de Ataco</option>
                                     <option value="Hotel Las Puertas de Apaneca">Hotel Las Puertas de Apaneca</option>
-                                    <option value="La casa de Mamapán">La casa de Mamapán</option>
-                                    <option value="Hotel María Isabel">Hotel María Isabel</option>
-                                    <option value="Hotel Roca Sunzal">Hotel Roca Sunzal</option>
-                                    <option value="Atami Scape Resort">Atami Scape Resort</option>
-                                    <option value="Hotel Casa de Mar">Hotel Casa de Mar</option>
-                                    <option value="Puro Surf Hotel">Puro Surf Hotel</option>
-                                    <option value="Hotel Royal Decameron Salinitas">Hotel Royal Decameron Salinitas
-                                    </option>
-                                    <option value="Hotel Casa del Golfo">Hotel Casa del Golfo</option>
+                                    <option value="La casa de Mamapán">La casa de Mamapán - Ahuachapán</option>
+                                    <option value="Hotel María Isabel">Hotel María Isabel - Ahuachapán (Calle a Jujutla)</option>
+                                    <option value="Hotel Roca Sunzal">Hotel Roca Sunzal - Playa El Tunco, La Libertad</option>
+                                    <option value="Atami Scape Resort">Atami Scape Resort - Tamanique, La Libertad</option>
+                                    <option value="Hotel Casa de Mar">Hotel Casa de Mar - Playa El Tunco, La Libertad</option>
+                                    <option value="Puro Surf Hotel">Puro Surf Hotel - Playa El Zonte, La Libertad</option>
+                                    <option value="Hotel Royal Decameron Salinitas">Hotel Royal Decameron Salinitas - Playa Salinitas, Sonsonate</option>
+                                    <option value="Hotel Casa del Golfo">Hotel Casa del Golfo - Playa El Malicus, La Unión</option>
                                 </select>
                             </div>
                             <div class="mb-3" id="hotelTravelDateField">
@@ -392,15 +403,15 @@
                                 <input class="form-control" type="date" name="hotel_end_date" id="hotel_end_date">
                             </div>
                             <div class="mb-3" id="adultsHotelField">
-                                <div class="fw-bold">Adultos en la reservación:</div>
+                                <div class="fw-bold">Adultos en la reservación/habitación:</div>
                                 <input class="form-control" type="number" name="hotel_adults" id="hotel_adults"
                                     value="1">
                             </div>
                             <div class="mb-3" id="childrenHotelField">
-                                <div class="fw-bold">Niños en la reservación:</div>
+                                <div class="fw-bold">Niños en la reservación/habitación:</div>
                                 <input class="form-control" type="number" name="hotel_children" id="hotel_children"
                                     value="0">
-                                <p class="form-text">*Menores de 12 años</p>
+                                <p class="form-text">*Menores de 12 años cumplidos</p>
                             </div>
                             <div class="mb-3" id="roomTypeField">
                                 <label for="room_type" class="fw-bold">Tipo de habitación:</label>
@@ -415,16 +426,20 @@
                                 </select>
                             </div>
                             <div class="mb-3" id="hotelConsiderationsField">
-                                <label class="fw-bold" for="hotel_considerations">Consideraciones especiales del
-                                    tour:</label>
+                                <label class="fw-bold" for="hotel_considerations">Consideraciones especiales en la reservación:</label>
                                 <textarea class="form-control" name="hotel_considerations" id="hotel_considerations"
-                                    placeholder="e.g. Decoración especial/Special decoration"></textarea>
+                                    placeholder="e.g. Decoración especial/Special decoration">-</textarea>
+                                    <ul>
+                                        <li class="form-text">Consideraciones por enfermedades crónicas o preexistentes, alergias.</li>
+                                        <li class="form-text">Consideraciones para adultos mayores, capacidades especiales.</li>
+                                        <li class="form-text">Consideraciones por mascotas, alimentación, etc. </li>
+                                    </ul>
                             </div>
                             <!-- HOTEL -->
 
                             <!-- TRANSFER -->
                             <div class="mb-3" id="transferField">
-                                <label for="transfer" class="fw-bold">Tipo de transfer:</label>
+                                <label for="transfer" class="fw-bold">Tipo de traslado:</label>
                                 <select class="form-select" name="transfer" id="transfer">
                                     <option value="Aeropuerto/Hotel">Aeropuerto/Hotel</option>
                                     <option value="Hotel/Aeropuerto">Hotel/Aeropuerto</option>
@@ -433,7 +448,7 @@
                                 </select>
                             </div>
                             <div class="mb-3" id="transferDateField">
-                                <label class="fw-bold" for="transfer_date">Fecha de transfer:</label>
+                                <label class="fw-bold" for="transfer_date">Fecha de traslado:</label>
                                 <input class="form-control" type="date" name="transfer_date" id="transfer_date">
                             </div>
                             <div class="mb-3" id="vehicleField">
@@ -449,10 +464,10 @@
                             </div>
                             <div class="mb-3" id="transferConsiderationsField">
                                 <label class="fw-bold" for="transfer_considerations">Consideraciones y
-                                    dirección:</label>
+                                    dirección exacta de punto de salida y punto de llegada:</label>
                                 <textarea class="form-control" name="transfer_considerations"
                                     id="transfer_considerations"
-                                    placeholder="e.g. Transfer desde San Miguel/Aeropuerto"></textarea>
+                                    placeholder="e.g. Traslado desde Los Altos #17..."></textarea>
                                 <p class="form-text">*Por favor, especificar dirección exacta.</p>
                             </div>
                             <!-- TRANSFER -->
@@ -494,7 +509,7 @@
                                 </select>
                             </div>
                             <div class="mb-3" id="rc_considerations_field">
-                                <label class="fw-bold" for="rc_considerations">Consideraciones y dirección:</label>
+                                <label class="fw-bold" for="rc_considerations">Consideraciones y dirección exacta de punto de salida y punto de llegada:</label>
                                 <textarea class="form-control" name="rc_considerations" id="rc_considerations"
                                     placeholder="e.g. Punto de inicio/Punto final"></textarea>
                                 <p class="form-text">*Por favor, especificar dirección exacta.</p>
@@ -545,7 +560,7 @@
                                     <div class="fw-bold">Niños que viajan:</div>
                                     <input class="form-control" type="number" name="tds_children" id="tds_children"
                                         value="0">
-                                    <p class="form-text">*Menores de 12 años</p>
+                                    <p class="form-text">*Menores de 12 años cumplidos</p>
                                 </div>
                             <!-- TRANSPORTES DEL SOL -->
 

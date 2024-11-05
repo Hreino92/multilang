@@ -60,12 +60,12 @@ document.getElementById('form')
     });
 });
 
-// Mask-input
-$(document).ready(function(){
-  // Aplicar máscara al campo de texto con id 'phone'
-  $('#phone').inputmask('(999) 9999-9999'); // Máscara para número de teléfono
+// // Mask-input
+// $(document).ready(function(){
+//   // Aplicar máscara al campo de texto con id 'phone'
+//   $('#phone').inputmask('(999) 9999-9999'); // Máscara para número de teléfono
   
-});
+// });
 function scrollToSection(sectionId) {
   // Scroll suave hacia el inicio del div
   document.getElementById(sectionId).scrollIntoView({

@@ -124,11 +124,11 @@
     <div class="container mt-4 border border-success p-3 rounded " id="tickets_form">
         <h1 class="green-text text-center" data-section="tickets_form" data-value="title">Cotiza tu próximo vuelo</h1>
         <br>
-        <h5 data-section="tickets_form" data-value="instructions" style="text-align: justify;">Por favor, complete el
+        <p data-section="tickets_form" data-value="instructions" style="text-align: justify;">Por favor, complete el
             formulario proporcionando información precisa y actualizada para poder ofrecerle la cotización más adecuada
             para su boleto aéreo. Garantizamos la total confidencialidad de sus datos, los cuales serán utilizados
             exclusivamente para procesar su solicitud y mejorar la calidad de nuestro servicio. ¡Gracias por confiar en
-            nosotros!</h5>
+            nosotros!</p>
         <form id="form">
             <div class="row">
                 <!-- Columna 1 -->
@@ -150,6 +150,13 @@
                         <label for="email" class="fw-bold" data-section="tickets_form" data-value="email">Email:</label>
                         <input type="email" class="form-control" id="email" name="email" required
                             placeholder="e.g. juanperez@mail.com">
+                        <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="city" class="fw-bold" data-section="tickets_form" data-value="city">Ciudad de
+                            origen:</label>
+                        <input type="text" class="form-control" id="origin" name="origin" required
+                            placeholder="e.g. San Salvador">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
@@ -184,6 +191,26 @@
                             <input class="form-check-input" type="radio" name="flexibility" id="flexibility_no"
                                 value="NO">
                             <label class="form-check-label" for="flexibility_no">NO</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="contact_form" data-section="tickets_form"
+                            data-value="contact_form">¿Cuál es tu forma preferida para que te contactemos?:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
+                                value="WHATSAPP" checked>
+                            <label class="form-check-label" for="WHATSAPP">WhatsApp</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
+                                value="email">
+                            <label class="form-check-label" for="email">email</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
+                                value="LLAMADA">
+                            <label class="form-check-label" for="LLAMADA" data-section="tickets_form"
+                                data-value="phone_call">Llamada telefónica</label>
                         </div>
                     </div>
 
@@ -253,25 +280,35 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="contact_form" data-section="tickets_form"
-                            data-value="contact_form">¿Cuál es tu forma preferida para que te contactemos?:</label>
+                        <label class="fw-bold" for="scale" data-section="tickets_form" data-value="scale">¿Clase de preferencia?:</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
-                                value="WHATSAPP" checked>
-                            <label class="form-check-label" for="WHATSAPP">WhatsApp</label>
+                            <input class="form-check-input" type="radio" name="class" id="class" value="Primera Clase">
+                            <label class="form-check-label" for="SI" data-section="tickets_form"
+                                data-value="yes">Primera Clase</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
-                                value="email">
-                            <label class="form-check-label" for="email">email</label>
+                            <input class="form-check-input" type="radio" name="class" id="class" value="Clase Ejecutiva" >
+                            <label class="form-check-label" for="NO">Clase Ejecutiva</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
-                                value="LLAMADA">
-                            <label class="form-check-label" for="LLAMADA" data-section="tickets_form"
-                                data-value="phone_call">Llamada telefónica</label>
+                            <input class="form-check-input" type="radio" name="class" id="class" value="Clase Turista" checked>
+                            <label class="form-check-label" for="NO">Clase Turista</label>
                         </div>
                     </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="scale" data-section="tickets_form" data-value="scale">Tipo de asiento de preferencia:</label>
+                        <p class="form-text">*Los asientos serán asignados solo si el tipo de tarifa lo permite</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="seat" id="seat" value="Asiento de pasillo" checked>
+                            <label class="form-check-label" for="SI" data-section="tickets_form"
+                                data-value="yes">Asiento de pasillo</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="seat" id="seat" value="Asiento de ventana">
+                            <label class="form-check-label" for="NO">Asiento de ventana</label>
+                        </div>
+                    </div>
+                    
                     <div class="mb-3">
                         <label class="fw-bold" for="adults" data-section="tickets_form" data-value="adults">¿Cuántos
                             adultos viajan?:</label>
